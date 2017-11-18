@@ -1,0 +1,2 @@
+# datapacks
+Datapacks of Templex
