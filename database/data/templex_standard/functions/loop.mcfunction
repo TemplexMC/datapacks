@@ -107,16 +107,10 @@ execute as @a[scores={TPEnd=1..}] run function templex_standard:tp_end_try
 
 execute as @a[scores={Survival=1..}] run function templex_standard:survival
 
-execute as @a[x=452,y=21,z=429,distance=2] run function templex_standard:rtp_try
+#execute as @a[x=452,y=21,z=429,distance=..2] run function templex_standard:rtp_try
 execute as @a[scores={RTP=1..}] run function templex_standard:rtp_try
 
 execute as @a[scores={BuyRTP=1..}] run function templex_standard:buy_rtp_try
-
-execute as @a[scores={Dim=1},x=170,y=52,z=0,distance=100,gamemode=survival] run function templex_standard:end_protection
-
-execute as @a[scores={TPSend=1..}] run function templex_standard:tpsend
-
-execute as @a[scores={TPHere=1..}] run function templex_standard:tphere
 
 execute as @a[scores={Diamond=1..}] run function templex_standard:xray_check
 
@@ -137,15 +131,13 @@ execute as @a[scores={Secret=1},tag=special] run function templex_standard:zelda
 
 execute as @a[scores={Ping=1..}] run function templex_standard:ping
 
-execute as @a[scores={Iron=1..}] run function templex_standard:iron
+#execute as @a[scores={Iron=1..}] run function templex_standard:iron
 
 execute as @a[scores={Store=1..}] run function templex_standard:store
 
-execute as @a[scores={Run=1..}] run function templex_standard:mini_run_go
+#execute as @a[scores={Run=1..}] run function templex_standard:mini_run_go
 
-execute as @a[scores={Shovel=1..}] run function templex_standard:mini_shovel_go
-
-################################################## You need to update the all numbers to come before the the bought item. i.e. Buy'x'TC NOT BuyTC'x'
+#execute as @a[scores={Shovel=1..}] run function templex_standard:mini_shovel_go
 
 execute as @a[scores={Buy1TC=1..}] run function templex_standard:buy_1tc
 
@@ -153,11 +145,11 @@ execute as @a[scores={Buy10TC=1..}] run function templex_standard:buy_10tc
 
 execute as @a[scores={Buy100TC=1..}] run function templex_standard:buy_100tc
 
-execute as @a[scores={BuyRun=1..}] run function templex_standard:buy_run
+#execute as @a[scores={BuyRun=1..}] run function templex_standard:buy_run
 
-execute as @a[scores={BuyShovel=1..}] run function templex_standard:buy_shovel
+#execute as @a[scores={BuyShovel=1..}] run function templex_standard:buy_shovel
 
-execute as @a[scores={Wither=1..}] run function templex_standard:wither_try
+#execute as @a[scores={Wither=1..}] run function templex_standard:wither_try
 
 execute as @a[scores={Shulker=1..}] run function templex_standard:buy_shulker_try
 
@@ -171,7 +163,7 @@ execute as @a[scores={Buy_Slimeball=1..}] run function templex_standard:buy_slim
 
 execute as @a[scores={BuyHead_Nitrate=1..}] run function templex_standard:buy_head_nitrate
 
-execute as @a[scores={DoorTick=1..}] run function templex_standard:door_tick
+#execute as @a[scores={DoorTick=1..}] run function templex_standard:door_tick
 
 execute as @a[scores={Tutorial=1..}] run function templex_standard:tutorial
 
