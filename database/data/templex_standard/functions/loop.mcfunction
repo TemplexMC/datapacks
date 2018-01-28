@@ -32,7 +32,7 @@ execute as @e[name=ItemBoolean,scores={Database=1..}] run function templex_stand
 
 ### ONE PLAYER SLEEP ###
 
-execute as @a[nbt={Sleeping:1b}] run templex_standard:sleep
+execute as @a[nbt={Sleeping:1b}] run function templex_standard:sleep
 
 ### TAGS FOR GAMES ###
 
