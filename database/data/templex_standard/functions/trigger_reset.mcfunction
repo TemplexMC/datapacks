@@ -11,12 +11,14 @@ scoreboard players enable @a ViewKarma
 scoreboard players enable @a Vote
 scoreboard players enable @a TriggerReset
 scoreboard players enable @a Survival
+scoreboard players reset @a[tag=InProtection] Survival
 scoreboard players enable @a RTP
 scoreboard players enable @a BuyRTP
 scoreboard players enable @a ToggleParticle
 scoreboard players enable @a Tutorial
 scoreboard players enable @a Survey
 scoreboard players enable @a TPA
+execute as @p[tag=TPAing] run scoreboard players reset @a[tag=!TPAing] TPA
 scoreboard players enable @a TPAccept
 scoreboard players enable @a Discord
 scoreboard players enable @a TPDeny
@@ -62,3 +64,4 @@ tellraw @a [{"text":"All triggers have been reset!","color":"blue","italic":"tru
 tellraw @a[tag=OP] [{"text":"Trigger Reset System","color":"gold"},{"text":" : ","color":"dark_gray"},{"selector":"@s","color":"green"},{"text":" just reset all triggers.","color":"red"}]
 scoreboard players set @a[scores={TriggerReset=1..}] TriggerReset 0
 execute as @a at @s run playsound minecraft:block.note.xylophone master @s
+tag @a[tag=InProtection] remove InProtection
