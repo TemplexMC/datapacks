@@ -1,0 +1,15 @@
+{
+	"type": "crafting_shapeless",
+	"ingredients": [
+		{
+			"item": "minecraft:bone_meal"
+		},
+		{
+			"item": "minecraft:lily_pad"
+		}
+	],
+	"result": {
+		"item": "minecraft:lily_pad"
+		,"count":3
+	}
+}

@@ -7,12 +7,19 @@ scoreboard players enable @a Home
 scoreboard players enable @a TPHere
 scoreboard players enable @a TPSend
 scoreboard players enable @a ViewPlayTime
+scoreboard players enable @a ViewKarma
 scoreboard players enable @a Vote
 scoreboard players enable @a TriggerReset
 scoreboard players enable @a Survival
 scoreboard players enable @a RTP
 scoreboard players enable @a BuyRTP
 scoreboard players enable @a ToggleParticle
+scoreboard players enable @a Tutorial
+scoreboard players enable @a Survey
+scoreboard players enable @a TPA
+scoreboard players enable @a TPAccept
+scoreboard players enable @a Discord
+scoreboard players enable @a TPDeny
 
 scoreboard players enable @a Ping
 
@@ -28,12 +35,17 @@ scoreboard players enable @a Buy500XP
 scoreboard players enable @a Store
 scoreboard players enable @a Store_KP
 scoreboard players enable @a Store_TC
-scoreboard players enable @a BuyHead_Nitrate
+scoreboard players enable @a Buy_Head_Nitrate
 scoreboard players enable @a Buy_Arrow
 scoreboard players enable @a Buy_Slimeball
-scoreboard players enable @a Buy1TC
-scoreboard players enable @a Buy10TC
-scoreboard players enable @a Buy100TC
+scoreboard players enable @a Buy_1TC
+scoreboard players enable @a Buy_10TC
+scoreboard players enable @a Buy_100TC
+scoreboard players enable @a Buy_Coal
+scoreboard players enable @a Buy_Iron
+scoreboard players enable @a Buy_Gold
+scoreboard players enable @a Buy_Diamonds
+scoreboard players enable @a Buy_Emeralds
 
 ### Perks
 scoreboard players enable @a[tag=special] Firework
@@ -47,5 +59,6 @@ scoreboard players enable @a[tag=Iron] Iron
 
 ### These must happen (in this order) at the end of the script
 tellraw @a [{"text":"All triggers have been reset!","color":"blue","italic":"true"}]
+tellraw @a[tag=OP] [{"text":"Trigger Reset System","color":"gold"},{"text":" : ","color":"dark_gray"},{"selector":"@s","color":"green"},{"text":" just reset all triggers.","color":"red"}]
 scoreboard players set @a[scores={TriggerReset=1..}] TriggerReset 0
-playsound minecraft:block.note.xylophone master @a
+execute as @a at @s run playsound minecraft:block.note.xylophone master @s

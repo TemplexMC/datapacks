@@ -1,4 +1,4 @@
-kill @a[score_Home_min=1]
+kill @a[scores={Home=1..}]
 scoreboard players remove @s Deaths 1
 scoreboard players enable @s Home
 scoreboard players enable @a Home
