@@ -32,7 +32,7 @@ execute as @e[name=ItemBoolean,scores={Database=1..}] run function templex_stand
 
 ### ONE PLAYER SLEEP ###
 
-scoreboard players add @a[nbt={Sleeping:1b}] SleepTime 1
+execute as @a[nbt={Sleeping:1b}] run templex_standard:sleep
 
 ### TAGS FOR GAMES ###
 
@@ -114,8 +114,8 @@ execute as @a[scores={BuyRTP=1..}] run function templex_standard:buy_rtp_try
 
 execute as @a[scores={Diamond=1..}] run function templex_standard:xray_check
 
-execute as @a[scores={SleepTime=2}] run function templex_standard:sleepalert
-execute as @a[scores={SleepTime=15}] run function templex_standard:sleep
+#execute as @a[scores={SleepTime=2}] run function templex_standard:sleepalert
+#execute as @a[scores={SleepTime=15}] run function templex_standard:sleep
 
 #execute as @a[tag=PO,gamemode=!spectator] run function templex_standard:particles
 
