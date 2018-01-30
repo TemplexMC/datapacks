@@ -1,5 +1,4 @@
 # While having 3000+ KP without having already bought access.
-execute as @s[scores={Karma=3000..},tag=!endcmplt] run scoreboard players remove @s Karma 3000
 execute as @s[scores={Karma=3000..},tag=!endcmplt] run tellraw @a [{"selector":"@s","color":"green"},{"text":" has just bought permanent access to the End for \u00A663000 \u00A74Karma \u00A74Points\u00A78.","color":"gold"}]
 execute as @s[scores={Karma=3000..},tag=!endcmplt] run tellraw @s [{"text":"Successfully bought permanent access to the End!","color":"green","italic":"true"}]
 execute as @s[scores={Karma=3000..},tag=!endcmplt] run playsound minecraft:block.end_portal.spawn master @a ~ ~ ~ 1 1 1
