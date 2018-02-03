@@ -1,6 +1,6 @@
 # Players with the TPAto tag.
 execute as @s[tag=TPAto] run tellraw @p[tag=TPAing] [{"selector":"@s","color":"green"},{"text":" has denied your TPA request. Sorry.","color":"red"}]
-execute as @s[tag=TPAto] run tellraw @s [{"text":"Sucessfully denied the TPA request from ","color":"aqua"},{"selector":"@p[tag=TPAing]","color":"green"},{"text":".","color":"aqua"}]
+execute as @s[tag=TPAto] run tellraw @s [{"text":"Sucessfully denied the TPA request from ","color":"aqua","italic":"true"},{"selector":"@p[tag=TPAing]","color":"green","italic":"false"},{"text":".","color":"aqua","italic":"true"}]
 execute as @s[tag=TPAto] run tellraw @a[tag=OP] [{"text":"New TPA System","color":"gold"},{"text":" : ","color":"dark_gray"},{"selector":"@s","color":"green"},{"text":" just denied ","color":"red"},{"selector":"@p[tag=TPAing]","color":"green"},{"text":"'s TPA request.","color":"red"}]
 execute as @s[tag=TPAto] run scoreboard players set @a TPA 0
 execute as @s[tag=TPAto] run scoreboard players set @a TPARequest 0

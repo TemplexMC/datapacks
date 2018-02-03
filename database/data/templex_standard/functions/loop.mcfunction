@@ -10,6 +10,10 @@ execute as @a[tag=!Booked] run function templex_standard:cmd_book
 tag @a remove UUIDTagged
 execute as @p[tag=!UUIDAdded] run function templex_standard:uuid
 
+### SPAWN PARTICLES ###
+
+particle minecraft:heart -1761692.5 24 865283.5 ~0.5 ~0.5 ~0.5 0.001 10 force @a
+
 ### TIMELY COMMANDS ###
 
 execute as @p run scoreboard players add @e[name=Timer] Database 1

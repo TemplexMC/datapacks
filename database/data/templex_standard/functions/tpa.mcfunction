@@ -17,7 +17,7 @@ execute as @s[tag=TPAing,tag=!GotTPA] at @p[tag=TPAto] run playsound minecraft:b
 execute as @s[tag=TPAing,tag=!GotTPA] at @s run playsound minecraft:block.wood_button.click_on master @s
 execute as @s[tag=TPAing,tag=!GotTPA] run tellraw @p[tag=TPAto] [{"selector":"@s","color":"green"},{"text":" is wanting to teleport to you.","color":"gold"}]
 execute as @s[tag=TPAing,tag=!GotTPA] run tellraw @p[tag=TPAto] [{"text":"[Accept]","color":"green","hoverEvent":{"action":"show_text","value":"\u00A7eClick to \u00A7aaccept\u00A78!"},"clickEvent":{"action":"run_command","value":"/trigger TPAccept"}},{"text":" "},{"text":"[Deny]","color":"red","hoverEvent":{"action":"show_text","value":"\u00A7eClick to \u00A7cdeny\u00A78!"},"clickEvent":{"action":"run_command","value":"/trigger TPDeny"}}]
-execute as @s[tag=TPAing,tag=!GotTPA] run tellraw @s [{"text":"The TPA request has been sent to ","color":"aqua","italic":"true"},{"selector":"@p[tag=TPAto]","color":"green"},{"text":".","color":"aqua","italic":"true"}]
+execute as @s[tag=TPAing,tag=!GotTPA] run tellraw @s [{"text":"The TPA request has been sent to ","color":"aqua","italic":"true"},{"selector":"@p[tag=TPAto]","color":"green","italic":"false"},{"text":".","color":"aqua","italic":"true"}]
 execute as @s[tag=TPAing,tag=!GotTPA] run tellraw @a[tag=OP] [{"text":"New TPA System","color":"gold"},{"text":" : ","color":"dark_gray"},{"selector":"@s","color":"green"},{"text":" is wanting to TPA to ","color":"red"},{"selector":"@p[tag=TPAto]","color":"green"},{"text":".","color":"red"}]
 execute as @s[tag=TPAing,tag=!GotTPA] run scoreboard players set @s TPAFind 0
 execute as @s[tag=TPAing,tag=!GotTPA] run tag @s add GotTPA
