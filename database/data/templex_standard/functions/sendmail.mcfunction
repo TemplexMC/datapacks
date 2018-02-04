@@ -24,6 +24,7 @@ execute as @s[tag=Mailing] positioned 0 100 0 run scoreboard players set @e[name
 execute as @s[tag=Mailing] positioned 0 100 0 run tag @e[tag=MailTPStand] remove MailTried
 execute as @s[tag=Mailing] positioned 0 100 0 run tag @e[tag=MailTPStand] remove TPto
 execute as @s[tag=Mailing] positioned 0 100 0 run scoreboard players set @a Mail 0
+execute as @s[tag=Reading] positioned 0 100 0 run scoreboard players enable @a MailRead
 execute as @s[tag=Mailing] positioned 0 100 0 run scoreboard players enable @a Mail
 execute as @s[tag=Mailing] positioned 0 100 0 run scoreboard players set @e[name=MailFind,type=armor_stand] Database 0
 execute as @s[tag=Mailing] positioned 0 100 0 run tag @s remove Mailing

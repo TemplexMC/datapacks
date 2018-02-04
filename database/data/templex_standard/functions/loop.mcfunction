@@ -195,4 +195,4 @@ execute as @a[scores={TPDeny=1..}] run function templex_standard:tpdeny
 
 execute as @a[scores={Mail=1..}] run function templex_standard:sendmail
 
-#execute as @a[scores={MailRead=1..}] run function templex_standard:
+execute as @a[scores={MailRead=1..}] run function templex_standard:readmail
