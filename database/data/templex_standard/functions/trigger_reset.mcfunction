@@ -22,6 +22,8 @@ execute as @p[tag=TPAing] run scoreboard players reset @a[tag=!TPAing] TPA
 scoreboard players enable @a TPAccept
 scoreboard players enable @a Discord
 scoreboard players enable @a TPDeny
+scoreboard players enable @a Mail
+scoreboard players enable @a MailRead
 
 scoreboard players enable @a Ping
 
