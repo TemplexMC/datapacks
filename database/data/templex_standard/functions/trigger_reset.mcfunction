@@ -24,6 +24,7 @@ scoreboard players enable @a Discord
 scoreboard players enable @a TPDeny
 scoreboard players enable @a Mail
 scoreboard players enable @a MailRead
+execute as @p[tag=Mailing] run scoreboard players reset @a[tag=!Mailing] Mail
 
 scoreboard players enable @a Ping
 
