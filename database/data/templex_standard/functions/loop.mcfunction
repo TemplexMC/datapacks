@@ -36,7 +36,7 @@ execute as @e[name=ItemBoolean,scores={Database=1..}] run function templex_stand
 
 ### ONE PLAYER SLEEP ###
 
-execute as @a[nbt={Sleeping:1b}] run function templex_standard:sleep
+execute as @a[nbt={Sleeping:1b}] run scoreboard players add @e[name=Proxy3,type=armor_stand] Database 1
 
 ### TAGS FOR GAMES ###
 
@@ -119,7 +119,7 @@ execute as @a[scores={BuyRTP=1..}] run function templex_standard:buy_rtp_try
 execute as @a[scores={Diamond=1..}] run function templex_standard:xray_check
 
 #execute as @a[scores={SleepTime=2}] run function templex_standard:sleepalert
-#execute as @a[scores={SleepTime=15}] run function templex_standard:sleep
+execute as @p[nbt={Sleeping:1b}] if entity @e[name=Proxy3,scores={Database=20..},limit=1] run function templex_standard:sleep
 
 #execute as @a[tag=PO,gamemode=!spectator] run function templex_standard:particles
 
