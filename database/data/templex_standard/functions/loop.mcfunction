@@ -71,7 +71,7 @@ data merge entity @e[type=creeper,tag=!DoesNotExplode,limit=1] {ExplosionRadius:
 
 ### NO PLAYER DAMAGE AT SPAWN ###
 
-effect give @a[x=-1761693,y=18,z=865288,distance=..175,type=player] resistance 1 100 true
+effect give @a[x=-1761693,y=18,z=865288,distance=..175] resistance 1 100 true
 
 ### DATABASE ###
 
