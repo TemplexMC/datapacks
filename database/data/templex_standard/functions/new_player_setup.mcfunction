@@ -18,5 +18,6 @@ tellraw @a [{"selector":"@s","color":"green"},{"text":" is a new player","color"
 # Gives starter items.
 give @s wooden_sword{display:{Name:"{\"text\":\"Foam Dagger\",\"color\":\"gold\"}",Lore:["Should it bend this much?"]},ench:[{id:16,lvl:3}]} 1
 give @s bread{display:{Name:"{\"text\":\"Mana\",\"color\":\"red\"}",Lore:["Tastes stale... :/"]}} 10
-give @s white_wool{display:{Name:"{\"text\":\"Cotton Candy\",\"color\":\"red\"}",Lore:["Ew. Tastes like fur!"]}} 3
+give @s white_wool{display:{Name:"{\"text\":\"Cotton Candy\",\"color\":\"green\"}",Lore:["Ew. Tastes like fur!"]}} 3
 give @s coal{display:{Name:"{\"text\":\"Chocolate\",\"color\":\"red\"}",Lore:["It's a bit hard..."]}} 8
+give @s crafting_table{display:{Name:"{\"text\":\"Bench da la Crafting\",\"color\":\"green\"}",Lore:["Craft things in this."]}} 1
