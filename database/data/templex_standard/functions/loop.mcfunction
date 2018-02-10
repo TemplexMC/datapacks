@@ -12,7 +12,7 @@ execute as @p[tag=!UUIDAdded] run function templex_standard:uuid
 
 ### SPAWN PARTICLES ###
 
-particle minecraft:heart -1761692.5 24 865283.5 ~0.5 ~0.5 ~0.5 0.001 10 force @a
+#particle minecraft:heart -1761692.5 24 865283.5 ~0.5 ~0.5 ~0.5 0.001 10 force @a
 
 ### TIMELY COMMANDS ###
 
@@ -46,14 +46,15 @@ execute as @a[nbt={Sleeping:1b}] run scoreboard players add @e[name=Proxy3,type=
 
 ### SPAWN CLEAN ###
 
-#x=-1761693,y=18,z=865288,distance=..128,
-tag @e[x=-1761693,y=18,z=865288,distance=..128,tag=!NOKILL,type=armor_stand] add NOKILL
-tag @e[x=-1761693,y=18,z=865288,distance=..128,tag=!NOKILL,type=xp_bottle] add NOKILL
-tag @e[x=-1761693,y=18,z=865288,distance=..128,tag=!NOKILL,type=xp_orb] add NOKILL
-tag @e[x=-1761693,y=18,z=865288,distance=..128,tag=!NOKILL,type=arrow] add NOKILL
-tag @e[x=-1761693,y=18,z=865288,distance=..128,tag=!NOKILL,type=villager] add NOKILL
-tag @e[x=-1761693,y=18,z=865288,distance=..128,tag=!NOKILL,type=item] add NOKILL
-tp @e[x=-1761693,y=18,z=865288,distance=..128,tag=!NOKILL,type=!player] ~ ~-270 ~
+#x=63,y=127,z=61,distance=..300,
+tag @e[x=63,y=127,z=61,distance=..300,tag=!NOKILL,type=armor_stand] add NOKILL
+tag @e[x=63,y=127,z=61,distance=..300,tag=!NOKILL,type=xp_bottle] add NOKILL
+tag @e[x=63,y=127,z=61,distance=..300,tag=!NOKILL,type=xp_orb] add NOKILL
+tag @e[x=63,y=127,z=61,distance=..300,tag=!NOKILL,type=arrow] add NOKILL
+tag @e[x=63,y=127,z=61,distance=..300,tag=!NOKILL,type=villager] add NOKILL
+tag @e[x=63,y=127,z=61,distance=..300,tag=!NOKILL,type=item] add NOKILL
+tag @e[x=63,y=127,z=61,distance=..300,tag=!NOKILL,type=squid] add NOKILL
+tp @e[x=63,y=127,z=61,distance=..300,tag=!NOKILL,type=!player] ~ ~-270 ~
 #tp @e[x=-1761693,y=18,z=865288,distance=..1000,type=creeper,type=enderman,type=skeleton,type=spider,type=cave_spider,type=zombie,type=zombie_villager,type=endermite] ~ ~-270 ~
 #tp @e[x=-1761693,y=18,z=865288,distance=..1000,type=tnt,type=shulker,type=witch] ~ ~-270 ~
 #tp @e[x=-1761693,y=18,z=865288,distance=..1000,type=skeleton] ~ ~-270 ~
@@ -71,7 +72,7 @@ data merge entity @e[type=creeper,tag=!DoesNotExplode,limit=1] {ExplosionRadius:
 
 ### NO PLAYER DAMAGE AT SPAWN ###
 
-effect give @a[x=-1761693,y=18,z=865288,distance=..175] resistance 1 100 true
+effect give @a[x=63,y=127,z=61,distance=..300] resistance 1 100 true
 
 ### DATABASE ###
 
@@ -79,13 +80,13 @@ execute as @e[name=KarmaBoolean,scores={Database=1..}] run function templex_stan
 
 ### TEAMS ###
 
-execute as @a[team=!NC,scores={PlayTime=0..503999},tag=!special] run function templex_standard:ncfix
-execute as @a[team=!Warrior,scores={PlayTime=504000..1223999},tag=!special] run function templex_standard:team_warrior
-execute as @a[team=!Explorer,scores={PlayTime=1224000..1583999},tag=!special] run function templex_standard:team_explorer
-execute as @a[team=!Master,scores={PlayTime=1584000..3167999},tag=!special] run function templex_standard:team_master
-execute as @a[team=!Knight,scores={PlayTime=3168000..6335999},tag=!special] run function templex_standard:team_knight
-execute as @a[team=!Magician,scores={PlayTime=6336000..12095999},tag=!special] run function templex_standard:team_magician
-execute as @a[team=!HighKing,scores={PlayTime=12096000..50000000},tag=!special] run function templex_standard:team_highking
+#execute as @a[team=!NC,scores={PlayTime=0..503999},tag=!special] run function templex_standard:ncfix
+#execute as @a[team=!Warrior,scores={PlayTime=504000..1223999},tag=!special] run function templex_standard:team_warrior
+#execute as @a[team=!Explorer,scores={PlayTime=1224000..1583999},tag=!special] run function templex_standard:team_explorer
+#execute as @a[team=!Master,scores={PlayTime=1584000..3167999},tag=!special] run function templex_standard:team_master
+#execute as @a[team=!Knight,scores={PlayTime=3168000..6335999},tag=!special] run function templex_standard:team_knight
+#execute as @a[team=!Magician,scores={PlayTime=6336000..12095999},tag=!special] run function templex_standard:team_magician
+#execute as @a[team=!HighKing,scores={PlayTime=12096000..50000000},tag=!special] run function templex_standard:team_highking
 
 ### PRE-FUNCTIONS ###
 
@@ -99,7 +100,7 @@ execute as @a[scores={Rules=1..}] run function templex_standard:rules
 
 execute as @a[scores={Login=1..}] run function templex_standard:login
 
-execute as @a[scores={Commands=1..}] run function templex_standard:commands
+#execute as @a[scores={Commands=1..}] run function templex_standard:commands
 
 execute as @a[scores={ViewPlayTime=1..}] run function templex_standard:view_play_time
 
@@ -111,7 +112,7 @@ execute as @a[scores={TPEnd=1..}] run function templex_standard:tp_end_try
 
 execute as @a[scores={Survival=1..}] run function templex_standard:survival
 
-#execute as @a[x=452,y=21,z=429,distance=..2] run function templex_standard:rtp_try
+execute as @a[x=103.0,y=125.00,z=64.0,distance=..1.5] run function templex_standard:rtp_try
 execute as @a[scores={RTP=1..}] run function templex_standard:rtp_try
 
 execute as @a[scores={BuyRTP=1..}] run function templex_standard:buy_rtp_try
@@ -193,6 +194,6 @@ execute as @a[scores={ViewKarma=1..}] run function templex_standard:view_karma
 
 execute as @a[scores={TPDeny=1..}] run function templex_standard:tpdeny
 
-execute as @a[scores={Mail=1..}] run function templex_standard:sendmail
+#execute as @a[scores={Mail=1..}] run function templex_standard:sendmail
 
-execute as @a[scores={MailRead=1..}] run function templex_standard:readmail
+#execute as @a[scores={MailRead=1..}] run function templex_standard:readmail

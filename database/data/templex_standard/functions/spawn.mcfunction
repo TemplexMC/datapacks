@@ -1,4 +1,4 @@
-tp @s -1761682 21 865266
+tp @s 82 127 59
 tellraw @s [{"text":"Successfully TPed to Spawn!","color":"blue","italic":"true"}]
 tellraw @a[tag=OP] [{"text":"Spawn System","color":"gold"},{"text":" : ","color":"dark_gray"},{"text":"Successfully TPed ","color":"red"},{"selector":"@s","color":"green"},{"text":" to Spawn!","color":"red"}]
 scoreboard players enable @a Spawn

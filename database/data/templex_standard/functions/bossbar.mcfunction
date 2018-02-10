@@ -1,7 +1,7 @@
 # Counter.
 scoreboard players add @e[name=Bossbar,type=armor_stand] Database 1
 # Display.
-execute as @e[name=Bossbar,type=armor_stand,scores={Database=1}] run bossbar set minecraft:templex39 players -
+execute as @e[name=Bossbar,type=armor_stand,scores={Database=1}] run bossbar set minecraft:templex40 players -
 execute as @e[name=Bossbar,type=armor_stand,scores={Database=1}] run bossbar set minecraft:templex1 players @a
 
 execute as @e[name=Bossbar,type=armor_stand,scores={Database=3}] run bossbar set minecraft:templex1 players -
@@ -117,5 +117,8 @@ execute as @e[name=Bossbar,type=armor_stand,scores={Database=73}] run bossbar se
 
 execute as @e[name=Bossbar,type=armor_stand,scores={Database=75}] run bossbar set minecraft:templex38 players -
 execute as @e[name=Bossbar,type=armor_stand,scores={Database=75}] run bossbar set minecraft:templex39 players @a
+
+execute as @e[name=Bossbar,type=armor_stand,scores={Database=77}] run bossbar set minecraft:templex39 players -
+execute as @e[name=Bossbar,type=armor_stand,scores={Database=77}] run bossbar set minecraft:templex40 players @a
 # Reset counter.
-execute as @e[name=Bossbar,type=armor_stand,scores={Database=95}] run scoreboard players set @s Database 0
+execute as @e[name=Bossbar,type=armor_stand,scores={Database=97}] run scoreboard players set @s Database 0
