@@ -46,15 +46,15 @@ execute as @a[nbt={Sleeping:1b}] run scoreboard players add @e[name=Proxy3,type=
 
 ### SPAWN CLEAN ###
 
-#x=63,y=127,z=61,distance=..300,
-tag @e[x=63,y=127,z=61,distance=..300,tag=!NOKILL,type=armor_stand] add NOKILL
-tag @e[x=63,y=127,z=61,distance=..300,tag=!NOKILL,type=xp_bottle] add NOKILL
-tag @e[x=63,y=127,z=61,distance=..300,tag=!NOKILL,type=xp_orb] add NOKILL
-tag @e[x=63,y=127,z=61,distance=..300,tag=!NOKILL,type=arrow] add NOKILL
-tag @e[x=63,y=127,z=61,distance=..300,tag=!NOKILL,type=villager] add NOKILL
-tag @e[x=63,y=127,z=61,distance=..300,tag=!NOKILL,type=item] add NOKILL
-tag @e[x=63,y=127,z=61,distance=..300,tag=!NOKILL,type=squid] add NOKILL
-tp @e[x=63,y=127,z=61,distance=..300,tag=!NOKILL,type=!player] ~ ~-270 ~
+#x=82,y=127,z=59,distance=..1000,
+tag @e[x=82,y=127,z=59,distance=..1000,tag=!NOKILL,type=armor_stand] add NOKILL
+tag @e[x=82,y=127,z=59,distance=..1000,tag=!NOKILL,type=xp_bottle] add NOKILL
+tag @e[x=82,y=127,z=59,distance=..1000,tag=!NOKILL,type=xp_orb] add NOKILL
+tag @e[x=82,y=127,z=59,distance=..1000,tag=!NOKILL,type=arrow] add NOKILL
+tag @e[x=82,y=127,z=59,distance=..1000,tag=!NOKILL,type=villager] add NOKILL
+tag @e[x=82,y=127,z=59,distance=..1000,tag=!NOKILL,type=item] add NOKILL
+tag @e[x=82,y=127,z=59,distance=..1000,tag=!NOKILL,type=squid] add NOKILL
+tp @e[x=82,y=127,z=59,distance=..1000,tag=!NOKILL,type=!player] ~ ~-270 ~
 #tp @e[x=-1761693,y=18,z=865288,distance=..1000,type=creeper,type=enderman,type=skeleton,type=spider,type=cave_spider,type=zombie,type=zombie_villager,type=endermite] ~ ~-270 ~
 #tp @e[x=-1761693,y=18,z=865288,distance=..1000,type=tnt,type=shulker,type=witch] ~ ~-270 ~
 #tp @e[x=-1761693,y=18,z=865288,distance=..1000,type=skeleton] ~ ~-270 ~
@@ -101,6 +101,7 @@ execute as @a[scores={Rules=1..}] run function templex_standard:rules
 execute as @a[scores={Login=1..}] run function templex_standard:login
 
 #execute as @a[scores={Commands=1..}] run function templex_standard:commands
+execute as @a[scores={Commands=1..}] run scoreboard players set @s Commands 0
 
 execute as @a[scores={ViewPlayTime=1..}] run function templex_standard:view_play_time
 
@@ -175,6 +176,7 @@ execute as @a[scores={Tutorial=1..}] run function templex_standard:tutorial
 execute as @a[scores={Survey=1..}] run function templex_standard:survey
 
 execute as @a[scores={TPA=1..}] run function templex_standard:tpa
+execute as @a[scores={TPA=..-1}] run function templex_standard:tpa
 
 execute as @a[scores={TPAccept=1..}] run function templex_standard:tpaccept
 
@@ -195,5 +197,7 @@ execute as @a[scores={ViewKarma=1..}] run function templex_standard:view_karma
 execute as @a[scores={TPDeny=1..}] run function templex_standard:tpdeny
 
 #execute as @a[scores={Mail=1..}] run function templex_standard:sendmail
+execute as @a[scores={Mail=1..}] run scoreboard players set @s Mail 0
 
 #execute as @a[scores={MailRead=1..}] run function templex_standard:readmail
+execute as @a[scores={MailRead=1..}] run scoreboard players set @s MailRead 0
