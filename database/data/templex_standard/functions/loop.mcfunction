@@ -8,7 +8,8 @@ team join NC @a[team=]
 execute as @a[tag=!Booked] run function templex_standard:cmd_book
 
 tag @a remove UUIDTagged
-execute as @p[tag=!UUIDAdded] run function templex_standard:uuid
+tag @s remove UUIDAdded
+execute as @p[tag=!UUIDDone] run function templex_standard:uuid
 
 ### SPAWN PARTICLES ###
 

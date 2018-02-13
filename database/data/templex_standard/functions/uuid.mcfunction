@@ -4,4 +4,4 @@ scoreboard players operation @s UUID = @e[name=CurrentUUID,type=armor_stand] Dat
 tellraw @a[tag=OP] [{"text":"Tagger","color":"gold"},{"text":" : ","color":"dark_gray"},{"text":"Just tagged ","color":"red"},{"selector":"@s"},{"text":" with UUID: ","color":"red"},{"score":{"name":"@e[name=CurrentUUID,type=armor_stand]","objective":"Database"}}]
 
 # Tagging.
-tag @s add UUIDAdded
+tag @s add UUIDDone
