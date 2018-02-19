@@ -52,6 +52,7 @@ scoreboard players enable @a Buy_Iron
 scoreboard players enable @a Buy_Gold
 scoreboard players enable @a Buy_Diamonds
 scoreboard players enable @a Buy_Emeralds
+scoreboard players enable @a Buy_HolyTrident
 
 ### Perks
 scoreboard players enable @a[tag=special] Firework
