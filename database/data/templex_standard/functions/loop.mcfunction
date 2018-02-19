@@ -205,4 +205,4 @@ execute as @a[scores={MailRead=1..}] run scoreboard players set @s MailRead 0
 
 execute as @a[scores={Buy_HolyTrident=1..}] run function templex_standard:buy_holytrident
 
-execute as @a[scores={ViewTC=1,,}] run function templex_standard:view_tc
+execute as @a[scores={ViewTC=1..}] run function templex_standard:view_tc
