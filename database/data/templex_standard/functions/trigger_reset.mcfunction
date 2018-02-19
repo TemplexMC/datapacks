@@ -26,6 +26,7 @@ scoreboard players enable @a Mail
 scoreboard players enable @a MailRead
 execute as @a[x=-1761693,y=18,z=865288,distance=..128] run scoreboard players reset @s MailRead
 execute as @p[tag=Mailing] run scoreboard players reset @a[tag=!Mailing] Mail
+scoreboard players enable @a ViewTC
 
 scoreboard players enable @a Ping
 
