@@ -7,9 +7,17 @@ team join NC @a[team=]
 
 execute as @a[tag=!Booked] run function templex_standard:cmd_book
 
+### TAG FIX ###
+
+tag @a remove endcmplt
 tag @a remove UUIDTagged
-tag @s remove UUIDAdded
-execute as @p[tag=!UUIDDone] run function templex_standard:uuid
+tag @a remove UUIDAdded
+tag @a remove UUIDDone
+
+### UUID ###
+
+execute as @p[tag=!HasUUID] run function templex_standard:uuid
+execute as @p[scores={UUID=0}] run function templex_standard:uuid
 
 ### SPAWN PARTICLES ###
 
@@ -37,7 +45,10 @@ execute as @e[name=ItemBoolean,scores={Database=1..}] run function templex_stand
 
 ### ONE PLAYER SLEEP ###
 
-execute as @a[nbt={Sleeping:1b}] run scoreboard players add @e[name=Proxy3,type=armor_stand] Database 1
+#execute as @a[nbt={Sleeping:1b}] run scoreboard players add @e[name=Proxy3,type=armor_stand] Database 1
+execute as @a[nbt={Sleeping:1b}] run function templex_standard:vsleep
+
+execute as @p[tag=VSLEEP] run function templex_standard:vsleep_main
 
 ### TAGS FOR GAMES ###
 
@@ -146,11 +157,11 @@ execute as @a[scores={Store=1..}] run function templex_standard:store
 
 #execute as @a[scores={Shovel=1..}] run function templex_standard:mini_shovel_go
 
-execute as @a[scores={Buy1TC=1..}] run function templex_standard:buy_1tc
+execute as @a[scores={Buy_1TC=1..}] run function templex_standard:buy_1tc
 
-execute as @a[scores={Buy10TC=1..}] run function templex_standard:buy_10tc
+execute as @a[scores={Buy_10TC=1..}] run function templex_standard:buy_10tc
 
-execute as @a[scores={Buy100TC=1..}] run function templex_standard:buy_100tc
+execute as @a[scores={Buy_100TC=1..}] run function templex_standard:buy_100tc
 
 #execute as @a[scores={BuyRun=1..}] run function templex_standard:buy_run
 
@@ -206,3 +217,7 @@ execute as @a[scores={MailRead=1..}] run scoreboard players set @s MailRead 0
 execute as @a[scores={Buy_HolyTrident=1..}] run function templex_standard:buy_holytrident
 
 execute as @a[scores={ViewTC=1..}] run function templex_standard:view_tc
+
+execute as @a[scores={VoteDay=1..}] run function templex_standard:voteday
+
+execute as @a[scores={VoteNight=1..}] run function templex_standard:votenight
