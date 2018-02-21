@@ -9,6 +9,7 @@ execute as @a[tag=!Booked] run function templex_standard:cmd_book
 
 ### TAG FIX ###
 
+scoreboard players add @a[tag=endcmplt] Karma 3000
 tag @a remove endcmplt
 tag @a remove UUIDTagged
 tag @a remove UUIDAdded
