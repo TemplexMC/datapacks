@@ -1,5 +1,5 @@
 # Tellraw.
-tellraw @s [{"text":"You just started down a long journey of quests!","color":"green"}]
+tellraw @s [{"text":"You just completed a quest!","color":"green"}]
 tellraw @s [{"text":"\u00A76500 \u00A74Karma Points \u00A75 have been added to your profile!","color":"dark_purple"}]
 tellraw @s [{"text":"\u00A7675 \u00A74Templex Credits \u00A75 have been added to your profile!","color":"dark_purple"}]
 tellraw @s [{"text":"\u00A77--- \u00A74Quests \u00A77---"}]

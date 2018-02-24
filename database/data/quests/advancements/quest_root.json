@@ -17,8 +17,7 @@
 		"title": "Templex Quests: Quest Root",
 		"description": "Kill a sheep to start your quests!",
 		"show_toast": true,
-		"announce_to_chat": true,
-		"hidden": true
+		"announce_to_chat": true
 	},
 	"rewards": {
 		"function": "quests:killed_sheep",

@@ -27,6 +27,7 @@ scoreboard players enable @a MailRead
 execute as @a[x=-1761693,y=18,z=865288,distance=..128] run scoreboard players reset @s MailRead
 execute as @p[tag=Mailing] run scoreboard players reset @a[tag=!Mailing] Mail
 scoreboard players enable @a ViewTC
+scoreboard players enable @a Donate
 
 scoreboard players enable @a Ping
 
@@ -43,17 +44,21 @@ scoreboard players enable @a Store
 scoreboard players enable @a Store_KP
 scoreboard players enable @a Store_TC
 scoreboard players enable @a Buy_Head_Nitrate
+scoreboard players enable @a Buy_Head_Shark
 scoreboard players enable @a Buy_Arrow
 scoreboard players enable @a Buy_Slimeball
 scoreboard players enable @a Buy_1TC
 scoreboard players enable @a Buy_10TC
 scoreboard players enable @a Buy_100TC
+scoreboard players enable @a Buy_1000TC
 scoreboard players enable @a Buy_Coal
 scoreboard players enable @a Buy_Iron
 scoreboard players enable @a Buy_Gold
 scoreboard players enable @a Buy_Diamonds
 scoreboard players enable @a Buy_Emeralds
 scoreboard players enable @a Buy_HolyTrident
+scoreboard players enable @a Buy_50XP
+scoreboard players enable @a Buy_500XP
 
 ### Perks
 scoreboard players enable @a[tag=special] Firework

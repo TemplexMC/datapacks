@@ -140,9 +140,9 @@ execute as @p[nbt={Sleeping:1b}] if entity @e[name=Proxy3,scores={Database=20..}
 
 execute as @a[scores={ToggleParticle=1..}] run function templex_standard:toggleparticle
 
-execute as @a[scores={Buy50XP=1..}] run function templex_standard:buy_50xp
+execute as @a[scores={Buy_50XP=1..}] run function templex_standard:buy_50xp
 
-execute as @a[scores={Buy500XP=1..}] run function templex_standard:buy_500xp
+execute as @a[scores={Buy_500XP=1..}] run function templex_standard:buy_500xp
 
 execute as @a[scores={Firework=1},tag=special] run function templex_standard:firework
 
@@ -180,7 +180,7 @@ execute as @a[scores={Buy_Arrow=1..}] run function templex_standard:buy_arrow
 
 execute as @a[scores={Buy_Slimeball=1..}] run function templex_standard:buy_slimeball
 
-execute as @a[scores={BuyHead_Nitrate=1..}] run function templex_standard:buy_head_nitrate
+execute as @a[scores={Buy_Head_Nitrate=1..}] run function templex_standard:buy_head_nitrate
 
 #execute as @a[scores={DoorTick=1..}] run function templex_standard:door_tick
 
@@ -222,3 +222,9 @@ execute as @a[scores={ViewTC=1..}] run function templex_standard:view_tc
 execute as @a[scores={VoteDay=1..}] run function templex_standard:voteday
 
 execute as @a[scores={VoteNight=1..}] run function templex_standard:votenight
+
+execute as @a[scores={Donate=1..}] run function templex_standard:donate
+
+execute as @a[scores={Buy_Head_Shark=1..}] run function templex_standard:buy_head_shark
+
+execute as @a[scores={Buy_1000TC=1..}] run function templex_standard:buy_1000tc
