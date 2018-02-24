@@ -6,7 +6,7 @@ execute as @s[scores={Karma=10000..},tag=!bought_end] run tellraw @a [{"selector
 execute as @s[scores={Karma=10000..},tag=!bought_end] run tellraw @s [{"text":"Successfully bought permanent access to the End!","color":"green","italic":"true"}]
 execute as @s[scores={Karma=10000..},tag=!bought_end] run playsound minecraft:block.end_portal.spawn master @a ~ ~ ~ 1 1 1
 execute as @s[scores={Karma=10000..},tag=!bought_end] run tag @s add getBoughtEnd
-execute as @s[scores={Karma=10000..},tag=!bought_end] run scoreboard players remove @s Karma 30000
+execute as @s[scores={Karma=10000..},tag=!bought_end] run scoreboard players remove @s Karma 10000
 execute as @s[tag=getBoughtEnd] run tag @s add bought_end
 execute as @s[tag=getBoughtEnd] run tag @s remove getBoughtEnd
 # If you have already bought access.

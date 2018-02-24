@@ -46,8 +46,8 @@ execute as @e[name=ItemBoolean,scores={Database=1..}] run function templex_stand
 
 ### ONE PLAYER SLEEP ###
 
-#execute as @a[nbt={Sleeping:1b}] run scoreboard players add @e[name=Proxy3,type=armor_stand] Database 1
-execute as @a[nbt={Sleeping:1b}] run function templex_standard:vsleep
+execute as @a[nbt={Sleeping:1b}] run scoreboard players add @e[name=Proxy3,type=armor_stand] VoteDay 1
+execute as @e[name=Proxy3,type=armor_stand,scores={VoteDay=20..}] run function templex_standard:vsleep
 
 execute as @p[tag=VSLEEP] run function templex_standard:vsleep_main
 
@@ -140,9 +140,9 @@ execute as @p[nbt={Sleeping:1b}] if entity @e[name=Proxy3,scores={Database=20..}
 
 execute as @a[scores={ToggleParticle=1..}] run function templex_standard:toggleparticle
 
-execute as @a[scores={Buy50XP=1..}] run function templex_standard:buy_xp
+execute as @a[scores={Buy50XP=1..}] run function templex_standard:buy_50xp
 
-execute as @a[scores={Buy10XP=1..}] run function templex_standard:buy_xp10
+execute as @a[scores={Buy500XP=1..}] run function templex_standard:buy_500xp
 
 execute as @a[scores={Firework=1},tag=special] run function templex_standard:firework
 

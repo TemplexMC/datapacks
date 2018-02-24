@@ -21,11 +21,13 @@ execute as @e[name=Proxy2,type=armor_stand,scores={Database=0}] run tag @a remov
 execute as @e[name=Proxy2,type=armor_stand,scores={Database=0}] run scoreboard players reset @a VoteDay
 execute as @e[name=Proxy2,type=armor_stand,scores={Database=0}] run scoreboard players reset @a VoteNight
 execute as @e[name=Proxy2,type=armor_stand,scores={Database=0}] run scoreboard players reset @s VoteDay
+execute as @e[name=Proxy2,type=armor_stand,scores={Database=0}] run scoreboard players reset @e[name=Proxy3,type=armor_stand] VoteDay
 # Timer done.
 execute as @e[name=Proxy1,type=armor_stand,scores={Database=300..}] run tag @a remove VSLEEP
 execute as @e[name=Proxy1,type=armor_stand,scores={Database=300..}] run tag @a remove SleepVoted
 execute as @e[name=Proxy1,type=armor_stand,scores={Database=300..}] run scoreboard players reset @a VoteDay
 execute as @e[name=Proxy1,type=armor_stand,scores={Database=300..}] run scoreboard players reset @a VoteNight
 execute as @e[name=Proxy1,type=armor_stand,scores={Database=300..}] run scoreboard players reset @e[name=Proxy2,type=armor_stand] VoteDay
+execute as @e[name=Proxy1,type=armor_stand,scores={Database=300..}] run scoreboard players reset @e[name=Proxy3,type=armor_stand] VoteDay
 execute as @e[name=Proxy1,type=armor_stand,scores={Database=300..}] run tellraw @a [{"text":"The majority of players do not want day right now... Keeping night.","color":"gray"}]
 execute as @e[name=Proxy1,type=armor_stand,scores={Database=300..}] run scoreboard players set @s Database 0
