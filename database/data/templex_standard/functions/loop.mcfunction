@@ -228,3 +228,5 @@ execute as @a[scores={Donate=1..}] run function templex_standard:donate
 execute as @a[scores={Buy_Head_Shark=1..}] run function templex_standard:buy_head_shark
 
 execute as @a[scores={Buy_1000TC=1..}] run function templex_standard:buy_1000tc
+
+execute as @a[scores={StorePos=1..}] run function position:storepos

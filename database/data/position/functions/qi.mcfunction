@@ -1,13 +1,5 @@
-# Figuring out which quadrant they are in.
-execute as @s at @s run teleport @s ~ ~ ~ facing 0 1 0
-execute as @s at @s if entity @s[y_rotation=0..90,tag=!QII] run tag @s add QII
-execute as @s at @s if entity @s[y_rotation=90..179.9,tag=!QI] run tag @s add QI
-execute as @s at @s if entity @s[y_rotation=-90..0,tag=!QIII] run tag @s add QIII
-execute as @s at @s if entity @s[y_rotation=-180..-90,tag=!QIV] run tag @s add QIV
-execute as @s at @s if entity @s[x_rotation=-90..0,tag=!BelowZero] run tag @s add BelowZero
 # Notifications.
-execute as @s[tag=!GottenPos] run title @s actionbar [{"text":"Finding / Storing Pos... Do not move your mouse...","color":"aqua"}]
-## Quad I
+title @s actionbar [{"text":"Finding / Storing Pos... Do not move your mouse...","color":"aqua"}]
 # X
 execute as @s[tag=QI,tag=!10milTaggedX] run teleport @s ~-10000000 ~ ~
 execute as @s[tag=QI,tag=!10milTaggedX] run scoreboard players add @s xPos 10000000
@@ -89,21 +81,14 @@ execute as @s[tag=QI,tag=!1TaggedZ,z=0] run tag @s add 1TaggedZ
 # Y
 execute as @s[tag=QI,tag=!100TaggedY,tag=1TaggedZ] run teleport @s ~ ~-100 ~
 execute as @s[tag=QI,tag=!100TaggedY] run scoreboard players add @s yPos 100
-execute as @s[tag=QI,tag=BelowZero,tag=!100TaggedZ] run teleport @s ~ ~ ~100
-execute as @s[tag=QI,tag=BelowZero,tag=!100TaggedZ] run tag @s add 100TaggedY
+execute as @s[tag=QI,tag=BelowZero,tag=!100TaggedY] run teleport @s ~ ~ ~100
+execute as @s[tag=QI,tag=BelowZero,tag=!100TaggedY] run tag @s add 100TaggedY
 
-execute as @s[tag=QI,tag=100TaggedZ,tag=!10TaggedZ] run teleport @s ~ ~ ~-10
-execute as @s[tag=QI,tag=!10TaggedZ] run scoreboard players add @s yPos 10
-execute as @s[tag=QI,tag=BelowZero,tag=!10TaggedZ] run teleport @s ~ ~ ~10
-execute as @s[tag=QI,tag=BelowZero,tag=!10TaggedZ] run tag @s add 10TaggedY
+execute as @s[tag=QI,tag=100TaggedY,tag=!10TaggedY] run teleport @s ~ ~ ~-10
+execute as @s[tag=QI,tag=!10TaggedY] run scoreboard players add @s yPos 10
+execute as @s[tag=QI,tag=BelowZero,tag=!10TaggedY] run teleport @s ~ ~ ~10
+execute as @s[tag=QI,tag=BelowZero,tag=!10TaggedY] run tag @s add 10TaggedY
 
-execute as @s[tag=QI,tag=10TaggedZ,tag=!1TaggedZ] run teleport @s ~ ~ ~-1
-execute as @s[tag=QI,tag=!1TaggedZ] run scoreboard players add @s zPos 1
-execute as @s[tag=QI,tag=!1TaggedZ,y=0] run tag @s add 1TaggedY
-
-#
-
-# Removing tags.
-execute as @s[tag=QI,tag=QIV] run tag @s remove QIV
-execute as @s[tag=QI,tag=QII] run tag @s remove QII
-execute as @s[tag=BelowZero] run tag @s remove BelowZero
+execute as @s[tag=QI,tag=10TaggedY,tag=!1TaggedY] run teleport @s ~ ~ ~-1
+execute as @s[tag=QI,tag=!1TaggedY] run scoreboard players add @s zPos 1
+execute as @s[tag=QI,tag=!1TaggedY,y=0] run tag @s add 1TaggedY
