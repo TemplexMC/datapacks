@@ -67,7 +67,7 @@ tag @e[x=82,y=127,z=59,distance=..1000,tag=!NOKILL,type=arrow] add NOKILL
 tag @e[x=82,y=127,z=59,distance=..1000,tag=!NOKILL,type=villager] add NOKILL
 tag @e[x=82,y=127,z=59,distance=..1000,tag=!NOKILL,type=item] add NOKILL
 tag @e[x=82,y=127,z=59,distance=..1000,tag=!NOKILL,type=squid] add NOKILL
-tp @e[x=82,y=127,z=59,distance=..1000,tag=!NOKILL,type=!player] ~ ~-270 ~
+execute as @e[x=82,y=127,z=59,distance=..1000,tag=!NOKILL,type=!player] at @s run tp @s ~ ~-270 ~
 #tp @e[x=-1761693,y=18,z=865288,distance=..1000,type=creeper,type=enderman,type=skeleton,type=spider,type=cave_spider,type=zombie,type=zombie_villager,type=endermite] ~ ~-270 ~
 #tp @e[x=-1761693,y=18,z=865288,distance=..1000,type=tnt,type=shulker,type=witch] ~ ~-270 ~
 #tp @e[x=-1761693,y=18,z=865288,distance=..1000,type=skeleton] ~ ~-270 ~
