@@ -31,6 +31,9 @@ scoreboard players enable @a Donate
 
 scoreboard players enable @a Ping
 
+### Minigames
+scoreboard players enable @a TPArena
+
 ### All Buyable Items
 # Indirect Items
 scoreboard players enable @a Shulker

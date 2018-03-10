@@ -1,8 +1,8 @@
 scoreboard players add @s DiamondTime 1
-execute as @a[scores={Diamond=1200..}] run tellraw @a[tag=OP] [{"text":"Xray Check System","color":"gold"},{"text":" : ","color":"dark_gray"},{"selector":"@s"},{"text":" has been mining diamonds for a minute, but has only mined ","color":"red"},{"score":{"name":"@s","objective":"Diamond"},"color":"gold"},{"text":" diamonds. They need to mine ","color":"red"},{"text":"13","color":"gold"},{"text":" diamonds in order to be considered an \"Xray Hacker\". You may still want to watch them.","color":"red"}]
+execute as @a[scores={DiamondTime=1200..}] run tellraw @a[tag=OP] [{"text":"Xray Check System","color":"gold"},{"text":" : ","color":"dark_gray"},{"selector":"@s"},{"text":" has been mining diamonds for a minute, but has only mined ","color":"red"},{"score":{"name":"@s","objective":"Diamond"},"color":"gold"},{"text":" diamonds. They need to mine ","color":"red"},{"text":"13","color":"gold"},{"text":" diamonds in order to be considered an \"Xray Hacker\". You may still want to watch them.","color":"red"}]
 
-execute as @a[scores={Diamond=1200..}] run scoreboard players set @s Diamond 0
-execute as @a[scores={Diamond=1200..}] run scoreboard players set @s DiamondTime 0
+execute as @a[scores={DiamondTime=1200..}] run scoreboard players set @s Diamond 0
+execute as @a[scores={DiamondTime=1200..}] run scoreboard players set @s DiamondTime 0
 
 execute as @a[scores={Diamond=13..}] run scoreboard players set Z Diamond 20
 execute as @a[scores={Diamond=13..}] run scoreboard players operation Z DiamondTime = @s DiamondTime

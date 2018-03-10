@@ -46,10 +46,12 @@ execute as @e[name=ItemBoolean,scores={Database=1..}] run function templex_stand
 
 ### ONE PLAYER SLEEP ###
 
-execute as @a[nbt={Sleeping:1b}] run scoreboard players add @e[name=Proxy3,type=armor_stand] VoteDay 1
-execute as @e[name=Proxy3,type=armor_stand,scores={VoteDay=20..}] run function templex_standard:vsleep
+#execute as @a[nbt={Sleeping:1b}] run scoreboard players add @e[name=Proxy3,type=armor_stand] VoteDay 1
+#execute as @e[name=Proxy3,type=armor_stand,scores={VoteDay=20..}] run function templex_standard:vsleep
 
-execute as @p[tag=VSLEEP] run function templex_standard:vsleep_main
+#execute as @p[tag=VSLEEP] run function templex_standard:vsleep_main
+
+#tag @a remove VSLEEP
 
 ### TAGS FOR GAMES ###
 
@@ -67,6 +69,10 @@ tag @e[x=82,y=127,z=59,distance=..1000,tag=!NOKILL,type=arrow] add NOKILL
 tag @e[x=82,y=127,z=59,distance=..1000,tag=!NOKILL,type=villager] add NOKILL
 tag @e[x=82,y=127,z=59,distance=..1000,tag=!NOKILL,type=item] add NOKILL
 tag @e[x=82,y=127,z=59,distance=..1000,tag=!NOKILL,type=squid] add NOKILL
+tag @e[x=82,y=127,z=59,distance=..1000,tag=!NOKILL,type=tropical_fish] add NOKILL
+tag @e[x=82,y=127,z=59,distance=..1000,tag=!NOKILL,type=puffer_fish] add NOKILL
+tag @e[x=82,y=127,z=59,distance=..1000,tag=!NOKILL,type=salmon_mob] add NOKILL
+tag @e[x=82,y=127,z=59,distance=..1000,tag=!NOKILL,type=cod_mob] add NOKILL
 execute as @e[x=82,y=127,z=59,distance=..1000,tag=!NOKILL,type=!player] at @s run tp @s ~ ~-270 ~
 #tp @e[x=-1761693,y=18,z=865288,distance=..1000,type=creeper,type=enderman,type=skeleton,type=spider,type=cave_spider,type=zombie,type=zombie_villager,type=endermite] ~ ~-270 ~
 #tp @e[x=-1761693,y=18,z=865288,distance=..1000,type=tnt,type=shulker,type=witch] ~ ~-270 ~
@@ -113,8 +119,8 @@ execute as @a[scores={Rules=1..}] run function templex_standard:rules
 
 execute as @a[scores={Login=1..}] run function templex_standard:login
 
-#execute as @a[scores={Commands=1..}] run function templex_standard:commands
-execute as @a[scores={Commands=1..}] run scoreboard players set @s Commands 0
+execute as @a[scores={Commands=1..}] run function templex_standard:commands
+#execute as @a[scores={Commands=1..}] run scoreboard players set @s Commands 0
 
 execute as @a[scores={ViewPlayTime=1..}] run function templex_standard:view_play_time
 
@@ -230,3 +236,5 @@ execute as @a[scores={Buy_Head_Shark=1..}] run function templex_standard:buy_hea
 execute as @a[scores={Buy_1000TC=1..}] run function templex_standard:buy_1000tc
 
 execute as @a[scores={StorePos=1..}] run function position:storepos
+
+execute as @a[scores={TPArena=1..}] run function minigames:goto_battlearena

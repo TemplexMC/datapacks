@@ -1,0 +1,8 @@
+{
+	"type": "smelting",
+	"ingredient": {
+		"item": "minecraft:cactus"
+	},
+	"result": "minecraft:cactus_green",
+	"cooktime": 1
+}
