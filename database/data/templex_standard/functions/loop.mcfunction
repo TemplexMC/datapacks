@@ -24,6 +24,12 @@ execute as @p[scores={UUID=0}] run function templex_standard:uuid
 
 #particle minecraft:heart -1761692.5 24 865283.5 ~0.5 ~0.5 ~0.5 0.001 10 force @a
 
+### MINIGAMES ###
+
+execute as @a[tag=!InZombs,scores={ZKillZombie=1..}] run scoreboard players reset @s ZKillZombie
+execute as @a[tag=!InZombs,scores={ZKillSkeleton=1..}] run scoreboard players reset @s ZKillSkeleton
+execute as @a[tag=!InZombs,scores={ZKillEndermite=1..}] run scoreboard players reset @s ZKillEndermite
+
 ### TIMELY COMMANDS ###
 
 execute as @p run scoreboard players add @e[name=Timer] Database 1
