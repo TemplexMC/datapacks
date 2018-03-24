@@ -11,7 +11,7 @@ execute as @e[name=Proxy1,type=armor_stand,scores={zPos=..1000000}] run scoreboa
 execute if entity @e[name=Proxy1,type=armor_stand,scores={zPos=..100000}] run teleport @s ~ ~ ~-100000
 execute as @e[name=Proxy1,type=armor_stand,scores={zPos=..100000}] run scoreboard players add @s zPos 100000
 # < -10,000
-execute if entity@e[name=Proxy1,type=armor_stand,scores={zPos=..10000}] run teleport @s ~ ~ ~-10000
+execute if entity @e[name=Proxy1,type=armor_stand,scores={zPos=..10000}] run teleport @s ~ ~ ~-10000
 execute as @e[name=Proxy1,type=armor_stand,scores={zPos=..10000}] run scoreboard players add @s zPos 10000
 # < -1,000
 execute if entity @e[name=Proxy1,type=armor_stand,scores={zPos=..1000}] run teleport @s ~ ~ ~-1000
