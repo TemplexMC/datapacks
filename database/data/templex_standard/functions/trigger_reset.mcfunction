@@ -34,6 +34,7 @@ scoreboard players enable @a Ping
 ### Minigames
 scoreboard players enable @a TPArena
 scoreboard players enable @a TPZombs
+scoreboard players enable @a SeeZombsStats
 
 ### All Buyable Items
 # Indirect Items

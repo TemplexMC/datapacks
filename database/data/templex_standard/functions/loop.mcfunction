@@ -149,3 +149,5 @@ execute as @a[scores={Buy_1000TC=1..}] run function templex_standard:buy_1000tc
 execute as @a[scores={StorePos=1..}] run function position:storepos
 execute as @a[scores={TPArena=1..}] run function minigames:goto_battlearena
 execute as @a[scores={TPZombs=1..}] run function minigames:goto_zombs
+execute as @a[scores={SeeZombsStats=1..}] run function minigames:seezombsstats
+execute as @a[scores={HowToZombs=1..}] run function minigame:howtozombs

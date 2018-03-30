@@ -1,4 +1,4 @@
-scoreboard objectives add BossKill dummy
+scoreboard objectives add BossKill minecraft.killed:minecraft.wither_skeleton
 scoreboard objectives add Buy_1000TC trigger
 scoreboard objectives add Buy_100TC trigger
 scoreboard objectives add Buy_10TC trigger
@@ -32,6 +32,7 @@ scoreboard objectives add Ping trigger
 scoreboard objectives add RTP trigger
 scoreboard objectives add Rules trigger
 scoreboard objectives add Secret trigger
+scoreboard objectives add SeeZombsStats trigger
 scoreboard objectives add Shovel trigger
 scoreboard objectives add Shulker trigger
 scoreboard objectives add Spawn trigger
