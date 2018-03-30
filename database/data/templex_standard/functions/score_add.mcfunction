@@ -62,6 +62,8 @@ scoreboard objectives add Vote trigger
 scoreboard objectives add VoteDay trigger
 scoreboard objectives add VoteNight trigger
 scoreboard objectives add VSLEEP dummy
+scoreboard objectives add YouTubers trigger
+scoreboard objectives add TwitchStreamers trigger
 scoreboard objectives add ZeldaTime dummy
 # Others.
 scoreboard objectives add Database dummy Database of Scores

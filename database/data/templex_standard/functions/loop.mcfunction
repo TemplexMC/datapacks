@@ -22,6 +22,7 @@ execute as @a[tag=!InZombs,scores={ZKillZombie=1..}] run scoreboard players rese
 execute as @a[tag=!InZombs,scores={ZKillSkeleton=1..}] run scoreboard players reset @s ZKillSkeleton
 execute as @a[tag=!InZombs,scores={ZKillEndermite=1..}] run scoreboard players reset @s ZKillEndermite
 execute as @a[tag=!InZombs,scores={BossKill=1..}] run scoreboard players reset @s BossKill
+execute as @a[tag=InZombs,x=-923151,y=17,z=-300161,distance=200..] run tag @s remove InZombs
 ### TIMELY COMMANDS ###
 execute as @p run scoreboard players add @e[name=Timer] Database 1
 execute as @e[name=Timer,scores={Database=20}] run function templex_standard:timely
@@ -34,9 +35,9 @@ execute as @e[name=ItemBoolean,scores={Database=1..}] run function templex_stand
 # Month    : Years-Celebrated . minor update . bug fix
 # Start here!
 ### ONE PLAYER SLEEP ###
-#execute as @a[nbt={Sleeping:1b}] run scoreboard players add @e[name=Proxy3,type=armor_stand] VoteDay 1
-#execute as @e[name=Proxy3,type=armor_stand,scores={VoteDay=20..}] run function templex_standard:vsleep
-#execute as @p[tag=VSLEEP] run function templex_standard:vsleep_main
+execute as @a[nbt={Sleeping:1b}] run scoreboard players add @e[name=Proxy3,type=armor_stand] VoteDay 1
+execute as @e[name=Proxy3,type=armor_stand,scores={VoteDay=20..}] run function templex_standard:vsleep
+execute as @p[tag=VSLEEP] run function templex_standard:vsleep_main
 #tag @a remove VSLEEP
 ### TAGS FOR GAMES ###
 #tag @a[tag=!InShovel] remove SWinner {Tags:["SWinner"]}
@@ -151,3 +152,5 @@ execute as @a[scores={TPArena=1..}] run function minigames:goto_battlearena
 execute as @a[scores={TPZombs=1..}] run function minigames:goto_zombs
 execute as @a[scores={SeeZombsStats=1..}] run function minigames:seezombsstats
 execute as @a[scores={HowToZombs=1..}] run function minigame:howtozombs
+execute as @a[scores={YouTubers=1..}] run function templex_standard:youtubers
+execute as @a[scores={TwitchStreamers=1..}] run function templex_standard:twitchers

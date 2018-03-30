@@ -1,0 +1,24 @@
+## YOUTUBERS
+tellraw @s [{"text":"-- \u00A73Templex \u00A74You\u00A7rTubers \u00A77--","color":"gray"}]
+#  Nitrate1
+tellraw @s [{"text":"\u00A74>>> \u00A73Nitrate1 \u00A78-- \u00A77Server \u00A73Owner \u00A74<<<"}]
+tellraw @s [{"text":"\u00A75Subscribers on \u00A7d04\u00A78.\u00A7d30\u00A78.\u00A7d18\u00A78: \u00A76287"}]
+tellraw @s [{"text":"\u00A75Channel Name\u00A78: \u00A76Nitrate 1"}]
+tellraw @s [{"text":"\u00A75Channel Link\u00A78: "},{"text":"\u00A76CLICK HERE","hoverEvent":{"action":"show_text","value":"\u00A74https://www.youtube.com/nitrate1"},"clickEvent":{"action":"open_url","value":"https://www.youtube.com/nitrate1"}}]
+#  KibblesK
+tellraw @s [{"text":"\u00A74>>> \u00A7eKibblesK \u00A78-- \u00A77Server \u00A7eYouTuber \u00A74<<<"}]
+tellraw @s [{"text":"\u00A75Subscribers on \u00A7d04\u00A78.\u00A7d30\u00A78.\u00A7d18\u00A78: \u00A7690"}]
+tellraw @s [{"text":"\u00A75Channel Name\u00A78: \u00A76KibblesK"}]
+tellraw @s [{"text":"\u00A75Channel Link\u00A78: "},{"text":"\u00A76CLICK HERE","hoverEvent":{"action":"show_text","value":"\u00A74https://www.youtube.com/channel/UCO-v2FjLy-5k14MLIV_OQZQ"},"clickEvent":{"action":"open_url","value":"https://www.youtube.com/channel/UCO-v2FjLy-5k14MLIV_OQZQ"}}]
+#  AM9327
+tellraw @s [{"text":"\u00A74>>> \u00A7eAM9327 \u00A78-- \u00A77Server \u00A7eYouTuber \u00A74<<<"}]
+tellraw @s [{"text":"\u00A75Subscribers on \u00A7d04\u00A78.\u00A7d30\u00A78.\u00A7d18\u00A78: \u00A76107"}]
+tellraw @s [{"text":"\u00A75Channel Name\u00A78: \u00A76AM9327"}]
+tellraw @s [{"text":"\u00A75Channel Link\u00A78: "},{"text":"\u00A76CLICK HERE","hoverEvent":{"action":"show_text","value":"\u00A74https://www.youtube.com/channel/UCldyX_qLr2OrkG7TR3-5DPA"},"clickEvent":{"action":"open_url","value":"https://www.youtube.com/channel/UCldyX_qLr2OrkG7TR3-5DPA"}}]
+#  TODO
+tellraw @s [{"text":"More will be added soon..."}]
+#  Telling OPs.
+tellraw @a[tag=OP] [{"text":"YouTubers System","color":"gold"},{"text":" : ","color":"dark_gray"},{"text":"Just showed ","color":"red"},{"selector":"@s","color":"green"},{"text":" our YouTubers...","color":"red"}]
+## Resetting.
+scoreboard players reset @s YouTubers
+scoreboard players enable @a YouTubers

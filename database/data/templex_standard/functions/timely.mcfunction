@@ -32,4 +32,4 @@ execute as @e[name=Minutes,scores={Database=60}] run execute as @e[name=Seconds,
 execute as @e[name=Minutes,scores={Database=60..}] run scoreboard players add @e[name=Hours] Database 1
 execute as @e[name=Minutes,scores={Database=60..}] run scoreboard players remove @s Database 60
 ### Has to be last.
-scoreboard players reset @e[name=Timer] Database 0
+scoreboard players reset @e[name=Timer] Database
