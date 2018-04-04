@@ -12,6 +12,13 @@ tag @a remove UUIDTagged
 tag @a remove UUIDAdded
 tag @a remove UUIDDone
 tag @a remove HasUUID
+### NEED TO KILL ###
+execute as @e[type=drowned] at @s run teleport @s ~ ~-270 ~
+### VOTE PARTY ###
+execute as @e[type=armor_stand,name=VoteParty,scores={Database=50..}] run function templex_standard:voteparty
+execute as @a[tag=VoteParty] at @s run scoreboard players add @s VotePartyTick 1
+execute as @a[scores={VotePartyTick=72000..}] run tag @s remove VoteParty
+execute as @a[scores={VotePartyTick=72000..}] run scoreboard players reset @s VotePartyTick
 ### UUID ###
 execute as @p[tag=!GotMyUUID] run function templex_standard:uuid
 execute as @p[scores={UUID=0}] run function templex_standard:uuid
@@ -25,7 +32,7 @@ execute as @a[tag=!InZombs,scores={BossKill=1..}] run scoreboard players reset @
 execute as @a[tag=InZombs,x=-923151,y=17,z=-300161,distance=200..] run tag @s remove InZombs
 ### TIMELY COMMANDS ###
 execute as @p run scoreboard players add @e[name=Timer] Database 1
-execute as @e[name=Timer,scores={Database=20}] run function templex_standard:timely
+execute as @e[name=Timer,scores={Database=20..}] run function templex_standard:timely
 ### ITEM CLEAR ###
 execute as @e[name=ItemBoolean,scores={Database=1..}] run function templex_standard:item_cleanup
 ### HEROBRINE MACHINE ###

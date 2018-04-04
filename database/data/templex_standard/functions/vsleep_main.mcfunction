@@ -1,7 +1,7 @@
 # Counting.
 scoreboard players add @e[name=Proxy1,type=armor_stand] Database 1
 # Subtraction checking.
-scoreboard players set @e[name=Proxy1,type=armor_stand] VoteDay 3
+scoreboard players set @e[name=Proxy1,type=armor_stand] VoteDay 2
 scoreboard players operation @e[name=Proxy2,type=armor_stand] Database = Players-Online Stats
 scoreboard players operation @e[name=Proxy2,type=armor_stand] Database /= @e[name=Proxy1,type=armor_stand] VoteDay
 scoreboard players operation @e[name=Proxy4,type=armor_stand] VoteDay = @e[name=Proxy2,type=armor_stand] Database

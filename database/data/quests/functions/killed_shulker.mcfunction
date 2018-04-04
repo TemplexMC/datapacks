@@ -11,4 +11,4 @@ tellraw @s [{"text":"\u00A72???\u00A78: \u00A7cUnidentified..."}]
 # Giving.
 scoreboard players add @s Karma 700
 scoreboard players add @s TC 90
-give @s stone{display:{Name:"{\"text\":\"Get Pronkt\",\"color\":\"aqua\"}"},ench:[{id:16,lvl:50}]} 1
+give @s stone{display:{Name:"{\"text\":\"Get Pronkt\",\"color\":\"aqua\"}"},ench:[{id:16,lvl:10}]} 1

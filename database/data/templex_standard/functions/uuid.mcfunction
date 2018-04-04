@@ -1,4 +1,4 @@
-# Tagging and outputing.
+# Tagging and outputting.
 execute if entity @s[tag=!Zeroed] run scoreboard players set @s UUID 0
 execute as @e[name=CurrentUUID,type=armor_stand] run scoreboard players add @s Database 1
 execute if entity @e[name=CurrentUUID,type=armor_stand] run scoreboard players add Current-UUID Stats 1

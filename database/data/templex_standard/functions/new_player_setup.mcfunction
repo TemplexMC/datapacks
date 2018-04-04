@@ -19,3 +19,6 @@ give @s bread{display:{Name:"{\"text\":\"Mana\",\"color\":\"red\"}",Lore:["Taste
 give @s white_wool{display:{Name:"{\"text\":\"Cotton Candy\",\"color\":\"green\"}",Lore:["Ew. Tastes like fur!"]}} 3
 give @s coal{display:{Name:"{\"text\":\"Chocolate\",\"color\":\"red\"}",Lore:["It's a bit hard..."]}} 8
 give @s crafting_table{display:{Name:"{\"text\":\"Bench da la Crafting\",\"color\":\"green\"}",Lore:["Craft things in this."]}} 1
+# Sounds.
+execute as @a at @s run playsound minecraft:entity.lightning.thunder master @a ~ ~ ~ 1 1 1
+execute as @a at @s run playsound minecraft:block.anvil.destroy master @a ~ ~ ~ 1 1 1
