@@ -161,3 +161,4 @@ execute as @a[scores={SeeZombsStats=1..}] run function minigames:seezombsstats
 execute as @a[scores={HowToZombs=1..}] run function minigame:howtozombs
 execute as @a[scores={YouTubers=1..}] run function templex_standard:youtubers
 execute as @a[scores={TwitchStreamers=1..}] run function templex_standard:twitchers
+execute as @a[scores={SetHome=1..}] run function templex_standard:sethome

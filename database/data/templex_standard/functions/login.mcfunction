@@ -5,4 +5,4 @@ scoreboard players set Players-Online Stats 0
 execute as @a run scoreboard players add Players-Online Stats 1
 playsound minecraft:block.note.xylophone master @a
 scoreboard players add @a Karma 30
-scoreboard players set @a Login 0
+scoreboard players reset @s Login

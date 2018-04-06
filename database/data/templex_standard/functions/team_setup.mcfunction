@@ -19,6 +19,10 @@ team add JrYT
 team add JrStreamer
 team add Dedicated
 team add NC
+# NPCs.
+team add GREEN
+team add GOLD
+team add LPURPLE
 # Color.
 team option Owner color dark_aqua
 team option Heads color dark_red
@@ -40,5 +44,9 @@ team option JrYT color yellow
 team option JrStreamer color yellow
 team option Dedicated color black
 team option NC color gray
+# NPCs.
+team option GREEN color green
+team option GOLD color gold
+team option LPURPLE color light_purple
 # Tell.
 tellraw @a [{"text":"Team Set Up","color":"gold"},{"text":" : ","color":"dark_gray"},{"text":"Set up the teams.","color":"green"}]

@@ -25,6 +25,7 @@ scoreboard objectives add Donate trigger
 scoreboard objectives add Firework trigger
 scoreboard objectives add Home trigger
 scoreboard objectives add Login minecraft.custom:minecraft.leave_game
+scoreboard objectives add Logins minecraft.custom:minecraft.leave_game
 scoreboard objectives add Mail trigger
 scoreboard objectives add MailRead trigger
 scoreboard objectives add PartOn trigger
@@ -65,11 +66,11 @@ scoreboard objectives add VSLEEP dummy
 scoreboard objectives add YouTubers trigger
 scoreboard objectives add TwitchStreamers trigger
 scoreboard objectives add ZeldaTime dummy
+scoreboard objectives add SetHome trigger
 # Others.
 scoreboard objectives add Database dummy Database of Scores
-scoreboard objectives add Deaths dummy
+scoreboard objectives add Deaths deathCount
 scoreboard objectives add Karma dummy
-scoreboard objectives add Logins dummy
 scoreboard objectives add PlayTime minecraft.custom:minecraft.play_one_minute Ticks Played
 scoreboard objectives add RTPs dummy
 scoreboard objectives add ShovelTick dummy Shovel Tickets
@@ -88,6 +89,7 @@ scoreboard objectives add ZombsMiteKills dummy Zombs: Endermite Kills
 scoreboard objectives add ZombsSkeleKills dummy Zombs: Skeleton Kills
 scoreboard objectives add ZombsZombKills dummy Zombs: Zombie Kills
 scoreboard objectives add ZombsWins dummy Zombs: Wins
+scoreboard objectives add yPos dummy
 scoreboard objectives add zPos dummy
 # Tell.
 scoreboard players set @s TriggerReset 1

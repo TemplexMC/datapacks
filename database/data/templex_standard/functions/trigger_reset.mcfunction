@@ -30,6 +30,7 @@ scoreboard players enable @a ViewTC
 scoreboard players enable @a Donate
 scoreboard players enable @a YouTubers
 scoreboard players enable @a TwitchStreamers
+scoreboard players enable @a SetHome
 
 scoreboard players enable @a Ping
 
