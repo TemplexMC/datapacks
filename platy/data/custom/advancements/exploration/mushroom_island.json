@@ -1,0 +1,30 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:mycelium"
+		},
+    "title": "This Smells",
+    "description": "Enter a mushroom biome"
+	},
+	"parent": "custom:exploration/make_map",
+	"criteria": {
+		"mushroom_biome": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"biome": "minecraft:mushroom_island"
+			}
+		},
+		"mushroom_shore": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"biome": "minecraft:mushroom_island_shore"
+			}
+		}
+	},
+	"requirements": [
+		[
+			"mushroom_biome",
+			"mushroom_shore"
+		]
+	]
+}

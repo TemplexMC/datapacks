@@ -1,0 +1,31 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:ender_eye"
+		},
+		"title": "Beyond the Third Dimension",
+		"description": "Travel to all the dimensions",
+		"frame": "goal"
+	},
+	"parent": "custom:exploration/root",
+	"criteria": {
+		"overworld": {
+			"trigger": "minecraft:changed_dimension",
+			"conditions": {
+				"to": "overworld"
+			}
+		},
+		"nether": {
+			"trigger": "minecraft:changed_dimension",
+			"conditions": {
+				"to": "the_nether"
+			}
+		},
+		"end": {
+			"trigger": "minecraft:changed_dimension",
+			"conditions": {
+				"to": "the_end"
+			}
+		}
+	}
+}

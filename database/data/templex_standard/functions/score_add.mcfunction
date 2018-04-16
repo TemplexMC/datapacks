@@ -23,6 +23,7 @@ scoreboard objectives add DiamondTime dummy
 scoreboard objectives add Discord trigger
 scoreboard objectives add Donate trigger
 scoreboard objectives add Firework trigger
+scoreboard objectives add Gift trigger
 scoreboard objectives add Home trigger
 scoreboard objectives add Login minecraft.custom:minecraft.leave_game
 scoreboard objectives add Logins minecraft.custom:minecraft.leave_game
@@ -68,6 +69,7 @@ scoreboard objectives add TwitchStreamers trigger
 scoreboard objectives add ZeldaTime dummy
 scoreboard objectives add SetHome trigger
 # Others.
+scoreboard objectives add HourlyKarma dummy Hourly Give KP
 scoreboard objectives add Database dummy Database of Scores
 scoreboard objectives add Deaths deathCount
 scoreboard objectives add Karma dummy
@@ -91,6 +93,13 @@ scoreboard objectives add ZombsZombKills dummy Zombs: Zombie Kills
 scoreboard objectives add ZombsWins dummy Zombs: Wins
 scoreboard objectives add yPos dummy
 scoreboard objectives add zPos dummy
+scoreboard objectives add rtp.xpos dummy
+scoreboard objectives add rtp.ypos dummy
+scoreboard objectives add rtp.zpos dummy
+scoreboard objectives add die.bool deathCount Deaths Boolean
+scoreboard objectives add die.xpos dummy
+scoreboard objectives add die.ypos dummy
+scoreboard objectives add die.zpos dummy
 # Tell.
 scoreboard players set @s TriggerReset 1
 tellraw @a [{"text":"Score Clear","color":"gold"},{"text":" : ","color":"dark_gray"},{"text":"Added all objectives back.","color":"green"}]

@@ -1,0 +1,23 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:debug_stick"
+        },
+        "title": "Begone, Bugs!",
+        "description": "Craft a debug stick",
+		"hidden": true
+    },
+    "parent": "custom:forestry/stick",	
+    "criteria": {
+        "debug_stick": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:debug_stick"
+                    }
+                ]
+            }
+        }
+    }
+}

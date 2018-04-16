@@ -1,0 +1,48 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:trident"
+		},
+		"title": "Poseidon's Fury",
+		"description": "Create a perfect trident",
+		"frame": "challenge"
+	},
+	"parent": "custom:ocean/throw_trident",
+	"rewards": {
+		"experience": 100
+	},
+	"criteria": {
+		"trident": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"item": "minecraft:trident",
+						"enchantments": [
+							{
+								"enchantment": "minecraft:loyalty",
+								"levels": 3
+							},
+							{
+								"enchantment": "minecraft:impaling",
+								"levels": 5
+							},
+							{
+								"enchantment": "minecraft:channeling",
+								"levels": 1
+							},
+							{
+								"enchantment": "minecraft:unbreaking",
+								"levels": 3
+							},	
+							{
+								"enchantment": "minecraft:mending",
+								"levels": 1
+							}
+						]
+					}
+				]
+			}
+		}
+	}
+}

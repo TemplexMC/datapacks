@@ -1,0 +1,20 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:cooked_porkchop"
+        },
+        "title": "Piggy Biker Gang",
+        "description": "If you mess with one, you mess with all of them"
+    },
+    "parent": "minecraft:nether/root",  
+    "criteria": {
+        "hurt_pigman": {
+            "trigger": "minecraft:player_hurt_entity",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:zombie_pigman"
+                }
+            }
+        }
+    }
+}

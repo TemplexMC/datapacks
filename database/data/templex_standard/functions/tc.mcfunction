@@ -1,5 +1,6 @@
 tellraw @a [{"text":"Dishing out TC...","color":"green"}]
 scoreboard players add @a TC 20
+scoreboard players add @a[team=Alchemist] TC 10
 scoreboard players add @a[tag=special] TC 4
 scoreboard players add @a[team=Templexian] TC 40
 scoreboard players add @a[team=Dedicated] TC 20
@@ -10,6 +11,7 @@ scoreboard players add @a[team=MVP] TC 29
 scoreboard players add @a[team=MVPP] TC 99
 scoreboard players add @a[team=DNRP] TC 299
 scoreboard players add @a[tag=VoteParty] TC 20
+scoreboard players add @a[team=Alchemist,tag=VoteParty] TC 10
 scoreboard players add @a[tag=special,tag=VoteParty] TC 4
 scoreboard players add @a[team=Templexian,tag=VoteParty] TC 40
 scoreboard players add @a[team=Dedicated,tag=VoteParty] TC 20

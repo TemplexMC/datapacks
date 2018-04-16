@@ -1,0 +1,21 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:slime_ball"
+		},
+		"title": "Yay! ... Oh Crap, There's More!",
+		"description": "'Kill' a slime"
+	},
+	"parent": "custom:combat/root",
+	"criteria": {
+		"slime": {
+			"trigger": "minecraft:player_killed_entity",
+			"conditions": {
+				"entity": {
+					"type": "slime"
+					}
+				}
+			}
+		}
+	}
+}

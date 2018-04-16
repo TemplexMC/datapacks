@@ -9,7 +9,7 @@ tellraw @s [{"text":"\u00A7aBuy 4 iron? \u00A76[4 for 200 Karma] \u00A7e[Click]"
 tellraw @s [{"text":"\u00A7aBuy 4 gold? \u00A76[4 for 600 Karma] \u00A7e[Click]","hoverEvent":{"action":"show_text","value":"\u00A77Click to try to buy four gold."},"clickEvent":{"action":"run_command","value":"/trigger Buy_Gold set 1"}}]
 tellraw @s [{"text":"\u00A7aBuy 4 diamonds? \u00A76[4 for 1200 Karma] \u00A7e[Click]","hoverEvent":{"action":"show_text","value":"\u00A77Click to try to buy four diamonds."},"clickEvent":{"action":"run_command","value":"/trigger Buy_Diamonds set 1"}}]
 tellraw @s [{"text":"\u00A7aBuy 4 emeralds? \u00A76[4 for 2400 Karma] \u00A7e[Click]","hoverEvent":{"action":"show_text","value":"\u00A77Click to try to buy four emeralds."},"clickEvent":{"action":"run_command","value":"/trigger Buy_Emeralds set 1"}}]
-tellraw @s [{"text":"\n\u00A7aBuy the Holy Trident? \u00A76[1 for 60000 Karma] \u00A7e[Click]\n\u00A74> \u00A75Has Loyalty III, Impaling V, Riptide III, Channeling I, Mending I, Sharpness 50, Fire Aspect X, and Looting X.","hoverEvent":{"action":"show_text","value":"\u00A77Click to buy the Holy Trident."},"clickEvent":{"action":"run_command","value":"/trigger Buy_HolyTrident"}}]
+tellraw @s [{"text":"\u00A7aBuy the Holy Trident? \u00A76[1 for 30000 Karma] \u00A7e[Click]\n\u00A74> \u00A75Has Loyalty III, Impaling V, Channeling I, Mending I, Sharpness 50, Fire Aspect X, and Looting X.","color":"dark_purple","hoverEvent":{"action":"show_text","value":"\u00A77Click to buy the Holy Trident."},"clickEvent":{"action":"run_command","value":"/trigger Buy_HolyTrident"}}]
 tellraw @s [{"text":"Click one to buy it.","color":"light_purple"}]
 scoreboard players set @s Store_KP 0
 scoreboard players enable @a Store_KP

@@ -1,0 +1,20 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:conduit"
+        },
+        "title": "Open Your Eyes",
+        "description": "Activate a conduit"
+    },
+    "parent": "custom:ocean/nautilus_shell",
+    "criteria": {
+        "conduit_power": {
+            "trigger": "minecraft:effects_changed",
+            "conditions": {
+                "effects": {
+                    "minecraft:conduit_power": {}
+                }
+            }
+        }
+    }
+}

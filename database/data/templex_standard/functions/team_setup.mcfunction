@@ -19,6 +19,7 @@ team add JrYT
 team add JrStreamer
 team add Dedicated
 team add NC
+team add Alchemist
 # NPCs.
 team add GREEN
 team add GOLD
@@ -44,6 +45,7 @@ team option JrYT color yellow
 team option JrStreamer color yellow
 team option Dedicated color black
 team option NC color gray
+team option Alchemist color dark_gray
 # NPCs.
 team option GREEN color green
 team option GOLD color gold

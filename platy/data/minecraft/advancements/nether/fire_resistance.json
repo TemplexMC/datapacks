@@ -1,0 +1,20 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:magma_cream"
+        },
+        "title": "Stayin' Frosty",
+        "description": "Drink a fire resistance potion"
+    },
+    "parent": "minecraft:nether/brew_potion",
+    "criteria": {
+        "fire_resistance": {
+            "trigger": "minecraft:effects_changed",
+            "conditions": {
+                "effects": {
+                    "minecraft:fire_resistance": {}
+                }
+            }
+        }
+    }
+}

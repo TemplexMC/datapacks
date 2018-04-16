@@ -1,0 +1,25 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:elytra",
+			"durability": 1
+        },
+        "title": "Worn Out",
+        "description": "Wear out an elytra",
+        "frame": "goal"
+    },
+    "parent": "minecraft:end/elytra",
+    "criteria": {
+        "elytra": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:elytra",
+						"durability": 1
+                    }
+                ]
+            }
+        }
+    }
+}

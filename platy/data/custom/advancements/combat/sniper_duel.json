@@ -1,0 +1,36 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:skeleton_skull"
+        },
+        "title": {
+            "translate": "Sniper Duel"
+        },
+        "description": {
+            "translate": "advancements.adventure.sniper_duel.description"
+        },
+        "frame": "challenge"
+    },
+    "parent": "custom:combat/shoot_arrow",
+	"rewards": {
+        "experience": 50
+    },
+    "criteria": {
+        "shot_skeleton": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "killing_blow": {
+                    "is_projectile": true
+                },
+                "entity": {
+                    "type": "skeleton",
+                    "distance": {
+                        "horizontal": {
+                            "min": 50
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

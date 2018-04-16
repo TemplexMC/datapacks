@@ -1,0 +1,82 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:dark_oak_bark"
+        },
+        "title": "Woof",
+        "description": "Create a block of bark"
+    },
+    "parent": "custom:forestry/log",	
+    "criteria": {
+        "oak_bark": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:oak_bark"
+                    }
+                ]
+            }
+        },
+        "spruce_bark": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:spruce_bark"
+                    }
+                ]
+            }
+        },
+		"birch_bark": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:birch_bark"
+                    }
+                ]
+            }
+        },
+        "jungle_bark": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:jungle_bark"
+                    }
+                ]
+            }
+        },
+        "acacia_bark": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:acacia_bark"
+                    }
+                ]
+            }
+        },
+        "dark_oak_bark": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:dark_oak_bark"
+                    }
+                ]
+            }
+        }
+	},
+	"requirements": [
+		[
+			"oak_bark",
+			"spruce_bark",
+			"birch_bark",
+			"jungle_bark",
+			"acacia_bark",
+			"dark_oak_bark"
+		]
+	]
+}

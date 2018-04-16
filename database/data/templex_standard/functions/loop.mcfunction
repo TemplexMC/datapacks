@@ -5,6 +5,17 @@ execute if entity @a[team=] run scoreboard players add @p TriggerReset 1
 tag @a[team=] remove HasUUID
 team join NC @a[team=]
 execute as @a[tag=!Booked] run function templex_standard:cmd_book
+### REPEATED COMMANDS ###
+function mobs:variants
+function quests:trigger_test
+function templex_standard:bossbar
+execute as @a[gamemode=!spectator,tag=PO] run function templex_standard:particles
+execute as @a[nbt={SelectedItem:{id:"minecraft:stick",tag:{display:{Name:"{\"text\":\"MaryPoppins\"}"}}}},tag=FlyEnabled,nbt=!{Dimension:1}] at @s run function bought_ranks:fly
+execute as @a[nbt={SelectedItem:{id:"minecraft:stick",tag:{display:{Name:"{\"text\":\"SpeedRacer\"}"}}}},team=Templexian,tag=!InZombs] at @s run function bought_ranks:speed
+execute as @a[nbt={SelectedItem:{id:"minecraft:book"},Inventory:[{Slot:102b,id:"minecraft:elytra"}]},tag=FlyEnabled,nbt=!{OnGround:1b},distance=1000..,tag=!InZombs] at @s run function bought_ranks:assisted_fly
+execute as @a[nbt={SelectedItem:{id:"minecraft:stick",tag:{display:{Name:"{\"text\":\"MaryPoppins\"}"}}}},tag=FlyEnabled,distance=1000..,tag=!InZombs] at @s run function bought_ranks:fly
+execute as @a[gamemode=survival,tag=!ByPassGamemode,distance=..350] run function templex_standard:protection
+execute positioned 82.52 127.90 59.75 run tag @a[distance=350..,tag=InProtection] remove InProtection
 ### TAG FIX ###
 scoreboard players add @a[tag=endcmplt] Karma 3000
 tag @a remove endcmplt
@@ -13,10 +24,11 @@ tag @a remove UUIDAdded
 tag @a remove UUIDDone
 tag @a remove HasUUID
 ### NEED TO KILL ###
-execute as @e[type=drowned] at @s run teleport @s ~ ~-270 ~
+#execute as @e[type=drowned] at @s run teleport @s ~ ~-270 ~
 ### VOTE PARTY ###
 execute as @e[type=armor_stand,name=VoteParty,scores={Database=50..}] run function templex_standard:voteparty
 execute as @a[tag=VoteParty] at @s run scoreboard players add @s VotePartyTick 1
+execute as @a[tag=VoteParty] at @s run title @s actionbar [{"text":"VoteParty still loves you!","color":"aqua"}]
 execute as @a[scores={VotePartyTick=72000..}] run tag @s remove VoteParty
 execute as @a[scores={VotePartyTick=72000..}] run scoreboard players reset @s VotePartyTick
 ### UUID ###
@@ -77,6 +89,7 @@ execute as @e[x=82,y=127,z=59,distance=..1000,tag=!NOKILL,type=!player] at @s ru
 data merge entity @e[type=creeper,tag=!DoesNotExplode,limit=1] {ExplosionRadius:0,Tags:["DoesNotExplode"]}
 ### NO PLAYER DAMAGE AT SPAWN ###
 effect give @a[x=63,y=127,z=61,distance=..300] resistance 1 100 true
+effect give @a[x=63,y=127,z=61,distance=..300] saturation 1 100 true
 ### DATABASE ###
 execute as @e[name=KarmaBoolean,scores={Database=1..}] run function templex_standard:karma
 ### TEAMS ###
@@ -162,3 +175,5 @@ execute as @a[scores={HowToZombs=1..}] run function minigame:howtozombs
 execute as @a[scores={YouTubers=1..}] run function templex_standard:youtubers
 execute as @a[scores={TwitchStreamers=1..}] run function templex_standard:twitchers
 execute as @a[scores={SetHome=1..}] run function templex_standard:sethome
+execute as @a[scores={Gift=1..}] run function templex_standard:gift
+execute as @a[scores={die.bool=1..}] run function templex_standard:die_bool
