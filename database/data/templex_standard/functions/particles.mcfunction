@@ -28,6 +28,7 @@ execute at @s[team=Templexian] run particle note ~ ~ ~ 1 1 1 0.001 2 force @a
 #execute at @s[team=RockStar] run particle portal ~ ~ ~ 1 1 1 0.002 3 force @a
 
 execute at @s[team=Alchemist] run particle enchanted_hit ~ ~ ~ 1 1 1 0.001 5 force @a
+execute at @s[tag=Alchemist,team=!Alchemist] run particle enchanted_hit ~ ~ ~ 1 1 1 0.001 5 force @a
 
 # Per Player
 

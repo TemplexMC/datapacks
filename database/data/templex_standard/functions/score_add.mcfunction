@@ -47,6 +47,7 @@ scoreboard objectives add Survey trigger
 scoreboard objectives add Survival trigger
 scoreboard objectives add Taunt trigger
 scoreboard objectives add ToggleParticle trigger
+scoreboard objectives add ToggleSpam trigger
 scoreboard objectives add TPA trigger
 scoreboard objectives add TPAccept trigger
 scoreboard objectives add TPAFind trigger
@@ -100,6 +101,9 @@ scoreboard objectives add die.bool deathCount Deaths Boolean
 scoreboard objectives add die.xpos dummy
 scoreboard objectives add die.ypos dummy
 scoreboard objectives add die.zpos dummy
+scoreboard objectives add tplx.lvlmult dummy Level Multiplier
+scoreboard objectives add tplx.lvl dummy Templex Level
+scoreboard objectives add tplx.lvlram dummy Level RAM
 # Tell.
 scoreboard players set @s TriggerReset 1
 tellraw @a [{"text":"Score Clear","color":"gold"},{"text":" : ","color":"dark_gray"},{"text":"Added all objectives back.","color":"green"}]

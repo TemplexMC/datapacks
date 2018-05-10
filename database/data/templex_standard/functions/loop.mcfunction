@@ -7,30 +7,33 @@ team join NC @a[team=]
 execute as @a[tag=!Booked] run function templex_standard:cmd_book
 ### REPEATED COMMANDS ###
 function mobs:variants
+function terr-main:main
 function quests:trigger_test
 function templex_standard:bossbar
 execute as @a[gamemode=!spectator,tag=PO] run function templex_standard:particles
 execute as @a[nbt={SelectedItem:{id:"minecraft:stick",tag:{display:{Name:"{\"text\":\"MaryPoppins\"}"}}}},tag=FlyEnabled,nbt=!{Dimension:1}] at @s run function bought_ranks:fly
-execute as @a[nbt={SelectedItem:{id:"minecraft:stick",tag:{display:{Name:"{\"text\":\"SpeedRacer\"}"}}}},team=Templexian,tag=!InZombs] at @s run function bought_ranks:speed
+execute as @a[nbt={SelectedItem:{id:"minecraft:stick",tag:{display:{Name:"{\"text\":\"SpeedRacer\"}"}}}},tag=Speed,tag=!InZombs] at @s run function bought_ranks:speed
 execute as @a[nbt={SelectedItem:{id:"minecraft:book"},Inventory:[{Slot:102b,id:"minecraft:elytra"}]},tag=FlyEnabled,nbt=!{OnGround:1b},distance=1000..,tag=!InZombs] at @s run function bought_ranks:assisted_fly
 execute as @a[nbt={SelectedItem:{id:"minecraft:stick",tag:{display:{Name:"{\"text\":\"MaryPoppins\"}"}}}},tag=FlyEnabled,distance=1000..,tag=!InZombs] at @s run function bought_ranks:fly
 execute as @a[gamemode=survival,tag=!ByPassGamemode,distance=..350] run function templex_standard:protection
-execute positioned 82.52 127.90 59.75 run tag @a[distance=350..,tag=InProtection] remove InProtection
+#execute positioned 82.52 127.90 59.75 run tag @a[distance=350..,tag=InProtection] remove InProtection
+### AUTOSCRIPT ###
+execute as @p[tag=AutoScript] run function templex_standard:autoscript
 ### TAG FIX ###
-scoreboard players add @a[tag=endcmplt] Karma 3000
-tag @a remove endcmplt
-tag @a remove UUIDTagged
-tag @a remove UUIDAdded
-tag @a remove UUIDDone
-tag @a remove HasUUID
+#scoreboard players add @a[tag=endcmplt] Karma 3000
+#tag @a[tag=endcmplt] remove endcmplt
+#tag @a[tag=UUIDTagged] remove UUIDTagged
+#tag @a[tag=UUIDAdded] remove UUIDAdded
+#tag @a[tag=UUIDDone] remove UUIDDone
+#tag @a[tag=HasUUID remove HasUUID
 ### NEED TO KILL ###
 #execute as @e[type=drowned] at @s run teleport @s ~ ~-270 ~
 ### VOTE PARTY ###
 execute as @e[type=armor_stand,name=VoteParty,scores={Database=50..}] run function templex_standard:voteparty
 execute as @a[tag=VoteParty] at @s run scoreboard players add @s VotePartyTick 1
 execute as @a[tag=VoteParty] at @s run title @s actionbar [{"text":"VoteParty still loves you!","color":"aqua"}]
-execute as @a[scores={VotePartyTick=72000..}] run tag @s remove VoteParty
-execute as @a[scores={VotePartyTick=72000..}] run scoreboard players reset @s VotePartyTick
+execute as @a[scores={VotePartyTick=72000..}] run tag @a remove VoteParty
+execute as @a[scores={VotePartyTick=72000..}] run scoreboard players reset @a VotePartyTick
 ### UUID ###
 execute as @p[tag=!GotMyUUID] run function templex_standard:uuid
 execute as @p[scores={UUID=0}] run function templex_standard:uuid
@@ -53,10 +56,10 @@ execute as @e[name=ItemBoolean,scores={Database=1..}] run function templex_stand
 # November :        1         .      2       .    0
 # Month    : Years-Celebrated . minor update . bug fix
 # Start here!
-### ONE PLAYER SLEEP ###
-execute as @a[nbt={Sleeping:1b}] run scoreboard players add @e[name=Proxy3,type=armor_stand] VoteDay 1
-execute as @e[name=Proxy3,type=armor_stand,scores={VoteDay=20..}] run function templex_standard:vsleep
-execute as @p[tag=VSLEEP] run function templex_standard:vsleep_main
+### SLEEP VOTE ###
+#execute as @a[nbt={Sleeping:1b}] run scoreboard players add @e[name=Proxy3,type=armor_stand] VoteDay 1
+#execute as @e[name=Proxy3,type=armor_stand,scores={VoteDay=20..}] run function templex_standard:vsleep
+#execute as @p[tag=VSLEEP] run function templex_standard:vsleep_main
 #tag @a remove VSLEEP
 ### TAGS FOR GAMES ###
 #tag @a[tag=!InShovel] remove SWinner {Tags:["SWinner"]}
@@ -112,7 +115,10 @@ execute as @a[scores={ViewPlayTime=1..}] run function templex_standard:view_play
 execute as @a[scores={Vote=1..}] run function templex_standard:vote
 execute as @a[scores={TriggerReset=1..}] run function templex_standard:trigger_reset
 execute as @a[scores={TPEnd=1..}] run function templex_standard:tp_end_try
-execute as @a[scores={Survival=1..}] run function templex_standard:survival
+execute as @a[scores={Survival=1..},tag=!t.ingame] run function templex_standard:survival
+execute as @a[scores={Survival=1..},tag=t.ingame] run tellraw @s [{"text":"Sorry, that is disabled right now. (You're in a protected area!)","color":"red"}]
+execute as @a[scores={Survival=1..},tag=t.ingame] run scoreboard players reset @s Survival
+execute as @a[scores={Survival=1..},tag=t.ingame] run scoreboard players enable @a Survival
 execute as @a[x=103.0,y=125.00,z=64.0,distance=..1.5] run function templex_standard:rtp_try
 execute as @a[scores={RTP=1..}] run function templex_standard:rtp_try
 execute as @a[scores={BuyRTP=1..}] run function templex_standard:buy_rtp_try
@@ -176,4 +182,6 @@ execute as @a[scores={YouTubers=1..}] run function templex_standard:youtubers
 execute as @a[scores={TwitchStreamers=1..}] run function templex_standard:twitchers
 execute as @a[scores={SetHome=1..}] run function templex_standard:sethome
 execute as @a[scores={Gift=1..}] run function templex_standard:gift
+execute as @a[scores={ToggleSpam=1..}] run function templex_standard:togglespam
+# Terrestria
 execute as @a[scores={die.bool=1..}] run function templex_standard:die_bool

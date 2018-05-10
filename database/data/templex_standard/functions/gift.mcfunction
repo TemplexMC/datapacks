@@ -33,4 +33,4 @@ execute as @s[tag=Gifter] as @s[scores={HourlyKarma=300..}] as @s[tag=gifting] r
 execute as @s[tag=Gifter] as @s[scores={HourlyKarma=300..}] as @s[tag=gifting] run tag @a remove gifting.tried
 execute as @s[tag=Gifter] as @s[scores={HourlyKarma=300..}] as @s[tag=gifting] run tag @a remove gifting
 # Resetting.
-execute as @s[tag=Gifter] as @s[scores={HourlyKarma=300..}] if entity @e[type=armor_stand,name=Gifter,scores={Database=200..}] at @s run function templex_standard:gifting_uuid_invalid
+execute as @s[tag=Gifter] as @s[scores={HourlyKarma=300..}] if entity @e[type=armor_stand,name=Gifter,scores={Database=100..}] at @s run function templex_standard:gifting_uuid_invalid

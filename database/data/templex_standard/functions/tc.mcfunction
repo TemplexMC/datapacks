@@ -1,6 +1,7 @@
-tellraw @a [{"text":"Dishing out TC...","color":"green"}]
+tellraw @a[tag=SO] [{"text":"Dishing out TC...","color":"green"}]
 scoreboard players add @a TC 20
 scoreboard players add @a[team=Alchemist] TC 10
+scoreboard players add @a[tag=Alchemist,team=!Alchemist] TC 10
 scoreboard players add @a[tag=special] TC 4
 scoreboard players add @a[team=Templexian] TC 40
 scoreboard players add @a[team=Dedicated] TC 20
