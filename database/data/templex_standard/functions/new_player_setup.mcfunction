@@ -5,7 +5,7 @@ execute as @s[tag=!OP,gamemode=survival,tag=!joined] run trigger SpawnPoint
 # Sets off their start scores.
 scoreboard players set @s RTPs 5
 #scoreboard players set @s Tutorial 1
-scoreboard players set @s ToggleSpam 1
+#scoreboard players set @s ToggleSpam 1
 scoreboard players add @a Karma 200
 scoreboard players add @a TC 20
 # Enables triggers for all online players | Needed to allow the new player to be able to do triggers.
@@ -26,4 +26,4 @@ give @s crafting_table{display:{Name:"{\"text\":\"Bench da la Crafting\",\"color
 execute as @a at @s run playsound minecraft:entity.lightning.thunder master @a ~ ~ ~ 1 1 1
 execute as @a at @s run playsound minecraft:block.anvil.destroy master @a ~ ~ ~ 1 1 1
 # Auto-Script.
-execute if entity @p[name=NitrateOrigins] run tag @s add AutoScript
+execute if entity @p[name=xNitrate] run tag @s add AutoScript

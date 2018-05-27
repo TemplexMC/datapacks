@@ -10,10 +10,12 @@ scoreboard objectives add Buy_Coal trigger
 scoreboard objectives add Buy_Diamonds trigger
 scoreboard objectives add Buy_Emeralds trigger
 scoreboard objectives add Buy_Gold trigger
+scoreboard objectives add Buy_GoldFarm trigger
 scoreboard objectives add Buy_Head_Nitrate trigger
 scoreboard objectives add Buy_Head_Shark trigger
 scoreboard objectives add Buy_HolyTrident trigger
 scoreboard objectives add Buy_Iron trigger
+scoreboard objectives add Buy_IronFarm trigger
 scoreboard objectives add Buy_Slimeball trigger
 scoreboard objectives add BuyRTP trigger
 scoreboard objectives add CmdBook trigger
@@ -59,6 +61,7 @@ scoreboard objectives add TPZombs trigger
 scoreboard objectives add TriggerReset trigger
 scoreboard objectives add Tutorial trigger
 scoreboard objectives add ViewKarma trigger
+scoreboard objectives add ViewLevel trigger
 scoreboard objectives add ViewPlayTime trigger
 scoreboard objectives add ViewTC trigger
 scoreboard objectives add Vote trigger

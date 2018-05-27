@@ -23,11 +23,18 @@ execute as @e[name=ZombsBoolean,type=armor_stand,tag=true] as @e[tag=Zombs,type=
 execute as @e[name=ZombsBoolean,type=armor_stand,tag=true] as @e[tag=Zombs,type=armor_stand,name=Boss] at @s as @a[tag=InZombs,distance=..200,scores={BossKill=1..}] run tag @s add BossKiller
 execute as @e[name=ZombsBoolean,type=armor_stand,tag=true] as @e[tag=Zombs,type=armor_stand,name=Boss] at @s as @a[tag=InZombs,distance=..200,scores={BossKill=1..}] run tellraw @a [{"text":"Zombs","color":"gold"},{"text":" : ","color":"dark_gray"},{"selector":"@s","color":"green"},{"text":" has just killed the Zombs Boss!","color":"aqua"}]
 execute as @p[tag=BossKiller] run tag @e[name=ZombsBoolean,type=armor_stand,tag=true] remove true
+execute as @e[name=NitrateOrigins,type=wither_skeleton,tag=!z.effected] at @s run effect give @s regeneration 100 10
+execute as @e[name=NitrateOrigins,type=wither_skeleton,tag=!z.effected] at @s run effect give @s absorption 100 100
+execute as @e[name=NitrateOrigins,type=wither_skeleton,tag=!z.effected] at @s run effect give @s resistance 100 10
+execute as @e[name=NitrateOrigins,type=wither_skeleton,tag=!z.effected] at @s run tag @s add z.effected
 # BossKiller.
 execute as @p[tag=BossKiller] run scoreboard players add @e[name=ZombsEndTimer,type=armor_stand] Database 1
 execute as @p[tag=BossKiller] as @e[name=ZombsEndTimer,type=armor_stand,scores={Database=1}] run title @a[tag=InZombs] actionbar [{"text":"Teleporting to Spawn in 10 seconds...","color":"aqua"}]
+execute as @p[tag=BossKiller] as @e[name=ZombsEndTimer,type=armor_stand,scores={Database=1}] run tellraw @a[tag=InZombs] [{"text":"Teleporting to Spawn in 10 seconds...","color":"aqua"}]
 execute as @p[tag=BossKiller] as @e[name=ZombsEndTimer,type=armor_stand,scores={Database=100}] run title @a[tag=InZombs] actionbar [{"text":"Teleporting to Spawn in 5 seconds...","color":"aqua"}]
+execute as @p[tag=BossKiller] as @e[name=ZombsEndTimer,type=armor_stand,scores={Database=100}] run tellraw @a[tag=InZombs] [{"text":"Teleporting to Spawn in 5 seconds...","color":"aqua"}]
 execute as @p[tag=BossKiller] as @e[name=ZombsEndTimer,type=armor_stand,scores={Database=200}] run title @a[tag=InZombs] actionbar [{"text":"Teleporting to Spawn now!","color":"aqua"}]
+execute as @p[tag=BossKiller] as @e[name=ZombsEndTimer,type=armor_stand,scores={Database=200}] run tellraw @a[tag=InZombs] [{"text":"Teleporting to Spawn now!","color":"aqua"}]
 execute as @p[tag=BossKiller] as @e[name=ZombsEndTimer,type=armor_stand,scores={Database=200}] run fill -923150 35 -300141 -923152 37 -300141 minecraft:iron_bars
 execute as @p[tag=BossKiller] as @e[name=ZombsEndTimer,type=armor_stand,scores={Database=200}] run fill -923166 41 -300154 -923166 42 -300153 minecraft:iron_bars
 execute as @p[tag=BossKiller] as @e[name=ZombsEndTimer,type=armor_stand,scores={Database=200}] run fill -923155 45 -300138 -923155 46 -300137 minecraft:iron_bars

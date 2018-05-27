@@ -33,22 +33,19 @@ scoreboard players enable @a TwitchStreamers
 scoreboard players enable @a SetHome
 scoreboard players enable @a Gift
 scoreboard players enable @a ToggleSpam
+scoreboard players enable @a ViewLevel
 
 scoreboard players enable @a Ping
-
 ### Minigames
 scoreboard players enable @a TPArena
 scoreboard players enable @a TPZombs
 scoreboard players enable @a SeeZombsStats
-
 ### All Buyable Items
 # Indirect Items
 scoreboard players enable @a Shulker
-
 # Not in Store
 scoreboard players enable @a Buy50XP
 scoreboard players enable @a Buy500XP
-
 # In Store
 scoreboard players enable @a Store
 scoreboard players enable @a Store_KP
@@ -69,17 +66,16 @@ scoreboard players enable @a Buy_Emeralds
 scoreboard players enable @a Buy_HolyTrident
 scoreboard players enable @a Buy_50XP
 scoreboard players enable @a Buy_500XP
-
+scoreboard players enable @a Buy_GoldFarm
+scoreboard players enable @a Buy_IronFarm
 ### Perks
 scoreboard players enable @a[tag=special] Firework
 scoreboard players enable @a[tag=special] ToggleParticle
 scoreboard players enable @a[tag=parttag] ToggleParticle
 scoreboard players enable @a[tag=special] Secret
 scoreboard players enable @a[tag=special] Taunt
-
 ### Unattainable
 scoreboard players enable @a[tag=Iron] Iron
-
 ### These must happen (in this order) at the end of the script
 tellraw @a [{"text":"All triggers have been reset!","color":"blue","italic":"true"}]
 tellraw @a[tag=OP] [{"text":"Trigger Reset System","color":"gold"},{"text":" : ","color":"dark_gray"},{"selector":"@s","color":"green"},{"text":" just reset all triggers.","color":"red"}]

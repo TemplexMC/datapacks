@@ -6,7 +6,7 @@ execute as @e[type=skeleton,limit=15,tag=!NOKILL] at @s run teleport @s ~ ~-270 
 execute if entity @p[nbt={Dimension:1}] as @e[type=enderman,limit=100,tag=!NOKILL] at @s run teleport @s ~ ~-270 ~
 execute as @e[type=enderman,limit=2,tag=!NOKILL] at @s run teleport @s ~ ~-270 ~
 execute as @e[type=blaze,limit=15,tag=!NOKILL] at @s run teleport @s ~ ~-270 ~
-execute as @e[type=zombie_pigman,limit=15,tag=!NOKILL] at @s run teleport @s ~ ~-270 ~
+execute as @e[type=zombie_pigman,limit=15,tag=!NOKILL,nbt={Dimension:-1b}] at @s run teleport @s ~ ~-270 ~
 execute as @e[type=phantom,limit=3,tag=!NOKILL] at @s run teleport @s ~ ~-270 ~
 execute as @e[type=squid,limit=25,tag=!NOKILL] at @s run teleport @s ~ ~-270 ~
 

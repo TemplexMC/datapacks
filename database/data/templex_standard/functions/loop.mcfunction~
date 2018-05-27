@@ -17,26 +17,6 @@ execute as @a[nbt={SelectedItem:{id:"minecraft:book"},Inventory:[{Slot:102b,id:"
 execute as @a[nbt={SelectedItem:{id:"minecraft:stick",tag:{display:{Name:"{\"text\":\"MaryPoppins\"}"}}}},tag=FlyEnabled,distance=1000..,tag=!InZombs] at @s run function bought_ranks:fly
 execute as @a[gamemode=survival,tag=!ByPassGamemode,distance=..350] run function templex_standard:protection
 #execute positioned 82.52 127.90 59.75 run tag @a[distance=350..,tag=InProtection] remove InProtection
-### LEVEL PERKS ###
-#execute as @a[scores={tplx.lvl=15..19},nbt=!{ActiveEffects:[{Id:3b}]}] at @s run effect give @s haste 10 1
-#execute as @a[scores={tplx.lvl=15..19},nbt=!{ActiveEffects:[{Id:11b}]}] at @s run effect give @s resistance 10 3
-#execute as @a[scores={tplx.lvl=20..24},nbt=!{ActiveEffects:[{Id:3b}]}] at @s run effect give @s haste 10 2
-#execute as @a[scores={tplx.lvl=20..24},nbt=!{ActiveEffects:[{Id:11b}]}] at @s run effect give @s resistance 10 5
-#execute as @a[scores={tplx.lvl=25..},nbt=!{ActiveEffects:[{Id:3b}]}] at @s run effect give @s haste 10 10
-#execute as @a[scores={tplx.lvl=25..},nbt=!{ActiveEffects:[{Id:11b}]}] at @s run effect give @s resistance 10 3
-execute as @a[scores={tplx.lvl=15..19},nbt=!{ActiveEffects:[{Id:3b}]}] at @s run effect give @s haste 10 1
-execute as @a[scores={tplx.lvl=15..19},nbt=!{ActiveEffects:[{Id:11b}]}] at @s run effect give @s resistance 10 0
-execute as @a[scores={tplx.lvl=20..24},nbt=!{ActiveEffects:[{Id:3b}]}] at @s run effect give @s haste 10 4
-execute as @a[scores={tplx.lvl=20..24},nbt=!{ActiveEffects:[{Id:11b}]}] at @s run effect give @s resistance 10 1
-execute as @a[scores={tplx.lvl=25..},nbt=!{ActiveEffects:[{Id:3b}]}] at @s run effect give @s haste 10 9
-execute as @a[scores={tplx.lvl=25..},nbt=!{ActiveEffects:[{Id:11b}]}] at @s run effect give @s resistance 10 2
-### FARMS ###
-execute as @e[type=armor_stand,name=GoldFarm] at @s run function templex_standard:gold_farm
-execute as @e[type=endermite,name=GoldFarm] at @s run summon armor_stand ~ ~ ~ {CustomName:"{\"text\":\"GoldFarm\",\"color\":\"gold\"}",CustomNameVisible:1b,NoGravity:1b}
-execute as @e[type=endermite,name=GoldFarm] at @s run kill @s
-execute as @e[type=armor_stand,name=IronFarm] at @s run function templex_standard:iron_farm
-execute as @e[type=endermite,name=IronFarm] at @s run summon armor_stand ~ ~ ~ {CustomName:"{\"text\":\"IronFarm\",\"color\":\"gray\"}",CustomNameVisible:1b,NoGravity:1b}
-execute as @e[type=endermite,name=IronFarm] at @s run kill @s
 ### AUTOSCRIPT ###
 execute as @p[tag=AutoScript] run function templex_standard:autoscript
 ### TAG FIX ###
@@ -116,13 +96,13 @@ effect give @a[x=63,y=127,z=61,distance=..300] saturation 1 100 true
 ### DATABASE ###
 execute as @e[name=KarmaBoolean,scores={Database=1..}] run function templex_standard:karma
 ### TEAMS ###
-execute as @a[team=!NC,scores={PlayTime=0..503999},tag=!special] run function templex_standard:ncfix
-execute as @a[team=!Warrior,scores={PlayTime=504000..1223999},tag=!special] run function templex_standard:team_warrior
-execute as @a[team=!Explorer,scores={PlayTime=1224000..1583999},tag=!special] run function templex_standard:team_explorer
-execute as @a[team=!Master,scores={PlayTime=1584000..3167999},tag=!special] run function templex_standard:team_master
-execute as @a[team=!Knight,scores={PlayTime=3168000..6335999},tag=!special] run function templex_standard:team_knight
-execute as @a[team=!Magician,scores={PlayTime=6336000..12095999},tag=!special] run function templex_standard:team_magician
-execute as @a[team=!King,scores={PlayTime=12096000..50000000},tag=!special] run function templex_standard:team_king
+#execute as @a[team=!NC,scores={PlayTime=0..503999},tag=!special] run function templex_standard:ncfix
+#execute as @a[team=!Warrior,scores={PlayTime=504000..1223999},tag=!special] run function templex_standard:team_warrior
+#execute as @a[team=!Explorer,scores={PlayTime=1224000..1583999},tag=!special] run function templex_standard:team_explorer
+#execute as @a[team=!Master,scores={PlayTime=1584000..3167999},tag=!special] run function templex_standard:team_master
+#execute as @a[team=!Knight,scores={PlayTime=3168000..6335999},tag=!special] run function templex_standard:team_knight
+#execute as @a[team=!Magician,scores={PlayTime=6336000..12095999},tag=!special] run function templex_standard:team_magician
+#execute as @a[team=!HighKing,scores={PlayTime=12096000..50000000},tag=!special] run function templex_standard:team_highking
 ### PRE-FUNCTIONS ###
 execute as @a[scores={SpawnPoint=1..}] run function templex_standard:spawnpoint
 execute as @a[scores={Home=1..}] run function templex_standard:home
@@ -203,8 +183,5 @@ execute as @a[scores={TwitchStreamers=1..}] run function templex_standard:twitch
 execute as @a[scores={SetHome=1..}] run function templex_standard:sethome
 execute as @a[scores={Gift=1..}] run function templex_standard:gift
 execute as @a[scores={ToggleSpam=1..}] run function templex_standard:togglespam
-execute as @a[scores={Buy_GoldFarm=1..}] run function templex_standard:buy_goldfarm
-execute as @a[scores={Buy_IronFarm=1..}] run function templex_standard:buy_ironfarm
-execute as @a[scores={ViewLevel=1..}] run function templex_standard:view_level
 # Terrestria
 execute as @a[scores={die.bool=1..}] run function templex_standard:die_bool
