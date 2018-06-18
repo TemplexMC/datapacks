@@ -1,0 +1,37 @@
+# Doers.
+#execute as @e[type=armor_stand,distance=..25,tag=!NOKILL] run tag @s add NOKILL
+#execute as @e[type=item,distance=..25,tag=!NOKILL] run tag @s add NOKILL
+#execute as @e[type=pig,distance=..25,tag=!NOKILL] run tag @s add NOKILL
+#execute as @e[type=cow,distance=..25,tag=!NOKILL] run tag @s add NOKILL
+#execute as @e[type=chicken,distance=..25,tag=!NOKILL] run tag @s add NOKILL
+#execute as @e[type=item,distance=..25,tag=!NOKILL] run tag @s add NOKILL
+#execute as @e[type=horse,distance=..25,tag=!NOKILL] run tag @s add NOKILL
+#execute as @e[type=wolf,distance=..25,tag=!NOKILL] run tag @s add NOKILL
+#execute as @e[type=squid,distance=..25,tag=!NOKILL] run tag @s add NOKILL
+#execute as @e[type=cod,distance=..25,tag=!NOKILL] run tag @s add NOKILL
+#execute as @e[type=salmon,distance=..25,tag=!NOKILL] run tag @s add NOKILL
+#execute as @e[type=tropical_fish,distance=..25,tag=!NOKILL] run tag @s add NOKILL
+#execute as @e[type=leash_knot,distance=..25,tag=!NOKILL] run tag @s add NOKILL
+#execute as @e[type=parrot,distance=..25,tag=!NOKILL] run tag @s add NOKILL
+#execute as @e[type=boat,distance=..25,tag=!NOKILL] run tag @s add NOKILL
+#execute as @e[type=minecart,distance=..25,tag=!NOKILL] run tag @s add NOKILL
+#execute as @e[type=hopper_minecart,distance=..25,tag=!NOKILL] run tag @s add NOKILL
+#execute as @e[type=tnt,distance=..25,tag=!NOKILL] run tag @s add NOKILL
+#execute as @e[type=furnace_minecart,distance=..25,tag=!NOKILL] run tag @s add NOKILL
+#execute as @e[type=enderpearl,distance=..25,tag=!NOKILL] run tag @s add NOKILL
+#execute as @e[type=endermites,distance=..25,tag=!NOKILL] run tag @s add NOKILL
+#execute as @e[type=snowball,distance=..25,tag=!NOKILL] run tag @s add NOKILL
+#execute as @e[type=horse,distance=..25,tag=!NOKILL] run tag @s add NOKILL
+
+execute as @e[type=zombie,distance=..25,tag=!KILL] run tag @s add KILL
+execute as @e[type=witch,distance=..25,tag=!KILL] run tag @s add KILL
+execute as @e[type=husk,distance=..25,tag=!KILL] run tag @s add KILL
+execute as @e[type=phantom,distance=..25,tag=!KILL] run tag @s add KILL
+execute as @e[type=skeleton,distance=..25,tag=!KILL] run tag @s add KILL
+execute as @e[type=spider,distance=..25,tag=!KILL] run tag @s add KILL
+execute as @e[type=enderman,distance=..25,tag=!KILL] run tag @s add KILL
+execute as @e[type=guardian,distance=..25,tag=!KILL] run tag @s add KILL
+execute as @e[type=silverfish,distance=..25,tag=!KILL] run tag @s add KILL
+execute as @e[type=ghast,distance=..25,tag=!KILL] run tag @s add KILL
+execute as @e[type=wither_skeleton,distance=..25,tag=!KILL] run tag @s add KILL
+execute as @e[type=!player,distance=..25,tag=KILL] at @s run summon lightning_bolt

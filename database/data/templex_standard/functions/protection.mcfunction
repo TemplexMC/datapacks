@@ -1,4 +1,5 @@
-# Sets their gamemode to adventure.
+# Doers.
+scoreboard players reset @s Survival
 gamemode adventure @s
 # Tellraws people.
 tellraw @a[tag=OP] [{"text":"Protection System","color":"gold"},{"text":" : ","color":"dark_gray"},{"text":"Just set ","color":"red"},{"selector":"@s","color":"green"},{"text":"'s gamemode to Adventure in the to protect builds!","color":"red"}]

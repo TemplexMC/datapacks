@@ -7,6 +7,8 @@ scoreboard objectives add Buy_500XP trigger
 scoreboard objectives add Buy_50XP trigger
 scoreboard objectives add Buy_Arrow trigger
 scoreboard objectives add Buy_Coal trigger
+scoreboard objectives add Buy_CoalFarm trigger
+scoreboard objectives add Buy_Class_Elf trigger
 scoreboard objectives add Buy_Diamonds trigger
 scoreboard objectives add Buy_Emeralds trigger
 scoreboard objectives add Buy_Gold trigger
@@ -16,8 +18,11 @@ scoreboard objectives add Buy_Head_Shark trigger
 scoreboard objectives add Buy_HolyTrident trigger
 scoreboard objectives add Buy_Iron trigger
 scoreboard objectives add Buy_IronFarm trigger
+scoreboard objectives add Buy_LightningG trigger
 scoreboard objectives add Buy_Slimeball trigger
+scoreboard objectives add Buy_SlimeFarm trigger
 scoreboard objectives add BuyRTP trigger
+scoreboard objectives add BuyTPA trigger
 scoreboard objectives add CmdBook trigger
 scoreboard objectives add Commands trigger
 scoreboard objectives add Diamond minecraft.broken:minecraft.diamond_ore
@@ -25,6 +30,7 @@ scoreboard objectives add DiamondTime dummy
 scoreboard objectives add Discord trigger
 scoreboard objectives add Donate trigger
 scoreboard objectives add Firework trigger
+scoreboard objectives add Freeze trigger
 scoreboard objectives add Gift trigger
 scoreboard objectives add Home trigger
 scoreboard objectives add Login minecraft.custom:minecraft.leave_game
@@ -50,6 +56,7 @@ scoreboard objectives add Survival trigger
 scoreboard objectives add Taunt trigger
 scoreboard objectives add ToggleParticle trigger
 scoreboard objectives add ToggleSpam trigger
+scoreboard objectives add ToggleSpeed trigger
 scoreboard objectives add TPA trigger
 scoreboard objectives add TPAccept trigger
 scoreboard objectives add TPAFind trigger
@@ -60,9 +67,11 @@ scoreboard objectives add TPEnd trigger
 scoreboard objectives add TPZombs trigger
 scoreboard objectives add TriggerReset trigger
 scoreboard objectives add Tutorial trigger
+scoreboard objectives add UpgradeClass trigger
 scoreboard objectives add ViewKarma trigger
 scoreboard objectives add ViewLevel trigger
 scoreboard objectives add ViewPlayTime trigger
+scoreboard objectives add ViewStats trigger
 scoreboard objectives add ViewTC trigger
 scoreboard objectives add Vote trigger
 scoreboard objectives add VoteDay trigger
@@ -107,6 +116,9 @@ scoreboard objectives add die.zpos dummy
 scoreboard objectives add tplx.lvlmult dummy Level Multiplier
 scoreboard objectives add tplx.lvl dummy Templex Level
 scoreboard objectives add tplx.lvlram dummy Level RAM
+scoreboard objectives add ElvenLevel dummy Elven Level
+scoreboard objectives add ElvenUpgradeCost dummy Elven Upgrade Cost
+scoreboard objectives add TPAs dummy
 # Tell.
 scoreboard players set @s TriggerReset 1
-tellraw @a [{"text":"Score Clear","color":"gold"},{"text":" : ","color":"dark_gray"},{"text":"Added all objectives back.","color":"green"}]
+tellraw @a [{"text":"Score Setup","color":"gold"},{"text":" : ","color":"dark_gray"},{"text":"Added all objectives back.","color":"green"}]

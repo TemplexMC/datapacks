@@ -13,6 +13,8 @@ execute as @s[tag=TPAto] run scoreboard players enable @a TPDeny
 execute as @s[tag=TPAto] run tag @a remove Tried
 execute as @s[tag=TPAto] run tag @a remove GotTPA
 execute as @s[tag=TPAto] run tag @a remove TPAing
+execute as @s[tag=TPAto] run tag @a remove tpa_removed
+execute as @s[tag=TPAto] run tag @a remove tpa_yep
 # Players who do not have the TPAto tag.
 execute as @s[tag=!TPAto] run tellraw @s [{"text":"TPAccept failed! Either you don't have any requests or the requester logged off.","color":"red"}]
 execute as @s[tag=!TPAto] run tellraw @a[tag=OP] [{"text":"New TPA System","color":"gold"},{"text":" : ","color":"dark_gray"},{"selector":"@s","color":"green"},{"text":" just tried to accept a TPA, but either didn't have any requests or the requester logged off.","color":"red"}]

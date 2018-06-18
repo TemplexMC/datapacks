@@ -5,5 +5,5 @@ tellraw @s[scores={Karma=15000..}] [{"text":"Successfully bought an Iron Farm fo
 execute as @s[scores={Karma=15000..}] run tellraw @a[tag=OP] [{"text":"Store","color":"gold"},{"text":" : ","color":"dark_gray"},{"selector":"@s","color":"green"},{"text":" just bought an Iron Farm for 15,000 Karma Points!","color":"red"}]
 playsound minecraft:block.note.xylophone master @s[scores={Karma=15000..}]
 scoreboard players remove @s[scores={Karma=15000..}] Karma 15000
-scoreboard players set @s Buy_IronFarm 0
+scoreboard players reset @s Buy_IronFarm
 scoreboard players enable @a Buy_IronFarm

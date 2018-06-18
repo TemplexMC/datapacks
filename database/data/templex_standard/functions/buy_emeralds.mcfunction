@@ -5,5 +5,5 @@ tellraw @s[scores={Karma=2400..}] [{"text":"Successfully bought 4 emeralds for 2
 execute as @s[scores={Karma=2400..}] run tellraw @a[tag=OP] [{"text":"Store","color":"gold"},{"text":" : ","color":"dark_gray"},{"selector":"@s"},{"text":" just bought 4 emeralds for 2400 Karma!","color":"red"}]
 scoreboard players remove @s[scores={Karma=2400..}] Karma 2400
 playsound minecraft:block.note.xylophone master @s[scores={Karma=2400..}]
-scoreboard players set @s Buy_Emeralds 0
+scoreboard players reset @s Buy_Emeralds
 scoreboard players enable @a Buy_Emeralds

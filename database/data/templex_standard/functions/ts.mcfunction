@@ -5,6 +5,7 @@ team add HeadAdmin
 team add HeadMod
 team add HeadBuilder
 team add Sysadmin
+team add SysYT
 team add Admin
 team add Mod
 team add Builder
@@ -30,6 +31,9 @@ team add Master
 team add Knight
 team add Magician
 team add King
+
+team add TAssassin
+team add TPartial
 # NPCs.
 team add GREEN
 team add GOLD
@@ -41,6 +45,7 @@ team option HeadAdmin color gray
 team option HeadMod color gray
 team option HeadBuilder color gray
 team option Sysadmin color gray
+team option SysYT color gray
 team option Admin color gray
 team option Mod color gray
 team option Builder color gray 
@@ -66,6 +71,9 @@ team option Master color gray
 team option Knight color gray
 team option Magician color gray
 team option King color gray
+
+team option TAssassin color gray
+team option TPartial color gray
 # Prefixes / Suffixes.
 team option Owner prefix [{"text":"\u00A74You\u00A76Tuber "}]
 team option Owner suffix [{"text":" \u00A73Owner"}]
@@ -76,6 +84,8 @@ team option HeadMod prefix [{"text":"\u00A76Head \u00A74Mod "}]
 team option HeadBuilder prefix [{"text":"\u00A76Head \u00A72Builder "}]
 team option HeadBuilder suffix [{"text":" \u00A75Streamer"}]
 team option Sysadmin prefix [{"text":"\u00A76Sys\u00A7cadmin "}]
+team option SysYT prefix [{"text":"\u00A74You\u00A76Tuber "}]
+team option SysYT suffix [{"text":" \u00A76Sys\u00A7cadmin"}]
 team option Admin prefix [{"text":"\u00A7cAdmin "}]
 team option Mod prefix [{"text":"\u00A74Mod "}]
 team option Builder prefix [{"text":"\u00A72Builder "}]
@@ -110,11 +120,14 @@ team option Master prefix [{"text":"\u00A75Master "}]
 team option Knight prefix [{"text":"\u00A79Knight "}]
 team option Magician prefix [{"text":"\u00A76Magician "}]
 team option King prefix [{"text":"\u00A74King "}]
+
+team option TAssassin prefix [{"text":"\u00A78Assassin "}]
+team option TAssassin suffix [{"text":" \u00A74Templexian"}]
+team option TPartial prefix [{"text":"\u00A7dPartial "}]
+team option TPartial suffix [{"text":" \u00A74Templexian"}]
 # NPCs.
 team option GREEN color green
 team option GOLD color gold
 team option LPURPLE color light_purple
 # Tell.
 tellraw @a [{"text":"Team Set Up","color":"gold"},{"text":" : ","color":"dark_gray"},{"text":"Set up the teams.","color":"green"}]
-
-

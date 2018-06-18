@@ -5,5 +5,5 @@ tellraw @s[scores={Karma=600..}] [{"text":"Successfully bought 4 gold for 600 Ka
 execute as @s[scores={Karma=600..}] run tellraw @a[tag=OP] [{"text":"Store","color":"gold"},{"text":" : ","color":"dark_gray"},{"selector":"@s"},{"text":" just bought 4 gold for 600 Karma!","color":"red"}]
 scoreboard players remove @s[scores={Karma=600..}] Karma 320
 playsound minecraft:block.note.xylophone master @s[scores={Karma=600..}]
-scoreboard players set @s Buy_Gold 0
+scoreboard players reset @s Buy_Gold
 scoreboard players enable @a Buy_Gold

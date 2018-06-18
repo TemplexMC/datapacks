@@ -12,7 +12,7 @@ execute as @a[tag=InZombs] at @s run tag @e[type=armor_stand,tag=Zombs,distance=
 execute as @e[tag=Zombs,type=armor_stand,scores={Database=100..},name=Skeletons] at @s run summon skeleton ~ ~ ~ {CustomName:"{\"text\":\"Ultimate Bowman\",\"color\":\"gold\"}",CustomNameVisible:1b,Tags:["ZombsNK","Zombs"]}
 execute as @e[tag=Zombs,type=armor_stand,scores={Database=100..},name=Zombies] at @s run summon zombie ~ ~ ~ {CustomName:"{\"text\":\"Want Hugs?\",\"color\":\"gold\"}",CustomNameVisible:1b,Tags:["ZombsNK","Zombs"]}
 execute as @e[tag=Zombs,type=armor_stand,scores={Database=100..},name=Endermites] at @s run summon endermite ~ ~ ~ {CustomName:"{\"text\":\"Purple Pest\",\"color\":\"gold\"}",CustomNameVisible:1b,Tags:["ZombsNK","Zombs"]}
-execute as @e[tag=Zombs,type=armor_stand,tag=GetSummoned,name=Boss,tag=!Summoned] at @s run summon wither_skeleton ~ ~ ~ {CustomName:"{\"text\":\"NitrateOrigins\",\"color\":\"aqua\"}",CustomNameVisible:1b,Tags:["ZombsNK"]}
+execute as @e[tag=Zombs,type=armor_stand,tag=GetSummoned,name=Boss,tag=!Summoned] at @s run summon wither_skeleton ~ ~ ~ {CustomName:"{\"text\":\"VTCAKAVSMoACE\",\"color\":\"aqua\"}",CustomNameVisible:1b,Tags:["ZombsNK"]}
 execute as @e[tag=Zombs,type=armor_stand,tag=GetSummoned,name=Boss,tag=!Summoned] at @s run tellraw @a [{"text":"Zombs","color":"gold"},{"text":" : ","color":"dark_gray"},{"text":"\u00A74WARNING! \u00A7bThe boss has spawned!","color":"aqua"}]
 execute as @e[tag=Zombs,type=armor_stand,tag=GetSummoned,name=Boss,tag=!Summoned] at @s run tag @e[name=ZombsBoolean,type=armor_stand,tag=!true] add true
 execute as @e[tag=Zombs,type=armor_stand,tag=GetSummoned,name=Boss,tag=!Summoned] at @s run tag @s add Summoned

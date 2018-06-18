@@ -5,5 +5,5 @@ tellraw @s[scores={TC=5000..}] [{"text":"Successfully bought DaSharkCraft's head
 execute as @s[scores={TC=5000..}] run tellraw @a[tag=OP] [{"text":"Store","color":"gold"},{"text":" : ","color":"dark_gray"},{"selector":"@s"},{"text":" just bought DaSharkCraft's head for 5000 Templex Credits!","color":"red"}]
 scoreboard players remove @s[scores={TC=5000..}] TC 5000
 playsound minecraft:block.note.xylophone master @s[scores={TC=5000..}]
-scoreboard players set @s Buy_Head_Shark 0
+scoreboard players reset @s Buy_Head_Shark
 scoreboard players enable @a Buy_Head_Shark

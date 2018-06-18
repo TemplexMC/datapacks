@@ -13,7 +13,6 @@ scoreboard players enable @a TriggerReset
 scoreboard players enable @a Survival
 scoreboard players reset @a[tag=InProtection] Survival
 scoreboard players enable @a RTP
-scoreboard players enable @a BuyRTP
 scoreboard players enable @a ToggleParticle
 scoreboard players enable @a Tutorial
 scoreboard players enable @a Survey
@@ -34,6 +33,10 @@ scoreboard players enable @a SetHome
 scoreboard players enable @a Gift
 scoreboard players enable @a ToggleSpam
 scoreboard players enable @a ViewLevel
+scoreboard players enable @a ViewStats
+scoreboard players enable @a UpgradeClass
+scoreboard players enable @a[scores={tplx.lvl=25..}] ToggleSpeed
+scoreboard players enable @a[tag=OP] Freeze
 
 scoreboard players enable @a Ping
 ### Minigames
@@ -68,6 +71,12 @@ scoreboard players enable @a Buy_50XP
 scoreboard players enable @a Buy_500XP
 scoreboard players enable @a Buy_GoldFarm
 scoreboard players enable @a Buy_IronFarm
+scoreboard players enable @a Buy_Class_Elf
+scoreboard players enable @a Buy_CoalFarm
+scoreboard players enable @a Buy_SlimeFarm
+scoreboard players enable @a Buy_LightningG
+scoreboard players enable @a BuyTPA
+scoreboard players enable @a BuyRTP
 ### Perks
 scoreboard players enable @a[tag=special] Firework
 scoreboard players enable @a[tag=special] ToggleParticle

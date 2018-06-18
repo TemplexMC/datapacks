@@ -22,3 +22,4 @@ scoreboard players add @a[team=VIPP,tag=VoteParty] TC 14
 scoreboard players add @a[team=MVP,tag=VoteParty] TC 29
 scoreboard players add @a[team=MVPP,tag=VoteParty] TC 99
 scoreboard players add @a[team=DNRP,tag=VoteParty] TC 299
+scoreboard players operation @s TC += @s tplx.lvl

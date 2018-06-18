@@ -6,4 +6,4 @@ execute if entity @e[name=CurrentUUID,type=armor_stand] run scoreboard players o
 execute if entity @e[name=CurrentUUID,type=armor_stand] run tellraw @a[tag=OP] [{"text":"Tagger","color":"gold"},{"text":" : ","color":"dark_gray"},{"text":"Just tagged ","color":"red"},{"selector":"@s"},{"text":" with UUID: ","color":"red"},{"score":{"name":"@e[name=CurrentUUID,type=armor_stand]","objective":"Database"}}]
 execute if entity @s[tag=!Zeroed] run tag @s add Zeroed
 # Tagging.
-execute if entity @e[name=CurrentUUID,type=armor_stand] run tag @s add GotMyUUID
+execute if entity @e[name=CurrentUUID,type=armor_stand] run tag @s add ThisUUID

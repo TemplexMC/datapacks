@@ -1,9 +1,9 @@
 execute at @s[team=Owner] run particle enchant ~ ~ ~ 1 1 1 0.001 5 force @a
-execute at @s[team=Heads] run particle end_rod ~ ~ ~ 1 1 1 0.001 1 force @a
+#execute at @s[team=Heads] run particle end_rod ~ ~ ~ 1 1 1 0.001 1 force @a
 execute at @s[team=Sysadmin] run particle dragon_breath ~ ~ ~ 1 1 1 1 20 force @a
-#execute at @s[team=HeadAdmin] run particle flame ~ ~ ~ 1 1 1 0.001 1 force @a
-#execute at @s[team=HSL] run particle happy_villager ~ ~ ~ 1 1 1 0.001 1 force @a
-#execute at @s[team=HeadMod] run particle end_rod ~ ~ ~ 1 1 1 0.001 1 force @a
+execute at @s[team=HeadAdmin] run particle flame ~ ~ ~ 1 1 1 0.001 1 force @a
+execute at @s[team=HeadBuilder] run particle happy_villager ~ ~ ~ 1 1 1 0.001 1 force @a
+execute at @s[team=HeadMod] run particle end_rod ~ ~ ~ 1 1 1 0.001 1 force @a
 execute at @s[team=Admin] run particle firework ~ ~ ~ 1 1 1 0.001 2 force @a
 #execute at @s[team=Admin-YT] run particle cloud ~ ~ ~ 1 1 1 0.001 1 force @a
 execute at @s[team=Mod] run particle cloud ~ ~ ~ 1 1 1 1 1 force @a

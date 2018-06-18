@@ -39,5 +39,7 @@ execute as @e[name=Minutes,scores={Database=60..}] run scoreboard players add @e
 execute as @e[name=Minutes,scores={Database=60..}] run scoreboard players remove @s Database 60
 scoreboard players add @e[type=armor_stand,name=GoldFarm] PlayTime 1
 scoreboard players add @e[type=armor_stand,name=IronFarm] PlayTime 1
+scoreboard players add @e[type=armor_stand,name=CoalFarm] PlayTime 1
+scoreboard players add @e[type=armor_stand,name=SlimeFarm] PlayTime 1
 ### Has to be last.
 scoreboard players reset @e[name=Timer] Database

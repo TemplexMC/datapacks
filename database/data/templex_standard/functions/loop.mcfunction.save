@@ -32,41 +32,29 @@ execute as @a[gamemode=survival,tag=!ByPassGamemode,distance=..350] run function
 #execute as @a[scores={tplx.lvl=25..},nbt=!{ActiveEffects:[{Id:10b}]}] at @s run effect give @s regeneration 10 3
 execute as @a[scores={tplx.lvl=15..19},nbt=!{ActiveEffects:[{Id:3b}]}] at @s run effect give @s haste 10 1
 execute as @a[scores={tplx.lvl=15..19},nbt=!{ActiveEffects:[{Id:11b}]}] at @s run effect give @s resistance 10 0
-execute as @a[scores={tplx.lvl=15..19},nbt=!{ActiveEffects:[{Id:5b}]}] at @s run effect give @s strength 10 0
 execute as @a[scores={tplx.lvl=20..24},nbt=!{ActiveEffects:[{Id:3b}]}] at @s run effect give @s haste 10 4
 execute as @a[scores={tplx.lvl=20..24},nbt=!{ActiveEffects:[{Id:11b}]}] at @s run effect give @s resistance 10 1
-execute as @a[scores={tplx.lvl=20..24},nbt=!{ActiveEffects:[{Id:5b}]}] at @s run effect give @s strength 10 1
-execute as @a[scores={tplx.lvl=25..34},nbt=!{ActiveEffects:[{Id:3b}]}] at @s run effect give @s haste 10 9
-execute as @a[scores={tplx.lvl=25..34},nbt=!{ActiveEffects:[{Id:11b}]}] at @s run effect give @s resistance 10 2
+execute as @a[scores={tplx.lvl=25..},nbt=!{ActiveEffects:[{Id:3b}]}] at @s run effect give @s haste 10 9
+execute as @a[scores={tplx.lvl=25..},nbt=!{ActiveEffects:[{Id:11b}]}] at @s run effect give @s resistance 10 2
 execute as @a[scores={tplx.lvl=25..},nbt=!{ActiveEffects:[{Id:1b}]},tag=SPEEDON] at @s run effect give @s speed 10 2
-execute as @a[scores={tplx.lvl=25..34},nbt=!{ActiveEffects:[{Id:10b}]}] at @s run effect give @s regeneration 10 2
-execute as @a[scores={tplx.lvl=25..34},nbt=!{ActiveEffects:[{Id:5b}]}] at @s run effect give @s strength 10 5
-execute as @a[scores={tplx.lvl=35..},nbt=!{ActiveEffects:[{Id:3b}]}] at @s run effect give @s haste 10 20
-execute as @a[scores={tplx.lvl=35..},nbt=!{ActiveEffects:[{Id:5b}]}] at @s run effect give @s strength 10 6
-execute as @a[scores={tplx.lvl=35..},nbt=!{ActiveEffects:[{Id:11b}]}] at @s run effect give @s resistance 10 5
-execute as @a[scores={tplx.lvl=35..},nbt=!{ActiveEffects:[{Id:10b}]}] at @s run effect give @s regeneration 10 5
-execute as @a[scores={tplx.lvl=50..},nbt=!{ActiveEffects:[{Id:23b}]}] at @s run effect give @s saturation 10 15
+execute as @a[scores={tplx.lvl=25..},nbt=!{ActiveEffects:[{Id:10b}]}] at @s run effect give @s regeneration 10 2
 ### FARMS ###
-execute as @e[type=armor_stand,name=GoldFarm] at @s if entity @e[type=item,name=Stick,distance=..1] run function templex_standard:pick_up_sticks
-execute as @e[type=armor_stand,name=IronFarm] at @s if entity @e[type=item,name=Stick,distance=..1] run function templex_standard:pick_up_sticks
-execute as @e[type=armor_stand,name=CoalFarm] at @s if entity @e[type=item,name=Stick,distance=..1] run function templex_standard:pick_up_sticks
-execute as @e[type=armor_stand,name=SlimeFarm] at @s if entity @e[type=item,name=Stick,distance=..1] run function templex_standard:pick_up_sticks
-execute as @e[type=armor_stand,name=GoldFarm] at @s run function templex_standard:gold_farm
-execute as @e[type=endermite,name=GoldFarm] at @s run summon armor_stand ~ ~ ~ {CustomName:"{\"text\":\"GoldFarm\",\"color\":\"gold\"}",CustomNameVisible:1b,NoGravity:1b}
-execute as @e[type=endermite,name=GoldFarm] at @s run kill @s
-execute as @e[type=armor_stand,name=IronFarm] at @s run function templex_standard:iron_farm
-execute as @e[type=endermite,name=IronFarm] at @s run summon armor_stand ~ ~ ~ {CustomName:"{\"text\":\"IronFarm\",\"color\":\"gray\"}",CustomNameVisible:1b,NoGravity:1b}
-execute as @e[type=endermite,name=IronFarm] at @s run kill @s
-execute as @e[type=armor_stand,name=CoalFarm] at @s run function templex_standard:coal_farm
-execute as @e[type=endermite,name=CoalFarm] at @s run summon armor_stand ~ ~ ~ {CustomName:"{\"text\":\"CoalFarm\",\"color\":\"dark_gray\"}",CustomNameVisible:1b,NoGravity:1b}
-execute as @e[type=endermite,name=CoalFarm] at @s run kill @s
-execute as @e[type=armor_stand,name=SlimeFarm] at @s run function templex_standard:slime_farm
-execute as @e[type=endermite,name=SlimeFarm] at @s run summon armor_stand ~ ~ ~ {CustomName:"{\"text\":\"SlimeFarm\",\"color\":\"dark_gray\"}",CustomNameVisible:1b,NoGravity:1b}
-execute as @e[type=endermite,name=SlimeFarm] at @s run kill @s
-### GUARDS ###
-execute as @e[type=armor_stand,name=LightningGuard] at @s run function templex_standard:lg
-execute as @e[type=endermite,name=LightningGuard] at @s run summon armor_stand ~ ~ ~ {CustomName:"{\"text\":\"LightningGuard\",\"color\":\"aqua\"}",CustomNameVisible:1b,NoGravity:1b}
-execute as @e[type=endermite,name=LightningGuard] at @s run kill @s
+#execute as @e[type=armor_stand,name=GoldFarm] at @s if entity @e[type=item,name=Stick,distance=..1] run function templex_standard:pick_up_sticks
+#execute as @e[type=armor_stand,name=IronFarm] at @s if entity @e[type=item,name=Stick,distance=..1] run function templex_standard:pick_up_sticks
+#execute as @e[type=armor_stand,name=CoalFarm] at @s if entity @e[type=item,name=Stick,distance=..1] run function templex_standard:pick_up_sticks
+#execute as @e[type=armor_stand,name=SlimeFarm] at @s if entity @e[type=item,name=Stick,distance=..1] run function templex_standard:pick_up_sticks
+#execute as @e[type=armor_stand,name=GoldFarm] at @s run function templex_standard:gold_farm
+#execute as @e[type=endermite,name=GoldFarm] at @s run summon armor_stand ~ ~ ~ {CustomName:"{\"text\":\"GoldFarm\",\"color\":\"gold\"}",CustomNameVisible:1b,NoGravity:1b}
+#execute as @e[type=endermite,name=GoldFarm] at @s run kill @s
+#execute as @e[type=armor_stand,name=IronFarm] at @s run function templex_standard:iron_farm
+#execute as @e[type=endermite,name=IronFarm] at @s run summon armor_stand ~ ~ ~ {CustomName:"{\"text\":\"IronFarm\",\"color\":\"gray\"}",CustomNameVisible:1b,NoGravity:1b}
+#execute as @e[type=endermite,name=IronFarm] at @s run kill @s
+#execute as @e[type=armor_stand,name=CoalFarm] at @s run function templex_standard:coal_farm
+#execute as @e[type=endermite,name=CoalFarm] at @s run summon armor_stand ~ ~ ~ {CustomName:"{\"text\":\"CoalFarm\",\"color\":\"dark_gray\"}",CustomNameVisible:1b,NoGravity:1b}
+#execute as @e[type=endermite,name=CoalFarm] at @s run kill @s
+#execute as @e[type=armor_stand,name=SlimeFarm] at @s run function templex_standard:slime_farm
+#execute as @e[type=endermite,name=SlimeFarm] at @s run summon armor_stand ~ ~ ~ {CustomName:"{\"text\":\"SlimeFarm\",\"color\":\"dark_gray\"}",CustomNameVisible:1b,NoGravity:1b}
+#execute as @e[type=endermite,name=SlimeFarm] at @s run kill @s
 ### AUTOSCRIPT ###
 #execute as @p[tag=AutoScript] run function templex_standard:autoscript
 ### TAG FIX ###
@@ -245,7 +233,5 @@ execute as @a[scores={ToggleSpeed=1..}] run function templex_standard:togglespee
 execute as @a[scores={Freeze=1..}] run function templex_standard:freeze
 execute as @a[scores={Freeze=..-1}] run function templex_standard:freeze
 execute as @a[scores={Buy_SlimeFarm=1..}] run function templex_standard:buy_slimefarm
-execute as @a[scores={Buy_LightningG=1..}] run function templex_standard:buy_lg
-execute as @a[scores={BuyTPA=1..}] run function templex_stand:buy_tpa_try
 # Terrestria
 execute as @a[scores={die.bool=1..}] run function templex_standard:die_bool

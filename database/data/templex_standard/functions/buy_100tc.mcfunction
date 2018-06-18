@@ -5,5 +5,5 @@ tellraw @s[scores={Karma=1500..}] [{"text":"Successfully bought 100 Templex Cred
 execute as @s[scores={Karma=1500..}] run tellraw @a[tag=OP] [{"text":"Store","color":"gold"},{"text":" : ","color":"dark_gray"},{"selector":"@s"},{"text":" just bought 100 Templex Credits for 1500 Karma!","color":"red"}]
 playsound minecraft:block.note.xylophone master @s[scores={Karma=1500..}]
 scoreboard players remove @s[scores={Karma=1500..}] Karma 1500
-scoreboard players set @s Buy_100TC 0
+scoreboard players reset @s Buy_100TC
 scoreboard players enable @a Buy_100TC
