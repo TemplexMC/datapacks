@@ -37,6 +37,9 @@ scoreboard players enable @a ViewStats
 scoreboard players enable @a UpgradeClass
 scoreboard players enable @a[scores={tplx.lvl=25..}] ToggleSpeed
 scoreboard players enable @a[tag=OP] Freeze
+scoreboard players enable @a DoMission
+scoreboard players enable @a Up_Elf_Sp
+scoreboard players enable @a Up_Elf_Eff
 
 scoreboard players enable @a Ping
 ### Minigames
@@ -77,6 +80,8 @@ scoreboard players enable @a Buy_SlimeFarm
 scoreboard players enable @a Buy_LightningG
 scoreboard players enable @a BuyTPA
 scoreboard players enable @a BuyRTP
+scoreboard players enable @a Buy_EnderEgg
+scoreboard players enable @a Buy_OP_CP
 ### Perks
 scoreboard players enable @a[tag=special] Firework
 scoreboard players enable @a[tag=special] ToggleParticle

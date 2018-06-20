@@ -18,6 +18,13 @@ execute as @a[gamemode=!spectator,tag=PO] run function templex_standard:particle
 #execute as @a[nbt={SelectedItem:{id:"minecraft:stick",tag:{display:{Name:"{\"text\":\"MaryPoppins\"}"}}}},tag=FlyEnabled,distance=1000..,tag=!InZombs] at @s run function bought_ranks:fly
 execute as @a[gamemode=survival,tag=!ByPassGamemode,distance=..350] run function templex_standard:protection
 #execute positioned 82.52 127.90 59.75 run tag @a[distance=350..,tag=InProtection] remove InProtection
+### FIX ###
+execute as @a[scores={ElvenLevel=1..},tag=!ElfFix] run tag @s add ElfFix
+execute as @a[tag=hasElf,tag=!ElfFix] run scoreboard players add @s ElvenLevel 1
+execute as @a[tag=hasElf,tag=!ElfFix] run scoreboard players add @s ElvenEff 1
+execute as @a[tag=hasElf,tag=!ElfFix] run scoreboard players add @s ElvenSpeed 1
+execute as @a[tag=hasElf,tag=!ElfFix] run tag @s add ElfFix
+execute as @a[tag=hasElf,tag=!hasClass] run tag @s add hasClass
 ### FREEZER ###
 #execute as @a[tag=Frozen] at @s run teleport @s @s
 #execute as @a[tag=Frozen,nbt=!{ActiveEffects:[{Id:2}]}] at @s run effect give @s slowness 100 255
@@ -247,5 +254,10 @@ execute as @a[scores={Freeze=..-1}] run function templex_standard:freeze
 execute as @a[scores={Buy_SlimeFarm=1..}] run function templex_standard:buy_slimefarm
 execute as @a[scores={Buy_LightningG=1..}] run function templex_standard:buy_lg
 execute as @a[scores={BuyTPA=1..}] run function templex_stand:buy_tpa_try
+execute as @a[scores={Buy_EnderEgg=1..}] run function templex_standard:buy_enderegg
+execute as @a[scores={Up_Elf_Sp=1..}] run function templex_standard:up_elf_sp
+execute as @a[scores={Up_Elf_Eff=1..}] run function templex_standard:up_elf_eff
+execute as @a[scores={DoMission=1..}] run function templex_standard:mission
+execute as @a[scores={Buy_OP_CP=1..}] run function templex_standard:buy_op_cp
 # Terrestria
 execute as @a[scores={die.bool=1..}] run function templex_standard:die_bool

@@ -15,6 +15,7 @@ tellraw @s [{"text":"\u00A7aBuy an Iron Farm? \u00A76[1 for 15,000 Karma] \u00A7
 tellraw @s [{"text":"\u00A7aBuy a Coal Farm? \u00A76[1 for 10,000 Karma] \u00A7e[Click]","hoverEvent":{"action":"show_text","value":"\u00A77Click to try to buy a Coal Farm."},"clickEvent":{"action":"run_command","value":"/trigger Buy_CoalFarm set 1"}}]
 tellraw @s [{"text":"\u00A7aBuy a Slime Farm? \u00A76[1 for 10,000 Karma] \u00A7e[Click]","hoverEvent":{"action":"show_text","value":"\u00A77Click to try to buy a Slime Farm."},"clickEvent":{"action":"run_command","value":"/trigger Buy_SlimeFarm set 1"}}]
 tellraw @s [{"text":"\u00A7aBuy a Lightning Guard? \u00A76[1 for 15,000 Karma] \u00A7e[Click]","hoverEvent":{"action":"show_text","value":"\u00A77Click to try to buy a Lightning Guard."},"clickEvent":{"action":"run_command","value":"/trigger Buy_LightningG set 1"}}]
+tellraw @s [{"text":"\u00A7aBuy the Chestplate of Righteousness? \u00A76[1 for 20,000 Karma] \u00A7e[Click]\n\u00A74> \u00A75Has Mending I, Unbreaking L (50), Protection L (50), Blast Protection XV (15), Fire Protection XX (20), and Projectile Protection XXV (25).","color":"dark_purple","hoverEvent":{"action":"show_text","value":"\u00A77Click to buy the Chestplate of Righteousness."},"clickEvent":{"action":"run_command","value":"/trigger Buy_OP_CP"}}]
 tellraw @s [{"text":"Click one to buy it.","color":"light_purple"}]
 scoreboard players reset @s Store_KP
 scoreboard players enable @a Store_KP

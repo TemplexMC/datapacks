@@ -22,3 +22,5 @@ execute as @s[tag=!TPAto] run tellraw @a[tag=OP] [{"text":"New TPA System","colo
 scoreboard players set @s TPAccept 0
 scoreboard players enable @a TPAccept
 execute as @s[tag=TPAto] run tag @a remove TPAto
+# Teller.
+execute as @a[tag=TPAing] at @s run tellraw @s [{"text":"You now have ","color":"dark_green"},{"score":{"name":"@s","objective":"TPAs"},"color":"gold"},{"text":" TPAs...","color":"dark_green"}]

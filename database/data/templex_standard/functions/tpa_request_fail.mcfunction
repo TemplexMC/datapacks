@@ -13,3 +13,4 @@ scoreboard players set @a TPA 0
 scoreboard players enable @a TPA
 scoreboard players enable @a TPAccept
 scoreboard players set @a TPAFind 0
+tellraw @s [{"text":"You now have ","color":"dark_green"},{"score":{"name":"@s","objective":"TPAs"},"color":"gold"},{"text":" TPAs...","color":"dark_green"}]

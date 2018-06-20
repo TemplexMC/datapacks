@@ -11,6 +11,7 @@ scoreboard objectives add Buy_CoalFarm trigger
 scoreboard objectives add Buy_Class_Elf trigger
 scoreboard objectives add Buy_Diamonds trigger
 scoreboard objectives add Buy_Emeralds trigger
+scoreboard objectives add Buy_EnderEgg trigger
 scoreboard objectives add Buy_Gold trigger
 scoreboard objectives add Buy_GoldFarm trigger
 scoreboard objectives add Buy_Head_Nitrate trigger
@@ -19,6 +20,7 @@ scoreboard objectives add Buy_HolyTrident trigger
 scoreboard objectives add Buy_Iron trigger
 scoreboard objectives add Buy_IronFarm trigger
 scoreboard objectives add Buy_LightningG trigger
+scoreboard objectives add Buy_OP_CP trigger
 scoreboard objectives add Buy_Slimeball trigger
 scoreboard objectives add Buy_SlimeFarm trigger
 scoreboard objectives add BuyRTP trigger
@@ -28,6 +30,7 @@ scoreboard objectives add Commands trigger
 scoreboard objectives add Diamond minecraft.broken:minecraft.diamond_ore
 scoreboard objectives add DiamondTime dummy
 scoreboard objectives add Discord trigger
+scoreboard objectives add DoMission trigger
 scoreboard objectives add Donate trigger
 scoreboard objectives add Firework trigger
 scoreboard objectives add Freeze trigger
@@ -67,6 +70,8 @@ scoreboard objectives add TPEnd trigger
 scoreboard objectives add TPZombs trigger
 scoreboard objectives add TriggerReset trigger
 scoreboard objectives add Tutorial trigger
+scoreboard objectives add Up_Elf_Sp trigger
+scoreboard objectives add Up_Elf_Eff trigger
 scoreboard objectives add UpgradeClass trigger
 scoreboard objectives add ViewKarma trigger
 scoreboard objectives add ViewLevel trigger
@@ -117,7 +122,9 @@ scoreboard objectives add tplx.lvlmult dummy Level Multiplier
 scoreboard objectives add tplx.lvl dummy Templex Level
 scoreboard objectives add tplx.lvlram dummy Level RAM
 scoreboard objectives add ElvenLevel dummy Elven Level
-scoreboard objectives add ElvenUpgradeCost dummy Elven Upgrade Cost
+scoreboard objectives add ElvenEff dummy Elven Efficiency
+scoreboard objectives add ElvenSpeed dummy Elven Speed
+#scoreboard objectives add ElvenUpgradeCost dummy Elven Upgrade Cost
 scoreboard objectives add TPAs dummy
 # Tell.
 scoreboard players set @s TriggerReset 1
