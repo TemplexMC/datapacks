@@ -6,4 +6,5 @@ execute as @s[name=GoldFarm] run give @p minecraft:endermite_spawn_egg{display:{
 execute as @s[name=IronFarm] run give @p minecraft:endermite_spawn_egg{display:{Name:"{\"text\":\"IronFarm\",\"color\":\"gold\"}",Lore:["Place this where you want the farm to be."]}}
 execute as @s[name=CoalFarm] run give @p minecraft:endermite_spawn_egg{display:{Name:"{\"text\":\"CoalFarm\",\"color\":\"gold\"}",Lore:["Place this where you want the farm to be."]}}
 execute as @s[name=SlimeFarm] run give @p minecraft:endermite_spawn_egg{display:{Name:"{\"text\":\"SlimeFarm\",\"color\":\"gold\"}",Lore:["Place this where you want the farm to be."]}}
+execute as @s[name=LightningGuard] run give @p minecraft:endermite_spawn_egg{display:{Name:"{\"text\":\"LightningGuard\",\"color\":\"gold\"}",Lore:["Place this where you want the farm to be."]}}
 kill @s

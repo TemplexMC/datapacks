@@ -2,10 +2,8 @@ scoreboard players enable @a Rules
 scoreboard players enable @a SpawnPoint
 scoreboard players enable @a Spawn
 scoreboard players enable @a TPEnd
-scoreboard players enable @a Commands
+#scoreboard players enable @a Commands
 scoreboard players enable @a Home
-scoreboard players enable @a TPHere
-scoreboard players enable @a TPSend
 scoreboard players enable @a ViewPlayTime
 scoreboard players enable @a ViewKarma
 scoreboard players enable @a Vote
@@ -15,35 +13,35 @@ scoreboard players reset @a[tag=InProtection] Survival
 scoreboard players enable @a RTP
 scoreboard players enable @a ToggleParticle
 scoreboard players enable @a Tutorial
-scoreboard players enable @a Survey
+#scoreboard players enable @a Survey
 scoreboard players enable @a TPA
 execute as @p[tag=TPAing] run scoreboard players reset @a[tag=!TPAing] TPA
 scoreboard players enable @a TPAccept
 scoreboard players enable @a Discord
 scoreboard players enable @a TPDeny
-scoreboard players enable @a Mail
-scoreboard players enable @a MailRead
-execute as @a[x=-1761693,y=18,z=865288,distance=..128] run scoreboard players reset @s MailRead
-execute as @p[tag=Mailing] run scoreboard players reset @a[tag=!Mailing] Mail
+#scoreboard players enable @a Mail
+#scoreboard players enable @a MailRead
+#execute as @a[x=-1761693,y=18,z=865288,distance=..128] run scoreboard players reset @s MailRead
+#execute as @p[tag=Mailing] run scoreboard players reset @a[tag=!Mailing] Mail
 scoreboard players enable @a ViewTC
 scoreboard players enable @a Donate
 scoreboard players enable @a YouTubers
 scoreboard players enable @a TwitchStreamers
-scoreboard players enable @a SetHome
-scoreboard players enable @a Gift
-scoreboard players enable @a ToggleSpam
+#scoreboard players enable @a SetHome
+#scoreboard players enable @a Gift
+#scoreboard players enable @a ToggleSpam
 scoreboard players enable @a ViewLevel
-scoreboard players enable @a ViewStats
-scoreboard players enable @a UpgradeClass
-scoreboard players enable @a[scores={tplx.lvl=25..}] ToggleSpeed
-scoreboard players enable @a[tag=OP] Freeze
-scoreboard players enable @a DoMission
-scoreboard players enable @a Up_Elf_Sp
-scoreboard players enable @a Up_Elf_Eff
+#scoreboard players enable @a ViewStats
+#scoreboard players enable @a UpgradeClass
+#scoreboard players enable @a[scores={tplx.lvl=25..}] ToggleSpeed
+#scoreboard players enable @a[tag=OP] Freeze
+#scoreboard players enable @a DoMission
+#scoreboard players enable @a Up_Elf_Sp
+#scoreboard players enable @a Up_Elf_Eff
 
-scoreboard players enable @a Ping
+#scoreboard players enable @a Ping
 ### Minigames
-scoreboard players enable @a TPArena
+#scoreboard players enable @a TPArena
 scoreboard players enable @a TPZombs
 scoreboard players enable @a SeeZombsStats
 ### All Buyable Items
@@ -82,16 +80,20 @@ scoreboard players enable @a BuyTPA
 scoreboard players enable @a BuyRTP
 scoreboard players enable @a Buy_EnderEgg
 scoreboard players enable @a Buy_OP_CP
+# Selling
+scoreboard players enable @a Sell
+scoreboard players enable @a Sell_Wheat
+scoreboard players enable @a Sell_Cactus
 ### Perks
 scoreboard players enable @a[tag=special] Firework
 scoreboard players enable @a[tag=special] ToggleParticle
 scoreboard players enable @a[tag=parttag] ToggleParticle
-scoreboard players enable @a[tag=special] Secret
-scoreboard players enable @a[tag=special] Taunt
+#scoreboard players enable @a[tag=special] Secret
+#scoreboard players enable @a[tag=special] Taunt
 ### Unattainable
-scoreboard players enable @a[tag=Iron] Iron
+#scoreboard players enable @a[tag=Iron] Iron
 ### These must happen (in this order) at the end of the script
-tellraw @a [{"text":"All triggers have been reset!","color":"blue","italic":"true"}]
+tellraw @a [{"text":"\u00A76Trigger Reset System \u00A78: \u00A7aAll triggers have been re-enabled!","color":"green","italic":"false"}]
 tellraw @a[tag=OP] [{"text":"Trigger Reset System","color":"gold"},{"text":" : ","color":"dark_gray"},{"selector":"@s","color":"green"},{"text":" just reset all triggers.","color":"red"}]
 scoreboard players set @a[scores={TriggerReset=1..}] TriggerReset 0
 execute as @a at @s run playsound minecraft:block.note.xylophone master @s
