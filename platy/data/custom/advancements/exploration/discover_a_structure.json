@@ -3,7 +3,7 @@
 		"icon": {
 			"item": "minecraft:cobweb"
 		},
-		"title": "Here before Us",
+		"title": "Here Before Us",
 		"description": "Find a structure in the world"
 	},
 	"parent": "custom:exploration/root",

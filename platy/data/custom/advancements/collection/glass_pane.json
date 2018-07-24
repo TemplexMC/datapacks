@@ -7,6 +7,9 @@
 		"description": "Collect all 17 glass pane types"
 	},
 	"parent": "custom:collection/glass",
+	"rewards": {
+		"experience": 50
+	},
 	"criteria": {
 		"white": {
 			"trigger": "minecraft:inventory_changed",

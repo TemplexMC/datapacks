@@ -1,9 +1,10 @@
 execute as @a[scores={SpawnPoint=1..}] run function templex_standard:spawnpoint
-execute as @a[scores={Home=1..}] run function templex_standard:home
+execute as @a[scores={Die=1..}] run function templex_standard:die
 execute as @a[scores={Spawn=1..}] run function templex_standard:spawn
 execute as @a[scores={Rules=1..}] run function templex_standard:rules
 execute as @a[scores={Login=1..}] run function templex_standard:login
 execute as @a[scores={Vote=1..}] run function templex_standard:vote
+execute positioned 103 125 64 as @a[distance=..1.5,scores={RTPs=1..}] at @s run function templex_standard:rtp_try
 execute as @a[scores={RTP=1..}] run function templex_standard:rtp_try
 execute as @a[scores={BuyRTP=1..}] run function templex_standard:buy_rtp_try
 execute as @a[scores={Diamond=1..}] run function templex_standard:xray_check
@@ -54,3 +55,8 @@ execute as @a[scores={ToggleParticle=1..}] run function templex_standard:togglep
 execute as @a[scores={Sell=1..}] run function templex_standard:sell
 execute as @a[scores={Sell_Wheat=1..}] run function templex_standard:sell_wheat
 execute as @a[scores={Sell_Cactus=1..}] run function templex_standard:sell_cactus
+execute as @a[scores={Home=1..}] run function templex_standard:newhome
+execute as @a[scores={SetHome=1..}] run function templex_standard:sethome
+execute as @a[scores={Secret=1..}] run function templex_standard:zelda
+execute as @a[scores={Firework=1..}] run function templex_standard:firework
+execute as @a[scores={Taunt=1..}] run function templex_standard:taunt

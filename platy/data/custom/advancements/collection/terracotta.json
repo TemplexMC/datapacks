@@ -7,6 +7,9 @@
 		"description": "Collect all 17 terracotta types"
 	},
 	"parent": "custom:collection/all_dye",
+	"rewards": {
+		"experience": 50
+	},
 	"criteria": {
 		"white": {
 			"trigger": "minecraft:inventory_changed",

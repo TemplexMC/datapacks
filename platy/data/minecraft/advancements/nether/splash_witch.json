@@ -1,7 +1,8 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:splash_potion"
+            "item": "minecraft:splash_potion",
+			"nbt": "{Potion:\"minecraft:poison\"}"
         },
         "title": "Taste of Your Own Medicine",
         "description": "Kill a witch with a splash potion",

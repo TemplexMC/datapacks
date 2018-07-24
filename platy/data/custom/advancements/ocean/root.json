@@ -4,8 +4,8 @@
             "item": "minecraft:water_bucket"
         },
         "title": "Ocean",
-        "description": "Enter the Deep",
-        "background": "minecraft:textures/blocks/prismarine_bricks.png",
+        "description": "Enter the deep",
+        "background": "minecraft:textures/block/prismarine_bricks.png",
         "show_toast": false,
         "announce_to_chat": false
     },

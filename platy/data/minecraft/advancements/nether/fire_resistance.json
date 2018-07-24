@@ -1,7 +1,8 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:magma_cream"
+            "item": "minecraft:potion",
+			"nbt": "{Potion:\"minecraft:fire_resistance\"}"
         },
         "title": "Stayin' Frosty",
         "description": "Drink a fire resistance potion"

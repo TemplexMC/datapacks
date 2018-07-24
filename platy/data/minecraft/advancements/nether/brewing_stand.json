@@ -6,7 +6,7 @@
         "title": "Brewing Machine",
         "description": "Craft a brewing stand"
     },
-    "parent": "minecraft:nether/obtain_blaze_rod",
+    "parent": "minecraft:nether/get_blaze_rod",
     "criteria": {
         "brewing_stand": {
             "trigger": "minecraft:inventory_changed",

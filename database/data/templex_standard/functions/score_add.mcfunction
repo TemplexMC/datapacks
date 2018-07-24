@@ -29,10 +29,11 @@ scoreboard objectives add CmdBook trigger
 #scoreboard objectives add Commands trigger
 scoreboard objectives add Diamond minecraft.broken:minecraft.diamond_ore
 scoreboard objectives add DiamondTime dummy
+scoreboard objectives add Die trigger
 scoreboard objectives add Discord trigger
 #scoreboard objectives add DoMission trigger
 scoreboard objectives add Donate trigger
-#scoreboard objectives add Firework trigger
+scoreboard objectives add Firework trigger
 #scoreboard objectives add Freeze trigger
 #scoreboard objectives add Gift trigger
 scoreboard objectives add Home trigger
@@ -44,11 +45,14 @@ scoreboard objectives add Login minecraft.custom:minecraft.leave_game
 #scoreboard objectives add Ping trigger
 scoreboard objectives add RTP trigger
 scoreboard objectives add Rules trigger
-#scoreboard objectives add Secret trigger
+scoreboard objectives add Secret trigger
 scoreboard objectives add SeeZombsStats trigger
 scoreboard objectives add Sell trigger
+scoreboard objectives add Sell_64Wheat trigger
+scoreboard objectives add Sell_64Cactus trigger
 scoreboard objectives add Sell_Wheat trigger
 scoreboard objectives add Sell_Cactus trigger
+scoreboard objectives add SetHome trigger
 #scoreboard objectives add Shovel trigger
 #scoreboard objectives add Shulker trigger
 scoreboard objectives add Spawn trigger
@@ -59,7 +63,7 @@ scoreboard objectives add Store_TC trigger
 #scoreboard objectives add StorePos trigger
 #scoreboard objectives add Survey trigger
 scoreboard objectives add Survival trigger
-#scoreboard objectives add Taunt trigger
+scoreboard objectives add Taunt trigger
 scoreboard objectives add ToggleParticle trigger
 #scoreboard objectives add ToggleSpam trigger
 #scoreboard objectives add ToggleSpeed trigger
@@ -78,9 +82,10 @@ scoreboard objectives add Tutorial trigger
 #scoreboard objectives add UpgradeClass trigger
 scoreboard objectives add ViewKarma trigger
 scoreboard objectives add ViewLevel trigger
-scoreboard objectives add ViewPlayTime trigger
+#scoreboard objectives add ViewPlayTime trigger
 #scoreboard objectives add ViewStats trigger
 scoreboard objectives add ViewTC trigger
+scoreboard objectives add ViewWalkTime trigger
 scoreboard objectives add Vote trigger
 scoreboard objectives add VoteDay trigger
 scoreboard objectives add VoteNight trigger
@@ -90,47 +95,51 @@ scoreboard objectives add TwitchStreamers trigger
 #scoreboard objectives add ZeldaTime dummy
 #scoreboard objectives add SetHome trigger
 # Others.
-#scoreboard objectives add HourlyKarma dummy Hourly Give KP
-scoreboard objectives add Database dummy Database of Scores
+#scoreboard objectives add HourlyKarma dummy [{"text":"Hourly Give KP"}]
+scoreboard objectives add Database dummy [{"text":"Database of Scores"}]
 scoreboard objectives add Deaths deathCount
 scoreboard objectives add Karma dummy
-scoreboard objectives add PlayTime minecraft.custom:minecraft.play_one_minute Ticks Played
+#scoreboard objectives add PlayTime minecraft.custom:minecraft.play_one_minute [{"text":"Ticks Played"}]
+scoreboard objectives add WalkTime minecraft.custom:minecraft.walk_one_cm [{"text":"Centimeters Walked"}]
 scoreboard objectives add RTPs dummy
-#scoreboard objectives add ShovelTick dummy Shovel Tickets
-#scoreboard objectives add ShovelWins dummy Shovel Wins
-#scoreboard objectives add SleepTime dummy Times Slept
-scoreboard objectives add Stats dummy Templex Statistics
-scoreboard objectives add TC dummy Templex Credits
-scoreboard objectives add UUID dummy User Unique ID
+#scoreboard objectives add ShovelTick dummy [{"text":"Shovel Tickets"}]
+#scoreboard objectives add ShovelWins dummy [{"text":"Shovel Wins"}]
+#scoreboard objectives add SleepTime dummy [{"text":"Times Slept"}]
+scoreboard objectives add Stats dummy [{"text":"Templex Statistics"}]
+scoreboard objectives add TC dummy [{"text":"Templex Credits"}]
+scoreboard objectives add UUID dummy [{"text":"User Unique ID"}]
 scoreboard objectives add Votes dummy
-#scoreboard objectives add xPos dummy
+scoreboard objectives add xPos dummy
 scoreboard objectives add Xray dummy
 scoreboard objectives add ZKillZombie minecraft.killed:minecraft.zombie
 scoreboard objectives add ZKillSkeleton minecraft.killed:minecraft.skeleton
 scoreboard objectives add ZKillEndermite minecraft.killed:minecraft.endermite
-scoreboard objectives add ZombsMiteKills dummy Zombs: Endermite Kills
-scoreboard objectives add ZombsSkeleKills dummy Zombs: Skeleton Kills
-scoreboard objectives add ZombsZombKills dummy Zombs: Zombie Kills
-scoreboard objectives add ZombsWins dummy Zombs: Wins
-#scoreboard objectives add yPos dummy
-#scoreboard objectives add zPos dummy
+scoreboard objectives add ZombsMiteKills dummy [{"text":"Zombs: Endermite Kills"}]
+scoreboard objectives add ZombsSkeleKills dummy [{"text":"Zombs: Skeleton Kills"}]
+scoreboard objectives add ZombsZombKills dummy [{"text":"Zombs: Zombie Kills"}]
+scoreboard objectives add ZombsWins dummy [{"text":"Zombs: Wins"}]
+scoreboard objectives add yPos dummy
+scoreboard objectives add zPos dummy
 scoreboard objectives add rtp.xpos dummy
 scoreboard objectives add rtp.ypos dummy
 scoreboard objectives add rtp.zpos dummy
-scoreboard objectives add die.bool deathCount Deaths Boolean
+scoreboard objectives add die.bool deathCount [{"text":"Deaths Boolean"}]
 scoreboard objectives add die.xpos dummy
 scoreboard objectives add die.ypos dummy
 scoreboard objectives add die.zpos dummy
-scoreboard objectives add tplx.lvlmult dummy Level Multiplier
-scoreboard objectives add tplx.lvl dummy Templex Level
-scoreboard objectives add tplx.lvlram dummy Level RAM
-#scoreboard objectives add ElvenLevel dummy Elven Level
-#scoreboard objectives add ElvenEff dummy Elven Efficiency
-#scoreboard objectives add ElvenSpeed dummy Elven Speed
-#scoreboard objectives add ElvenUpgradeCost dummy Elven Upgrade Cost
+scoreboard objectives add tplx.lvlmult dummy [{"text":"Level Multiplier"}]
+scoreboard objectives add tplx.lvl dummy [{"text":"Templex Level"}]
+scoreboard objectives add tplx.lvlram dummy [{"text":"Level RAM"}]
+#scoreboard objectives add ElvenLevel dummy [{"text":"Elven Level"}]
+#scoreboard objectives add ElvenEff dummy [{"text":"Elven Efficiency"}]
+#scoreboard objectives add ElvenSpeed dummy [{"text":"Elven Speed"}]
+#scoreboard objectives add ElvenUpgradeCost dummy [{"text":"Elven Upgrade Cost"}]
 #scoreboard objectives add TPAs dummy
 scoreboard objectives add VotePartyTick dummy
 scoreboard objectives add SellItems dummy
+scoreboard objectives add xpos.ram dummy
+scoreboard objectives add ypos.ram dummy
+scoreboard objectives add zpos.ram dummy
 # Tell.
 scoreboard players set @s TriggerReset 1
 tellraw @a [{"text":"Score Setup","color":"gold"},{"text":" : ","color":"dark_gray"},{"text":"Added all objectives back.","color":"green"}]

@@ -9,7 +9,7 @@
 	},
 	"parent": "minecraft:end/elytra",
 	"rewards": {
-        "experience": 100
+        "experience": 50
     },
 	"criteria": {
 		"4000": {

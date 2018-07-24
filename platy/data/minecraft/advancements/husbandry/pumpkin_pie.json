@@ -8,7 +8,7 @@
 	},
 	"parent": "minecraft:husbandry/pumpkin",
 	"criteria": {
-		"pie": {
+		"pumpkin_pie": {
 			"trigger": "minecraft:consume_item",
 			"conditions": {
 				"item": {

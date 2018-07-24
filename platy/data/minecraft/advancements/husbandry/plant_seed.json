@@ -12,44 +12,63 @@
     },
     "parent": "minecraft:husbandry/time_to_farm",
     "criteria": {
-        "wheat": {
+        "wheat_seeds": {
             "trigger": "minecraft:placed_block",
             "conditions": {
-                "block": "minecraft:wheat"
+                "item": {
+					"item": "minecraft:wheat_seeds"
+				}
             }
         },
-        "pumpkin_stem": {
+        "pumpkin_seeds": {
             "trigger": "minecraft:placed_block",
             "conditions": {
-                "block": "minecraft:pumpkin_stem"
+                "item": {
+					"item": "minecraft:pumpkin_seeds"
+				}
             }
         },
-        "melon_stem": {
+        "melon_seeds": {
             "trigger": "minecraft:placed_block",
             "conditions": {
-                "block": "minecraft:melon_stem"
+                "item": {
+					"item": "minecraft:melon_seeds"
+				}
             }
         },
-        "beetroots": {
+        "beetroot_seeds": {
             "trigger": "minecraft:placed_block",
             "conditions": {
-                "block": "minecraft:beetroots"
+                "item": {
+					"item": "minecraft:beetroot_seeds"
+				}
             }
         },
-        "nether_wart": {
-            "trigger": "minecraft:placed_block",
-            "conditions": {
-                "block": "minecraft:nether_wart"
-            }
-        }
+		"potato": {
+			"trigger": "minecraft:placed_block",
+			"conditions": {
+				"item": {
+                    "item": "minecraft:potato"
+                }
+			}
+		},
+		"carrot": {
+			"trigger": "minecraft:placed_block",
+			"conditions": {
+				"item": {
+					"item": "minecraft:carrot"
+				}
+			}
+		}
     },
     "requirements": [
         [
-            "wheat",
-            "pumpkin_stem",
-            "melon_stem",
-            "beetroots",
-            "nether_wart"
+            "wheat_seeds",
+			"pumpkin_seeds",
+			"melon_seeds",
+			"beetroot_seeds",
+			"potato",
+			"carrot"
         ]
     ]
 }

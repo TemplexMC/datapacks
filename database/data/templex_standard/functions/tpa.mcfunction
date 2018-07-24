@@ -1,16 +1,16 @@
 # Timer counter.
 execute as @s[tag=!TPAing] run scoreboard players add @s TPAFind 1
 # Math and figuring out which player has the correct UUID number.
-execute as @s[tag=!TPAing] run scoreboard players operation @e[name=Proxy3,type=armor_stand] Database = @p[tag=!Tried] UUID
-execute as @s[tag=!TPAing] run scoreboard players operation @e[name=Proxy4,type=armor_stand] Database = @s TPA
-execute as @s[tag=!TPAing] run scoreboard players operation @e[name=Proxy3,type=armor_stand] Database -= @e[name=Proxy4,type=armor_stand] Database
-execute as @s[tag=!TPAing] as @e[name=Proxy3,type=armor_stand,scores={Database=0}] run tag @p[scores={TPAFind=1..200}] add TPAing
+execute as @s[tag=!TPAing] run scoreboard players operation TPACID Database = @p[tag=!Tried] UUID
+execute as @s[tag=!TPAing] run scoreboard players operation TPAFID Database = @s TPA
+execute as @s[tag=!TPAing] run scoreboard players operation TPAFID Database -= TPACID Database
+execute as @s[tag=!TPAing] if score TPAFID Database matches 0 run tag @s add TPAing
 execute as @s[tag=!TPAing] run tag @p[tag=!Tried] add Tried
 execute as @s[tag=!TPAing] run tag @s add NoReset
 execute as @s[tag=!TPAing] run scoreboard players reset @a[tag=!NoReset] TPA
 execute as @s[tag=!TPAing] run tag @s remove NoReset
-scoreboard players set @e[name=Proxy3,type=armor_stand] Database 0
-scoreboard players set @e[name=Proxy4,type=armor_stand] Database 0
+scoreboard players reset TPACID Database
+scoreboard players reset TPAFID Database
 # Tags, tells, and resets old timer then starts a new one.
 execute as @s[tag=TPAing,tag=!GotTPA] run tag @p[tag=!Tried] add TPAto
 execute as @s[tag=TPAing,tag=!GotTPA] at @p[tag=TPAto] run playsound minecraft:block.wood_button.click_on master @p[tag=TPAto]
@@ -25,3 +25,4 @@ execute as @s[tag=TPAing,tag=GotTPA] run scoreboard players add @s TPARequest 1
 # Resets
 execute as @s[scores={TPAFind=60}] run function templex_standard:tpa_request_fail
 execute as @s[scores={TPARequest=300}] run function templex_standard:tpa_fail
+

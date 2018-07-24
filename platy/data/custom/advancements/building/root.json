@@ -5,7 +5,7 @@
         },
         "title": "Building",
         "description": "Your only limit is your imagination... and resources",
-        "background": "minecraft:textures/blocks/brick.png",
+        "background": "minecraft:textures/block/bricks.png",
         "show_toast": false,
         "announce_to_chat": false
     },		

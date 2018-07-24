@@ -28,6 +28,22 @@
                 }
             }
         },
+		"haste": {
+            "trigger": "minecraft:effects_changed",
+            "conditions": {
+                "effects": {
+                    "minecraft:haste": {}
+                }
+            }
+        },
+		"mining_fatigue": {
+            "trigger": "minecraft:effects_changed",
+            "conditions": {
+                "effects": {
+                    "minecraft:mining_fatigue": {}
+                }
+            }
+        },
         "strength": {
             "trigger": "minecraft:effects_changed",
             "conditions": {
@@ -44,11 +60,27 @@
                 }
             }
         },
+		"nausea": {
+            "trigger": "minecraft:effects_changed",
+            "conditions": {
+                "effects": {
+                    "minecraft:nausea": {}
+                }
+            }
+        },
         "regeneration": {
             "trigger": "minecraft:effects_changed",
             "conditions": {
                 "effects": {
                     "minecraft:regeneration": {}
+                }
+            }
+        },
+		"resistance": {
+            "trigger": "minecraft:effects_changed",
+            "conditions": {
+                "effects": {
+                    "minecraft:resistance": {}
                 }
             }
         },
@@ -84,6 +116,14 @@
                 }
             }
         },
+		"hunger": {
+            "trigger": "minecraft:effects_changed",
+            "conditions": {
+                "effects": {
+                    "minecraft:hunger": {}
+                }
+            }
+        },		
         "weakness": {
             "trigger": "minecraft:effects_changed",
             "conditions": {
@@ -108,19 +148,19 @@
                 }
             }
         },
-        "haste": {
+		"absorption": {
             "trigger": "minecraft:effects_changed",
             "conditions": {
                 "effects": {
-                    "minecraft:haste": {}
+                    "minecraft:absorption": {}
                 }
             }
         },
-        "mining_fatigue": {
+		"glowing": {
             "trigger": "minecraft:effects_changed",
             "conditions": {
                 "effects": {
-                    "minecraft:mining_fatigue": {}
+                    "minecraft:glowing": {}
                 }
             }
         },
@@ -132,51 +172,27 @@
                 }
             }
         },
-        "glowing": {
-            "trigger": "minecraft:effects_changed",
-            "conditions": {
-                "effects": {
-                    "minecraft:glowing": {}
-                }
-            }
-        },
-        "absorption": {
-            "trigger": "minecraft:effects_changed",
-            "conditions": {
-                "effects": {
-                    "minecraft:absorption": {}
-                }
-            }
-        },
-        "hunger": {
-            "trigger": "minecraft:effects_changed",
-            "conditions": {
-                "effects": {
-                    "minecraft:hunger": {}
-                }
-            }
-        },		
-        "nausea": {
-            "trigger": "minecraft:effects_changed",
-            "conditions": {
-                "effects": {
-                    "minecraft:nausea": {}
-                }
-            }
-        },
-        "resistance": {
-            "trigger": "minecraft:effects_changed",
-            "conditions": {
-                "effects": {
-                    "minecraft:resistance": {}
-                }
-            }
-        },
 		"slow_falling": {
 			"trigger": "minecraft:effects_changed",
 			"conditions": {
 				"effects": {
 					"minecraft:slow_falling": {}
+				}
+			}
+		},
+		"conduit_power": {
+			"trigger": "minecraft:effects_changed",
+			"conditions": {
+				"effects": {
+					"minecraft:conduit_power": {}
+				}
+			}
+		},
+		"dolphins_grace": {
+			"trigger": "minecraft:effects_changed",
+			"conditions": {
+				"effects": {
+					"minecraft:dolphins_grace": {}
 				}
 			}
 		}

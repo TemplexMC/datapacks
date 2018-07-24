@@ -1,0 +1,64 @@
+### NEW PLAYER SETUP ###
+execute as @a[team=,tag=!joined] run function templex_standard:new_player_setup
+tag @a[tag=!joined] add joined
+execute if entity @a[team=] run scoreboard players add @p TriggerReset 1
+execute as @s[team=] at @s run scoreboard players set @s RTPs 5
+tag @a[tag=GotMyUUID] remove GotMyUUID
+tag @a[tag=MyUUID] remove MyUUID
+team join NC @a[team=]
+execute as @a[tag=!Booked] run function templex_standard:cmd_book
+### REPEATED COMMANDS ###
+function templex_standard:bossbar
+execute as @a[gamemode=survival,tag=!ByPassGamemode,distance=..350] run function templex_standard:protection
+### VOTE PARTY ###
+execute if score VP Database matches 50 run function templex_standard:voteparty
+execute as @a[tag=VoteParty] at @s run scoreboard players add @s VotePartyTick 1
+execute as @a[tag=VoteParty] at @s run title @s actionbar [{"text":"VoteParty still loves you!","color":"aqua"}]
+execute as @a[scores={VotePartyTick=72000..}] run tag @a remove VoteParty
+execute as @a[scores={VotePartyTick=72000..}] run scoreboard players reset * VotePartyTick
+### UUID ###
+execute as @p[tag=!ThisUUID] run function templex_standard:uuid
+execute as @p[scores={UUID=0}] run function templex_standard:uuid
+### TIMELY COMMANDS ###
+execute as @p run scoreboard players add @e[name=Timer] Database 1
+execute as @e[name=Timer,scores={Database=20..}] run function templex_standard:timely
+### ITEM CLEAR ###
+execute as @e[name=ItemBoolean,scores={Database=1..}] run function templex_standard:item_cleanup
+### SPAWN CLEAN ###
+#x=82,y=127,z=59,distance=..1000,
+tag @e[x=82,y=127,z=59,distance=..1000,tag=!NOKILL,type=armor_stand] add NOKILL
+tag @e[x=82,y=127,z=59,distance=..1000,tag=!NOKILL,type=experience_bottle] add NOKILL
+tag @e[x=82,y=127,z=59,distance=..1000,tag=!NOKILL,type=experience_orb] add NOKILL
+tag @e[x=82,y=127,z=59,distance=..1000,tag=!NOKILL,type=arrow] add NOKILL
+tag @e[x=82,y=127,z=59,distance=..1000,tag=!NOKILL,type=villager] add NOKILL
+tag @e[x=82,y=127,z=59,distance=..1000,tag=!NOKILL,type=item] add NOKILL
+tag @e[x=82,y=127,z=59,distance=..1000,tag=!NOKILL,type=squid] add NOKILL
+tag @e[x=82,y=127,z=59,distance=..1000,tag=!NOKILL,type=tropical_fish] add NOKILL
+tag @e[x=82,y=127,z=59,distance=..1000,tag=!NOKILL,type=pufferfish] add NOKILL
+tag @e[x=82,y=127,z=59,distance=..1000,tag=!NOKILL,type=salmon] add NOKILL
+tag @e[x=82,y=127,z=59,distance=..1000,tag=!NOKILL,type=cod] add NOKILL
+tag @e[x=82,y=127,z=59,distance=..1000,tag=!NOKILL,type=firework_rocket] add NOKILL
+tag @e[x=82,y=127,z=59,distance=..1000,tag=!NOKILL,type=snowball] add NOKILL
+tag @e[x=82,y=127,z=59,distance=..1000,tag=!NOKILL,type=minecart] add NOKILL
+execute positioned 82 127 59 as @e[distance=..1000,tag=!NOKILL,type=!player] at @s run tp @s ~ ~-270 ~
+### NO CREEPER EXPLODE ###
+data merge entity @e[type=creeper,tag=!DoesNotExplode,limit=1] {ExplosionRadius:0,Tags:["DoesNotExplode"]}
+### NO PLAYER DAMAGE AT SPAWN ###
+effect give @a[x=63,y=127,z=61,distance=..300] resistance 1 100 true
+effect give @a[x=63,y=127,z=61,distance=..300] saturation 1 100 true
+### DATABASE ###
+execute as @e[name=KarmaBoolean,scores={Database=1..}] run function templex_standard:karma
+### TEAMS ###
+execute as @a[team=!NC,scores={WalkTime=..299999},tag=!special] run function templex_standard:ncfix
+execute as @a[team=!Warrior,scores={WalkTime=300000..999999},tag=!special] run function templex_standard:team_warrior
+execute as @a[team=!Explorer,scores={PlayTime=1000000..1999999},tag=!special] run function templex_standard:team_explorer
+execute as @a[team=!Master,scores={PlayTime=2000000..4999999},tag=!special] run function templex_standard:team_master
+execute as @a[team=!Knight,scores={PlayTime=5000000..11999999},tag=!special] run function templex_standard:team_knight
+execute as @a[team=!Magician,scores={PlayTime=12000000..23999999},tag=!special] run function templex_standard:team_magician
+execute as @a[team=!King,scores={PlayTime=24000000..24000010},tag=!special] run function templex_standard:team_king
+### FORWARDED FUNCTIONS ###
+function templex_standard:essential_functions
+#function templex_standard:needed_functions
+### TERRESTRIA ###
+function terr-main:main
+execute as @a[scores={die.bool=1..}] run function templex_standard:die_bool

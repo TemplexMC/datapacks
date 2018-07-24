@@ -13,24 +13,24 @@
     },
     "parent": "custom:combat/shoot_arrow",
 	"rewards": {
-        "experience": 50
+        "experience": 100
     },
-    "criteria": {
-        "shot_skeleton": {
-            "trigger": "minecraft:player_killed_entity",
-            "conditions": {
-                "killing_blow": {
-                    "is_projectile": true
-                },
-                "entity": {
-                    "type": "skeleton",
-                    "distance": {
-                        "horizontal": {
-                            "min": 50
-                        }
-                    }
-                }
-            }
-        }
-    }
+     "criteria": {
+		"projectile_kill_skeleton": {
+			"trigger": "minecraft:player_killed_entity",
+			"conditions": {
+				"entity": {
+					"type": "minecraft:skeleton",
+					"distance": {
+						"horizontal": {
+							"min": 50.0
+						}
+					}
+				},
+				"killing_blow": {
+					"is_projectile": true
+				}
+			}
+		}
+	}
 }

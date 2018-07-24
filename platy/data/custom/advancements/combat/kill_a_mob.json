@@ -11,7 +11,7 @@
         }
     },
     "parent": "custom:combat/make_sword",
-    "criteria": {
+	"criteria": {
 		"cave_spider": {
 			"trigger": "minecraft:player_killed_entity",
 			"conditions": {
@@ -68,11 +68,11 @@
 				}
 			}
 		},
-		"evocation_illager": {
+		"evoker": {
 			"trigger": "minecraft:player_killed_entity",
 			"conditions": {
 				"entity": {
-					"type": "minecraft:evocation_illager"
+					"type": "minecraft:evoker"
 				}
 			}
 		},
@@ -148,11 +148,11 @@
 				}
 			}
 		},
-		"vindication_illager": {
+		"vindicator": {
 			"trigger": "minecraft:player_killed_entity",
 			"conditions": {
 				"entity": {
-					"type": "minecraft:vindication_illager"
+					"type": "minecraft:vindicator"
 				}
 			}
 		},
@@ -195,6 +195,14 @@
 					"type": "minecraft:phantom"
 				}
 			}
+		},
+		"drowned": {
+			"trigger": "minecraft:player_killed_entity",
+			"conditions": {
+				"entity": {
+					"type": "minecraft:drowned"
+				}
+			}
 		}
 	},
 	"requirements": [
@@ -206,7 +214,7 @@
 			"polar_bear",
 			"blaze",
 			"creeper",
-			"evocation_illager",
+			"evoker",
 			"ghast",
 			"guardian",
 			"husk",
@@ -216,12 +224,13 @@
 			"skeleton",
 			"slime",
 			"stray",
-			"vindication_illager",
+			"vindicator",
 			"witch",
 			"wither_skeleton",
 			"zombie",
 			"zombie_villager",
-			"phantom"
+			"phantom",
+			"drowned"
 		]
 	]
 }

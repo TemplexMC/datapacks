@@ -4,7 +4,7 @@ scoreboard players enable @a Spawn
 scoreboard players enable @a TPEnd
 #scoreboard players enable @a Commands
 scoreboard players enable @a Home
-scoreboard players enable @a ViewPlayTime
+#scoreboard players enable @a ViewPlayTime
 scoreboard players enable @a ViewKarma
 scoreboard players enable @a Vote
 scoreboard players enable @a TriggerReset
@@ -27,7 +27,7 @@ scoreboard players enable @a ViewTC
 scoreboard players enable @a Donate
 scoreboard players enable @a YouTubers
 scoreboard players enable @a TwitchStreamers
-#scoreboard players enable @a SetHome
+scoreboard players enable @a SetHome
 #scoreboard players enable @a Gift
 #scoreboard players enable @a ToggleSpam
 scoreboard players enable @a ViewLevel
@@ -38,6 +38,10 @@ scoreboard players enable @a ViewLevel
 #scoreboard players enable @a DoMission
 #scoreboard players enable @a Up_Elf_Sp
 #scoreboard players enable @a Up_Elf_Eff
+scoreboard players enable @a Die
+scoreboard players enable @a VoteDay
+scoreboard players enable @a VoteNight
+scoreboard players enable @a ViewWalkTime
 
 #scoreboard players enable @a Ping
 ### Minigames
@@ -88,8 +92,8 @@ scoreboard players enable @a Sell_Cactus
 scoreboard players enable @a[tag=special] Firework
 scoreboard players enable @a[tag=special] ToggleParticle
 scoreboard players enable @a[tag=parttag] ToggleParticle
-#scoreboard players enable @a[tag=special] Secret
-#scoreboard players enable @a[tag=special] Taunt
+scoreboard players enable @a[tag=special] Secret
+scoreboard players enable @a[tag=special] Taunt
 ### Unattainable
 #scoreboard players enable @a[tag=Iron] Iron
 ### These must happen (in this order) at the end of the script

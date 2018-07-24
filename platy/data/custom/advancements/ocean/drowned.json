@@ -1,10 +1,11 @@
 {
 	"display": {
 		"icon": {
-			"item": "minecraft:rotten_flesh"
+			"item": "minecraft:player_head",
+			"nbt": "{SkullOwner:MHF_Drowned}"
 		},
 		"title": "Sailors Forgotten",
-		"description": "Kill a drowned sailor"
+		"description": "Put a drowned sailor to rest"
 	},
 	"parent": "custom:ocean/shipwreck",
 	"criteria": {

@@ -1,7 +1,7 @@
 {
 	"display": {
 		"icon": {
-			"item": "minecraft:enchanted_book"
+			"item": "minecraft:experience_bottle"
 		},
 		"title": "Magicly Repairing Molecules",
 		"description": "Obtain Mending on any item",

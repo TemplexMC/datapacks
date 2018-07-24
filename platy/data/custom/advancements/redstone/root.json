@@ -4,7 +4,7 @@
             "item": "minecraft:redstone"
         },
         "title": "Redstone",
-        "description": "Power the world!",
+        "description": "Power the world",
         "background": "minecraft:textures/gui/advancements/backgrounds/stone.png",
         "show_toast": false,
         "announce_to_chat": false

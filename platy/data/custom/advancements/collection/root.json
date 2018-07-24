@@ -5,7 +5,7 @@
 		},
 		"title": "The Rainbow",
 		"description": "World of Color",
-		"background": "minecraft:textures/blocks/white_concrete.png",
+		"background": "minecraft:textures/block/white_concrete.png",
 		"show_toast": false,
 		"announce_to_chat": false
 	},

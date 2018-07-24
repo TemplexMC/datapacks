@@ -9,8 +9,8 @@ scoreboard players operation @s tplx.lvlmult += lvladd Database
 scoreboard players operation @s tplx.lvlmult *= @s tplx.lvlmult
 scoreboard players operation @s tplx.lvlmult /= lvldiv Database
 # Level up.
-scoreboard players set tplx.lvlcompress Database 72000
-scoreboard players operation @s tplx.lvlram = @s PlayTime
+scoreboard players set tplx.lvlcompress Database 100000
+scoreboard players operation @s tplx.lvlram = @s WalkTime
 scoreboard players operation @s tplx.lvlram /= tplx.lvlcompress Database
 scoreboard players operation @s tplx.lvlram -= @s tplx.lvlmult
 execute as @s[scores={tplx.lvlram=0..}] run scoreboard players add @s tplx.lvl 1

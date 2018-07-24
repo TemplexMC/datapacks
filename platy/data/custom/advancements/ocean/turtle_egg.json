@@ -8,7 +8,7 @@
 	},
 	"parent": "custom:ocean/breed_turtle",
 	"criteria": {
-		"egg": {
+		"turtle_egg": {
 			"trigger": "minecraft:inventory_changed",
 			"conditions": {
 				"items": [

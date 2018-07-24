@@ -8,7 +8,7 @@
 	},
 	"parent": "custom:exploration/make_map",
 	"criteria": {
-		"book": {
+		"book_and_quill": {
 			"trigger": "minecraft:inventory_changed",
 			"conditions": {
 				"items": [

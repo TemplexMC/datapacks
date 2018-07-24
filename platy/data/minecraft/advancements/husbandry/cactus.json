@@ -3,7 +3,7 @@
 		"icon": {
 			"item": "minecraft:cactus"
 		},
-		"title": "Water Indpendent",
+		"title": "Water Independent",
 		"description": "Harvest a cactus"
 	},
 	"parent": "minecraft:husbandry/isugar_cane",

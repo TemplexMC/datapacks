@@ -14,19 +14,19 @@ function templex_standard:bossbar
 execute as @a[gamemode=!spectator,tag=PO] run function templex_standard:particles
 execute as @a[gamemode=survival,tag=!ByPassGamemode,distance=..350] run function templex_standard:protection
 ### LEVEL PERKS ###
-execute as @a[scores={tplx.lvl=15..19},nbt=!{ActiveEffects:[{Id:3b}]}] at @s run effect give @s haste 10000 2
-execute as @a[scores={tplx.lvl=15..19},nbt=!{ActiveEffects:[{Id:11b}]}] at @s run effect give @s resistance 10000 1
-execute as @a[scores={tplx.lvl=15..19},nbt=!{ActiveEffects:[{Id:5b}]}] at @s run effect give @s strength 10000 1
-execute as @a[scores={tplx.lvl=20..24},nbt=!{ActiveEffects:[{Id:3b}]}] at @s run effect give @s haste 10000 5
-execute as @a[scores={tplx.lvl=20..24},nbt=!{ActiveEffects:[{Id:11b}]}] at @s run effect give @s resistance 10000 2
-execute as @a[scores={tplx.lvl=20..24},nbt=!{ActiveEffects:[{Id:5b}]}] at @s run effect give @s strength 10000 2
-execute as @a[scores={tplx.lvl=25..34},nbt=!{ActiveEffects:[{Id:3b}]}] at @s run effect give @s haste 10000 10
-execute as @a[scores={tplx.lvl=25..},nbt=!{ActiveEffects:[{Id:11b}]}] at @s run effect give @s resistance 10000 3
-execute as @a[scores={tplx.lvl=25..},nbt=!{ActiveEffects:[{Id:1b}]},tag=SPEEDON] at @s run effect give @s speed 10000 3
-execute as @a[scores={tplx.lvl=25..},nbt=!{ActiveEffects:[{Id:10b}]}] at @s run effect give @s regeneration 10000 1
-execute as @a[scores={tplx.lvl=25..},nbt=!{ActiveEffects:[{Id:5b}]}] at @s run effect give @s strength 10000 3
-execute as @a[scores={tplx.lvl=35..},nbt=!{ActiveEffects:[{Id:3b}]}] at @s run effect give @s haste 10000 20
-execute as @a[scores={tplx.lvl=50..},nbt=!{ActiveEffects:[{Id:23b}]}] at @s run effect give @s saturation 10000 1
+execute as @a[scores={tplx.lvl=15..19},nbt=!{ActiveEffects:[{Id:3b}]},tag=!EO] at @s run effect give @s haste 10000 2
+execute as @a[scores={tplx.lvl=15..19},nbt=!{ActiveEffects:[{Id:11b}]},tag=!EO] at @s run effect give @s resistance 10000 1
+execute as @a[scores={tplx.lvl=15..19},nbt=!{ActiveEffects:[{Id:5b}]},tag=!EO] at @s run effect give @s strength 10000 1
+execute as @a[scores={tplx.lvl=20..24},nbt=!{ActiveEffects:[{Id:3b}]},tag=!EO] at @s run effect give @s haste 10000 5
+execute as @a[scores={tplx.lvl=20..24},nbt=!{ActiveEffects:[{Id:11b}]},tag=!EO] at @s run effect give @s resistance 10000 2
+execute as @a[scores={tplx.lvl=20..24},nbt=!{ActiveEffects:[{Id:5b}]},tag=!EO] at @s run effect give @s strength 10000 2
+execute as @a[scores={tplx.lvl=25..34},nbt=!{ActiveEffects:[{Id:3b}]},tag=!EO] at @s run effect give @s haste 10000 10
+execute as @a[scores={tplx.lvl=25..},nbt=!{ActiveEffects:[{Id:11b}]},tag=!EO] at @s run effect give @s resistance 10000 3
+execute as @a[scores={tplx.lvl=25..},nbt=!{ActiveEffects:[{Id:1b}]},tag=SPEEDON,tag=!EO] at @s run effect give @s speed 10000 3
+execute as @a[scores={tplx.lvl=25..},nbt=!{ActiveEffects:[{Id:10b}]},tag=!EO] at @s run effect give @s regeneration 10000 1
+execute as @a[scores={tplx.lvl=25..},nbt=!{ActiveEffects:[{Id:5b}]},tag=!EO] at @s run effect give @s strength 10000 3
+execute as @a[scores={tplx.lvl=35..},nbt=!{ActiveEffects:[{Id:3b}]},tag=!EO] at @s run effect give @s haste 10000 20
+execute as @a[scores={tplx.lvl=50..},nbt=!{ActiveEffects:[{Id:23b}]},tag=!EO] at @s run effect give @s saturation 10000 1
 ### FARMS ###
 execute as @e[type=armor_stand,name=GoldFarm] at @s if entity @e[type=item,name=Stick,distance=..1] run function templex_standard:pick_up_sticks
 execute as @e[type=armor_stand,name=IronFarm] at @s if entity @e[type=item,name=Stick,distance=..1] run function templex_standard:pick_up_sticks

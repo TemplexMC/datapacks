@@ -12,7 +12,7 @@
     },
     "parent": "minecraft:nether/brewing_stand",
     "criteria": {
-        "potion": {
+        "brew_potion": {
             "trigger": "minecraft:brewed_potion"
         }
     }

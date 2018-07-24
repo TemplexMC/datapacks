@@ -7,6 +7,9 @@
 		"description": "Collect all 10 coral block types"
 	},
 	"parent": "custom:collection/root",
+	"rewards": {
+		"experience": 25
+	},
 	"criteria": {
 		"tube": {
 			"trigger": "minecraft:inventory_changed",

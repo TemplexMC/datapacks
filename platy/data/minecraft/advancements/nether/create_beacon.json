@@ -12,7 +12,7 @@
     },
     "parent": "minecraft:nether/summon_wither",
     "criteria": {
-        "beacon": {
+        "create_beacon": {
             "trigger": "minecraft:construct_beacon",
             "conditions": {
                 "level": {"min": 1}

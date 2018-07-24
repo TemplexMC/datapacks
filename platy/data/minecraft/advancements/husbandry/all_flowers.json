@@ -7,7 +7,7 @@
 		"description": "Pick all the flowers",
 		"frame": "goal"
 	},
-	"parent": "minecraft:husbandry/flower",
+	"parent": "minecraft:husbandry/pick_flower",
 	"rewards": {
 		"experience": 50
 	},

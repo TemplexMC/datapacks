@@ -2,7 +2,7 @@
     "display": {
         "icon": {
             "item": "minecraft:elytra",
-			"durability": 1
+			"nbt": "{Damage:431}"
         },
         "title": "Worn Out",
         "description": "Wear out an elytra",
@@ -10,7 +10,7 @@
     },
     "parent": "minecraft:end/elytra",
     "criteria": {
-        "elytra": {
+        "broken_elytra": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
                 "items": [

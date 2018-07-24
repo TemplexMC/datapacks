@@ -20,11 +20,11 @@
 				}
 			}
 		},
-		"clownfish": {
+		"tropical_fish": {
 			"trigger": "minecraft:fishing_rod_hooked",
 			"conditions": {
 				"item": {
-					"item": "minecraft:clownfish"
+					"item": "minecraft:tropical_fish"
 				}
 			}
 		},
@@ -48,7 +48,7 @@
 	"requirements": [
 		[
 			"cod",
-			"clownfish",
+			"tropical_fish",
 			"pufferfish",
 			"salmon"
 		]

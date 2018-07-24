@@ -9,7 +9,7 @@
 	},
 	"parent": "custom:exploration/discover_a_structure",
 	"rewards": {
-        "experience": 250
+        "experience": 500
     },
 	"criteria": {
 		"buried_treasure": {

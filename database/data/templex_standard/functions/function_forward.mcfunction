@@ -14,7 +14,7 @@ execute as @a[scores={Survival=1..},tag=!t.ingame] run function templex_standard
 execute as @a[scores={Survival=1..},tag=t.ingame] run tellraw @s [{"text":"Sorry, that is disabled right now. (You're in a protected area!)","color":"red"}]
 execute as @a[scores={Survival=1..},tag=t.ingame] run scoreboard players reset @s Survival
 execute as @a[scores={Survival=1..},tag=t.ingame] run scoreboard players enable @a Survival
-execute as @a[x=103.0,y=125.00,z=64.0,distance=..1.5] run function templex_standard:rtp_try
+execute positioned 103 125 64 as @a[distance=..1.5] run function templex_standard:rtp_try
 execute as @a[scores={RTP=1..}] run function templex_standard:rtp_try
 execute as @a[scores={BuyRTP=1..}] run function templex_standard:buy_rtp_try
 execute as @a[scores={Diamond=1..}] run function templex_standard:xray_check

@@ -6,7 +6,7 @@
         "title": "Lost Weight",
         "description": "Drink a potion of slow falling"
     },
-    "parent": "custom:combat/killed_by_phantom",
+    "parent": "custom:combat/phantom_pains",
     "criteria": {
         "slow_falling": {
             "trigger": "minecraft:effects_changed",

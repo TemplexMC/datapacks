@@ -1,7 +1,8 @@
 {
 	"display": {
 		"icon": {
-			"item": "minecraft:trident"
+			"item": "minecraft:trident",
+			"nbt": "{Enchantments:[{id:\"minecraft:unbreaking\",lvl:1}]}"
 		},
 		"title": "Poseidon's Fury",
 		"description": "Create a perfect trident",

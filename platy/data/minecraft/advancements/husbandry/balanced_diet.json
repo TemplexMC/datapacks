@@ -13,7 +13,7 @@
 	},
 	"parent": "minecraft:husbandry/bake_bread",
 	"rewards": {
-		"experience": 100
+		"experience": 250
 	},
 	"criteria": {
 		"apple": {
@@ -88,11 +88,11 @@
 				}
 			}
 		},
-		"clownfish": {
+		"tropical_fish": {
 			"trigger": "minecraft:consume_item",
 			"conditions": {
 				"item": {
-					"item": "minecraft:clownfish"
+					"item": "minecraft:tropical_fish"
 				}
 			}
 		},
@@ -128,11 +128,11 @@
 				}
 			}
 		},
-		"melon": {
+		"melon_slice": {
 			"trigger": "minecraft:consume_item",
 			"conditions": {
 				"item": {
-					"item": "minecraft:melon"
+					"item": "minecraft:melon_slice"
 				}
 			}
 		},

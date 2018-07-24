@@ -3,10 +3,10 @@
         "icon": {
             "item": "minecraft:magma_block"
         },
-        "title": "Pushed around",
+        "title": "Pushed Around",
         "description": "Enter a bubble column"
     },
-	"parent": "custom:ocean/frost_walker",
+	"parent": "custom:ocean/dolphins_grace",
     "criteria": {
         "bubble_column": {
             "trigger": "minecraft:enter_block",

@@ -11,13 +11,13 @@
 		"mushroom_biome": {
 			"trigger": "minecraft:location",
 			"conditions": {
-				"biome": "minecraft:mushroom_island"
+				"biome": "minecraft:mushroom_fields"
 			}
 		},
 		"mushroom_shore": {
 			"trigger": "minecraft:location",
 			"conditions": {
-				"biome": "minecraft:mushroom_island_shore"
+				"biome": "minecraft:mushroom_field_shore"
 			}
 		}
 	},

@@ -7,6 +7,9 @@
 		"description": "Collect all 16 concrete colors"
 	},
 	"parent": "custom:collection/concrete_powder",
+	"rewards": {
+		"experience": 50
+	},
 	"criteria": {
 		"white": {
 			"trigger": "minecraft:inventory_changed",

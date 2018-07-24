@@ -5,7 +5,7 @@
         },
         "title": "Exploration",
         "description": "The world is vast and uncharted",
-        "background": "minecraft:textures/blocks/packed_ice.png",
+        "background": "minecraft:textures/block/packed_ice.png",
 		"show_toast": false,
         "announce_to_chat": false
     },

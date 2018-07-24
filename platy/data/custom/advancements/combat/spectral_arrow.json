@@ -8,7 +8,7 @@
     },
     "parent": "custom:combat/special_arrow",
     "criteria": {
-        "shot_arrow": {
+        "spectral_arrow": {
             "trigger": "minecraft:player_hurt_entity",
             "conditions": {
                 "damage": {

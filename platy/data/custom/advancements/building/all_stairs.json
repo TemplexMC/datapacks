@@ -167,7 +167,7 @@
 			"conditions": {
 				"items": [
 					{
-						"item": "minecraft:prismarine_bricks_stairs"
+						"item": "minecraft:prismarine_brick_stairs"
 					}
 				]
 			}

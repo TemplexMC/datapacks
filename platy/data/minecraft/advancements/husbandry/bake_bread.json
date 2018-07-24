@@ -4,7 +4,7 @@
 			"item": "minecraft:bread"
 		},
 		"title": "Unbaked Baked Goods",
-		"description": "'Bake' bread"
+		"description": "\"Bake\" bread"
 	},
 	"parent": "minecraft:husbandry/plant_seed",
 	"criteria": {

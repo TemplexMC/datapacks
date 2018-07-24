@@ -13,9 +13,9 @@
     },
     "parent": "custom:combat/kill_a_mob",
 	"rewards": {
-        "experience": 100
+        "experience": 500
     },
-   "criteria": {
+	"criteria": {
 		"cave_spider": {
 			"trigger": "minecraft:player_killed_entity",
 			"conditions": {
@@ -72,11 +72,11 @@
 				}
 			}
 		},
-		"evocation_illager": {
+		"evoker": {
 			"trigger": "minecraft:player_killed_entity",
 			"conditions": {
 				"entity": {
-					"type": "minecraft:evocation_illager"
+					"type": "minecraft:evoker"
 				}
 			}
 		},
@@ -152,11 +152,11 @@
 				}
 			}
 		},
-		"vindication_illager": {
+		"vindicator": {
 			"trigger": "minecraft:player_killed_entity",
 			"conditions": {
 				"entity": {
-					"type": "minecraft:vindication_illager"
+					"type": "minecraft:vindicator"
 				}
 			}
 		},
@@ -197,6 +197,14 @@
 			"conditions": {
 				"entity": {
 					"type": "minecraft:phantom"
+				}
+			}
+		},
+		"drowned": {
+			"trigger": "minecraft:player_killed_entity",
+			"conditions": {
+				"entity": {
+					"type": "minecraft:drowned"
 				}
 			}
 		}

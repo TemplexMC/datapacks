@@ -1,7 +1,8 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:diamond_helmet"
+            "item": "minecraft:diamond_helmet",
+			"nbt": "{Enchantments:[{id:\"minecraft:unbreaking\",lvl:1}]}"
         },
         "title": "Master Armorer",
         "description": "Create a perfect suit of armor",

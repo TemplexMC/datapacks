@@ -12,7 +12,7 @@
 			"trigger": "minecraft:fishing_rod_hooked",
 			"conditions": {
 				"entity": {
-					"type": "minecraft:cod_mob"
+					"type": "minecraft:cod"
 				}
 			}
 		},
@@ -24,11 +24,11 @@
 				}
 			}
 		},
-		"puffer_fish": {
+		"pufferfish": {
 			"trigger": "minecraft:fishing_rod_hooked",
 			"conditions": {
 				"entity": {
-					"type": "minecraft:puffer_fish"
+					"type": "minecraft:pufferfish"
 				}
 			}
 		},
@@ -36,7 +36,7 @@
 			"trigger": "minecraft:fishing_rod_hooked",
 			"conditions": {
 				"entity": {
-					"type": "minecraft:salmon_mob"
+					"type": "minecraft:salmon"
 				}
 			}
 		}
@@ -45,7 +45,7 @@
 		[
 			"cod",
 			"tropical_fish",
-			"puffer_fish",
+			"pufferfish",
 			"salmon"
 		]
 	]

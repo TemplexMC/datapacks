@@ -8,7 +8,7 @@
     },
     "parent": "custom:redstone/hopper",	
     "criteria": {
-        "tnt_minecart": {
+        "hopper_minecart": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
                 "items": [

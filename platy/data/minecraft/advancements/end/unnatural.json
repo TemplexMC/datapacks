@@ -8,7 +8,7 @@
 	},
 	"parent": "minecraft:end/chorus_fruit",
 	"criteria": {
-		"flower": {
+		"chorus_flower": {
 			"trigger": "minecraft:placed_block",
 			"conditions": {
 				"block": "minecraft:chorus_flower",

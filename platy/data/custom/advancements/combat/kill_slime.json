@@ -6,7 +6,7 @@
 		"title": "Yay! ... Oh Crap, There's More!",
 		"description": "'Kill' a slime"
 	},
-	"parent": "custom:combat/root",
+	"parent": "custom:combat/kill_a_mob",
 	"criteria": {
 		"slime": {
 			"trigger": "minecraft:player_killed_entity",

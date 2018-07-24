@@ -16,7 +16,7 @@
 		"experience": 100
 	},
     "criteria": {
-        "beacon": {
+        "full_beacon": {
             "trigger": "minecraft:construct_beacon",
             "conditions": {
                 "level": 4

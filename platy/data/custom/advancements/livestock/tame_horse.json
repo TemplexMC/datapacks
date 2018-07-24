@@ -23,12 +23,21 @@
 					"type": "minecraft:donkey"
 				}
 			}
+		},
+		"tame_mule": {
+			"trigger": "minecraft:tame_animal",
+			"conditions": {
+				"entity": {
+					"type": "minecraft:mule"
+				}
+			}
 		}
 	},
 	"requirements": [
 		[
 			"tame_horse",
-			"tame_donkey"
+			"tame_donkey",
+			"tame_mule"
 		]
 	]
 }

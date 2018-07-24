@@ -6,7 +6,10 @@
 		"title": "Powder Power",
 		"description": "Collect all 16 concrete powder colors"
 	},
-	"parent": "custom:collection/sand",
+	"parent": "custom:collection/all_dye",
+	"rewards": {
+		"experience": 50
+	},
 	"criteria": {
 		"white": {
 			"trigger": "minecraft:inventory_changed",

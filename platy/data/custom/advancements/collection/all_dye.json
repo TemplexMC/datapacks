@@ -7,6 +7,9 @@
 		"description": "Collect all 16 dye colors"
 	},
 	"parent": "custom:collection/root",
+	"rewards": {
+		"experience": 50
+	},
 	"criteria": {
 		"ink": {
 			"trigger": "minecraft:inventory_changed",

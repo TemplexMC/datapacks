@@ -7,7 +7,7 @@
 		"description": "Eat everything bad for you",
 		"frame": "goal"
 	},
-	"parent": "minecraft:husbandry/plant_seed",
+	"parent": "minecraft:husbandry/root",
 	"criteria": {
 		"chicken": {
 			"trigger": "minecraft:consume_item",

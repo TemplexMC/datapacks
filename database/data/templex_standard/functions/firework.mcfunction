@@ -1,4 +1,4 @@
-summon fireworks_rocket ~ ~ ~ {LifeTime:40,Damage:0s}
+summon firework_rocket ~ ~ ~ {LifeTime:40,Damage:0s}
 tellraw @a[tag=OP] [{"text":"Firework System (For Donors)","color":"gold"},{"text":" : ","color":"dark_gray"},{"selector":"@s"},{"text":" just set off a firework!","color":"red"}]
 tellraw @s [{"text":"And it's away!","color":"green"}]
 
