@@ -10,12 +10,15 @@ execute as @s[tag=tplx.home.true] as @s[tag=!home.got] run scoreboard players op
 execute as @s[tag=tplx.home.true] as @s[tag=!home.got] run tag @s add home.got
 # Doers.
 execute as @s[tag=tplx.home.true] as @s[tag=home.got] as @s[tag=!home.begin] run teleport @s 0 0 0
-execute as @s[tag=tplx.home.true] as @s[tag=home.got] as @s[tag=!home.begin] run gamemode spectator @s
+#execute as @s[tag=tplx.home.true] as @s[tag=home.got] as @s[tag=!home.begin] run gamemode spectator @s
 execute as @s[tag=tplx.home.true] as @s[tag=home.got] as @s[tag=!home.begin] run tag @s add home.begin
 ### TELL
 execute as @s[tag=tplx.home.true] as @s[tag=home.got] as @s[tag=!home.at] run title @s actionbar [{"text":"Teleporting to ","color":"light_purple"},{"score":{"name":"@s","objective":"xPos"},"color":"gold"},{"text":" "},{"score":{"name":"@s","objective":"yPos"},"color":"gold"},{"text":" "},{"score":{"name":"@s","objective":"zPos"},"color":"gold"},{"text":"...","color":"light_purple"}]
 #execute as @s[tag=tplx.home.true] as @s[tag=home.got] as @s[tag=!home.at] run title @s actionbar [{"text":"Teleporting to ","color":"light_purple"},{"score":{"name":"@s","objective":"xpos.ram"},"color":"gold"},{"text":" "},{"score":{"name":"@s","objective":"ypos.ram"},"color":"gold"},{"text":" "},{"score":{"name":"@s","objective":"zpos.ram"},"color":"gold"},{"text":"...","color":"light_purple"}]
 #execute as @s[tag=tplx.home.true] as @s[tag=home.got] as @s[tag=!home.at] run tellraw @s [{"text":"Teleporting to ","color":"light_purple"},{"score":{"name":"@s","objective":"xpos.ram"},"color":"gold"},{"text":" "},{"score":{"name":"@s","objective":"ypos.ram"},"color":"gold"},{"text":" "},{"score":{"name":"@s","objective":"zpos.ram"},"color":"gold"},{"text":"...","color":"light_purple"}]
+### No Fall
+execute as @s[tag=tplx.home.true] as @s[tag=home.got] as @s[tag=!home.at] at @s run setblock ~ ~-1 ~ lime_stained_glass
+execute as @s[tag=tplx.home.true] as @s[tag=home.got] as @s[tag=!home.at] at @s run fill ~1 ~-1 ~1 ~-1 ~-1 ~-1 air replace lime_stained_glass
 ### Y
 execute as @s[tag=tplx.home.true] as @s[tag=home.got] as @s[tag=!home.at] as @s[scores={ypos.ram=100..}] at @s run teleport @s ~ ~100 ~
 execute as @s[tag=tplx.home.true] as @s[tag=home.got] as @s[tag=!home.at] as @s[scores={ypos.ram=100..}] at @s run scoreboard players remove @s ypos.ram 100
@@ -104,8 +107,8 @@ execute as @s[tag=tplx.home.true] as @s[tag=home.got] as @s[tag=home.at] run tel
 execute as @s[tag=tplx.home.true] as @s[tag=home.got] as @s[tag=home.at] run tellraw @a[tag=OP] [{"text":"\u00A76Home System \u00A78: "},{"selector":"@s","color":"green"},{"text":" was successfully teleported to their set home!","color":"red"}]
 execute as @s[tag=tplx.home.true] as @s[tag=home.got] as @s[tag=home.at] run tag @s add home.done
 # Done.
-execute as @s[tag=home.done] run gamemode survival @s[tag=!OP]
-execute as @s[tag=home.done] run gamemode creative @s[tag=OP]
+#execute as @s[tag=home.done] run gamemode survival @s[tag=!OP]
+#execute as @s[tag=home.done] run gamemode creative @s[tag=OP]
 execute as @s[tag=home.done] run scoreboard players reset @s xpos.ram
 execute as @s[tag=home.done] run scoreboard players reset @s ypos.ram
 execute as @s[tag=home.done] run scoreboard players reset @s zpos.ram

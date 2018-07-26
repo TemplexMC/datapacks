@@ -29,3 +29,5 @@ execute as @a[scores={SetHome=1..}] run function templex_standard:sethome
 execute as @a[scores={Secret=1..}] run function templex_standard:zelda
 execute as @a[scores={Firework=1..}] run function templex_standard:firework
 execute as @a[scores={Taunt=1..}] run function templex_standard:taunt
+execute as @a[scores={ViewKarma=1..}] run function templex_standard:view_karma
+execute as @a[scores={ViewTC=1..}] run function templex_standard:view_tc

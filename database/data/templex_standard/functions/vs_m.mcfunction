@@ -17,16 +17,16 @@ execute if block -226 1 -116 glass run scoreboard players set SVDIV Database 2
 execute if block -226 1 -116 glass run scoreboard players operation PLAYO Database /= SVDIV Database
 execute if block -226 1 -116 glass run scoreboard players add VSTIMER Database 1
 #  YES.
-execute if block -226 1 -116 glass if score VSLEEP Database = PLAYO Database run tellraw @a [{"text":"Players have voted to change to day! Changing to day...","color":"gray"}]
-execute if block -226 1 -116 glass if score VSLEEP Database = PLAYO Database run weather clear 10000
-execute if block -226 1 -116 glass if score VSLEEP Database = PLAYO Database run time set 2147448005
-execute if block -226 1 -116 glass if score VSLEEP Database = PLAYO Database run tag @a remove SleepVoted
-execute if block -226 1 -116 glass if score VSLEEP Database = PLAYO Database run scoreboard players reset @a VoteDay
-execute if block -226 1 -116 glass if score VSLEEP Database = PLAYO Database run scoreboard players reset @a VoteNight
-execute if block -226 1 -116 glass if score VSLEEP Database = PLAYO Database run scoreboard players enable @a VoteDay
-execute if block -226 1 -116 glass if score VSLEEP Database = PLAYO Database run scoreboard players enable @a VoteNight
-execute if block -226 1 -116 glass if score VSLEEP Database = PLAYO Database run scoreboard players reset VSTIMER Database
-execute if block -226 1 -116 glass if score VSLEEP Database = PLAYO Database run scoreboard players set VSLEEP Database 10000
+execute if block -226 1 -116 glass if score VSLEEP Database >= PLAYO Database run tellraw @a [{"text":"Players have voted to change to day! Changing to day...","color":"gray"}]
+execute if block -226 1 -116 glass if score VSLEEP Database >= PLAYO Database run weather clear 10000
+execute if block -226 1 -116 glass if score VSLEEP Database >= PLAYO Database run time set 2147448005
+execute if block -226 1 -116 glass if score VSLEEP Database >= PLAYO Database run tag @a remove SleepVoted
+execute if block -226 1 -116 glass if score VSLEEP Database >= PLAYO Database run scoreboard players reset @a VoteDay
+execute if block -226 1 -116 glass if score VSLEEP Database >= PLAYO Database run scoreboard players reset @a VoteNight
+execute if block -226 1 -116 glass if score VSLEEP Database >= PLAYO Database run scoreboard players enable @a VoteDay
+execute if block -226 1 -116 glass if score VSLEEP Database >= PLAYO Database run scoreboard players enable @a VoteNight
+execute if block -226 1 -116 glass if score VSLEEP Database >= PLAYO Database run scoreboard players reset VSTIMER Database
+execute if block -226 1 -116 glass if score VSLEEP Database >= PLAYO Database run scoreboard players set VSLEEP Database 10000
 execute if block -226 1 -116 glass if score VSLEEP Database matches 10000 run scoreboard players reset PLAYO Database
 execute if block -226 1 -116 glass if score VSLEEP Database matches 10000 run scoreboard players reset VSLEEP Database
 #  NO.
