@@ -1,3 +1,7 @@
+# Adder.
+scoreboard players set @s TotalTime 0
+scoreboard players operation @s TotalTime = @s WalkTime
+scoreboard players operation @s TotalTime += @s SprintTime
 # Multiplier.
 scoreboard players set lvldiv Database 8
 scoreboard players set lvladd Database 5
@@ -8,7 +12,7 @@ scoreboard players operation @s tplx.lvlmult /= lvldiv Database
 # Checking.
 scoreboard players set inverse Database -1
 scoreboard players set tplx.lvlcompress Database 100000
-scoreboard players operation @s tplx.lvlram = @s WalkTime
+scoreboard players operation @s tplx.lvlram = @s TotalTime
 scoreboard players operation @s tplx.lvlram /= tplx.lvlcompress Database
 scoreboard players operation @s tplx.lvlram -= @s tplx.lvlmult
 scoreboard players operation @s tplx.lvlram *= inverse Database

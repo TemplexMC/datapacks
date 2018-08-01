@@ -29,7 +29,7 @@ execute as @a[scores={ViewLevel=1..}] run function templex_standard:view_level
 execute as @a[scores={ViewStats=1..}] run function templex_standard:view_stats
 execute as @a[scores={Buy_SlimeFarm=1..}] run function templex_standard:buy_slimefarm
 execute as @a[scores={Buy_CoalFarm=1..}] run function templex_standard:buy_coalfarm
-execute as @a[scores={ViewPlayTime=1..}] run function templex_standard:view_play_time
+execute as @a[scores={ViewWalkTime=1..}] run function templex_standard:view_walk_time
 execute as @a[scores={TriggerReset=1..}] run function templex_standard:trigger_reset
 execute as @a[scores={TPEnd=1..}] run function templex_standard:tp_end_try
 execute as @a[scores={Survival=1..},tag=!t.ingame] run function templex_standard:survival
@@ -60,3 +60,5 @@ execute as @a[scores={SetHome=1..}] run function templex_standard:sethome
 execute as @a[scores={Secret=1..}] run function templex_standard:zelda
 execute as @a[scores={Firework=1..}] run function templex_standard:firework
 execute as @a[scores={Taunt=1..}] run function templex_standard:taunt
+execute as @a[scores={Buy_50XP=1..}] run function templex_standard:buy_50xp
+execute as @a[scores={Buy_500XP=1..}] run function templex_standard:buy_500xp

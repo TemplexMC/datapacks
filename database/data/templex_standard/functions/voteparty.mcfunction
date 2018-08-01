@@ -6,4 +6,4 @@ scoreboard players add @a Karma 500
 scoreboard players add @a TC 300
 tag @a add VoteParty
 # Resets.
-scoreboard players set VP Database 0
+scoreboard players remove VP Database 50

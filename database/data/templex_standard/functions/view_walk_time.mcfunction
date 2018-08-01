@@ -1,4 +1,9 @@
-scoreboard players operation VWRAM Database = @s WalkTime
+# Adder.
+scoreboard players set @s TotalTime 0
+scoreboard players operation @s TotalTime = @s WalkTime
+scoreboard players operation @s TotalTime += @s SprintTime
+# Other.
+scoreboard players operation VWRAM Database = @s TotalTime
 scoreboard players set VWDIV Database 100000
 scoreboard players operation VWRAM Database /= VWDIV Database
 tellraw @s [{"text":"You have walked around ","color":"red","italic":"true"},{"text":"Templex","color":"dark_aqua","italic":"true","bold":"true"},{"text":" for approximately ","color":"red","italic":"true"},{"score":{"name":"VWRAM","objective":"Database"},"color":"gold","bold":"true"},{"text":" kilometers","color":"red","italic":"true"},{"text":"!","color":"dark_gray"}]

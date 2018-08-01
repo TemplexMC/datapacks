@@ -33,7 +33,7 @@ team add Magician
 team add King
 
 team add TAssassin
-team add TPartial
+team add TCrusader
 # NPCs.
 team add GREEN
 team add GOLD
@@ -73,7 +73,7 @@ team modify Magician color gray
 team modify King color gray
 
 team modify TAssassin color gray
-team modify TPartial color gray
+team modify TCrusader color gray
 # Prefixes / Suffixes.
 team modify Owner prefix [{"text":"\u00A74You\u00A76Tuber "}]
 team modify Owner suffix [{"text":" \u00A73Owner"}]
@@ -123,8 +123,8 @@ team modify King prefix [{"text":"\u00A74King "}]
 
 team modify TAssassin prefix [{"text":"\u00A78Assassin "}]
 team modify TAssassin suffix [{"text":" \u00A74Templexian"}]
-team modify TPartial prefix [{"text":"\u00A7dPartial "}]
-team modify TPartial suffix [{"text":" \u00A74Templexian"}]
+team modify TCrusader prefix [{"text":"\u00A7fCrusader "}]
+team modify TCrusader suffix [{"text":" \u00A74Templexian"}]
 # NPCs.
 team modify GREEN color green
 team modify GOLD color gold

@@ -11,6 +11,7 @@ execute as @a[tag=!Booked] run function templex_standard:cmd_book
 function terr-main:main
 function minecraft:variants
 function templex_standard:bossbar
+function quests:trigger_test
 execute as @a[gamemode=!spectator,tag=PO] run function templex_standard:particles
 execute as @a[gamemode=survival,tag=!ByPassGamemode,distance=..350] run function templex_standard:protection
 ### LEVEL PERKS ###
@@ -49,7 +50,7 @@ execute as @e[type=armor_stand,name=LightningGuard] at @s if entity @e[type=item
 execute as @e[type=endermite,name=LightningGuard] at @s run summon armor_stand ~ ~ ~ {CustomName:"{\"text\":\"LightningGuard\",\"color\":\"aqua\"}",CustomNameVisible:1b,NoGravity:1b}
 execute as @e[type=endermite,name=LightningGuard] at @s run kill @s
 ### VOTE PARTY ###
-execute as @e[type=armor_stand,name=VoteParty,scores={Database=50..}] run function templex_standard:voteparty
+execute if score VP Database >= VPM Database run function templex_standard:voteparty
 execute as @a[tag=VoteParty] at @s run scoreboard players add @s VotePartyTick 1
 execute as @a[tag=VoteParty] at @s run title @s actionbar [{"text":"VoteParty still loves you!","color":"aqua"}]
 execute as @a[scores={VotePartyTick=72000..}] run tag @a remove VoteParty
@@ -83,6 +84,7 @@ tag @e[x=82,y=127,z=59,distance=..1000,tag=!NOKILL,type=salmon] add NOKILL
 tag @e[x=82,y=127,z=59,distance=..1000,tag=!NOKILL,type=cod] add NOKILL
 tag @e[x=82,y=127,z=59,distance=..1000,tag=!NOKILL,type=firework_rocket] add NOKILL
 tag @e[x=82,y=127,z=59,distance=..1000,tag=!NOKILL,type=snowball] add NOKILL
+tag @e[x=82,y=127,z=59,distance=..1000,tag=!NOKILL,type=minecart] add NOKILL
 execute as @e[x=82,y=127,z=59,distance=..1000,tag=!NOKILL,type=!player] at @s run tp @s ~ ~-270 ~
 ### NO CREEPER EXPLODE ###
 data merge entity @e[type=creeper,tag=!DoesNotExplode,limit=1] {ExplosionRadius:0,Tags:["DoesNotExplode"]}
@@ -95,14 +97,14 @@ execute as @e[type=arrow] at @s if entity @e[type=item_frame,limit=1,distance=..
 ### DATABASE ###
 execute as @e[name=KarmaBoolean,scores={Database=1..}] run function templex_standard:karma
 ### TEAMS ###
-execute as @a[team=!NC,scores={PlayTime=0..503999},tag=!special] run function templex_standard:ncfix
-execute as @a[team=!Warrior,scores={PlayTime=504000..1223999},tag=!special] run function templex_standard:team_warrior
-execute as @a[team=!Explorer,scores={PlayTime=1224000..1583999},tag=!special] run function templex_standard:team_explorer
-execute as @a[team=!Master,scores={PlayTime=1584000..3167999},tag=!special] run function templex_standard:team_master
-execute as @a[team=!Knight,scores={PlayTime=3168000..6335999},tag=!special] run function templex_standard:team_knight
-execute as @a[team=!Magician,scores={PlayTime=6336000..12095999},tag=!special] run function templex_standard:team_magician
-execute as @a[team=!King,scores={PlayTime=12096000..50000000},tag=!special] run function templex_standard:team_king
+execute as @a[team=!NC,scores={TotalTime=..299999},tag=!special] run function templex_standard:ncfix
+execute as @a[team=!Warrior,scores={TotalTime=300000..999999},tag=!special] run function templex_standard:team_warrior
+execute as @a[team=!Explorer,scores={TotalTime=1000000..1999999},tag=!special] run function templex_standard:team_explorer
+execute as @a[team=!Master,scores={TotalTime=2000000..4999999},tag=!special] run function templex_standard:team_master
+execute as @a[team=!Knight,scores={TotalTime=5000000..11999999},tag=!special] run function templex_standard:team_knight
+execute as @a[team=!Magician,scores={TotalTime=12000000..23999999},tag=!special] run function templex_standard:team_magician
+execute as @a[team=!King,scores={TotalTime=24000000..24000010},tag=!special] run function templex_standard:team_king
 ### FORWARDED FUNCTIONS ###
-function templex_standard:needed_functions
+function templex_standard:function_forward
 # Terrestria
 execute as @a[scores={die.bool=1..}] run function templex_standard:die_bool

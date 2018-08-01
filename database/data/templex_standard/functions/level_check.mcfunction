@@ -1,3 +1,7 @@
+# Adder.
+scoreboard players set @s TotalTime 0
+scoreboard players operation @s TotalTime = @s WalkTime
+scoreboard players operation @s TotalTime += @s SprintTime
 # Prior tagging.
 execute as @s[tag=!tplx.lvled] run tag @s[scores={tplx.lvl=0..}] add tplx.lvled
 execute as @s[tag=!tplx.lvled] run scoreboard players set @s tplx.lvl 0
@@ -10,7 +14,7 @@ scoreboard players operation @s tplx.lvlmult *= @s tplx.lvlmult
 scoreboard players operation @s tplx.lvlmult /= lvldiv Database
 # Level up.
 scoreboard players set tplx.lvlcompress Database 100000
-scoreboard players operation @s tplx.lvlram = @s WalkTime
+scoreboard players operation @s tplx.lvlram = @s TotalTime
 scoreboard players operation @s tplx.lvlram /= tplx.lvlcompress Database
 scoreboard players operation @s tplx.lvlram -= @s tplx.lvlmult
 execute as @s[scores={tplx.lvlram=0..}] run scoreboard players add @s tplx.lvl 1

@@ -1,12 +1,13 @@
 ### PRE-FUNCTIONS ###
 execute as @a[scores={SpawnPoint=1..}] run function templex_standard:spawnpoint
-execute as @a[scores={Home=1..}] run function templex_standard:home
+execute as @a[scores={Home=1..}] run function templex_standard:newhome
+execute as @a[scores={Die=1..}] run function templex_standard:die
 execute as @a[scores={Spawn=1..}] run function templex_standard:spawn
 execute as @a[scores={Rules=1..}] run function templex_standard:rules
 execute as @a[scores={Login=1..}] run function templex_standard:login
 execute as @a[scores={Commands=1..}] run function templex_standard:commands
 #execute as @a[scores={Commands=1..}] run scoreboard players set @s Commands 0
-execute as @a[scores={ViewPlayTime=1..}] run function templex_standard:view_play_time
+execute as @a[scores={ViewWalkTime=1..}] run function templex_standard:view_walk_time
 execute as @a[scores={Vote=1..}] run function templex_standard:vote
 execute as @a[scores={TriggerReset=1..}] run function templex_standard:trigger_reset
 execute as @a[scores={TPEnd=1..}] run function templex_standard:tp_end_try
@@ -96,3 +97,10 @@ execute as @a[scores={Up_Elf_Sp=1..}] run function templex_standard:up_elf_sp
 execute as @a[scores={Up_Elf_Eff=1..}] run function templex_standard:up_elf_eff
 execute as @a[scores={DoMission=1..}] run function templex_standard:mission
 execute as @a[scores={Buy_OP_CP=1..}] run function templex_standard:buy_op_cp
+execute as @a[scores={Sell=1..}] run function templex_standard:sell
+execute as @a[scores={Sell_Wheat=1..}] run function templex_standard:sell_wheat
+execute as @a[scores={Sell_Cacti=1..}] run function templex_standard:sell_cacti
+execute as @a[scores={Sell_Reeds=1..}] run function templex_standard:sell_reeds
+execute as @a[scores={Sell_64Wheat=1..}] run function templex_standard:sell_64wheat
+execute as @a[scores={Sell_64Cacti=1..}] run function templex_standard:sell_64cacti
+execute as @a[scores={Sell_64Reeds=1..}] run function templex_standard:sell_64reeds

@@ -2,7 +2,7 @@ scoreboard players enable @a Rules
 scoreboard players enable @a SpawnPoint
 scoreboard players enable @a Spawn
 scoreboard players enable @a TPEnd
-#scoreboard players enable @a Commands
+scoreboard players enable @a Commands
 scoreboard players enable @a Home
 #scoreboard players enable @a ViewPlayTime
 scoreboard players enable @a ViewKarma
@@ -13,7 +13,7 @@ scoreboard players reset @a[tag=InProtection] Survival
 scoreboard players enable @a RTP
 scoreboard players enable @a ToggleParticle
 scoreboard players enable @a Tutorial
-#scoreboard players enable @a Survey
+scoreboard players enable @a Survey
 scoreboard players enable @a TPA
 execute as @p[tag=TPAing] run scoreboard players reset @a[tag=!TPAing] TPA
 scoreboard players enable @a TPAccept
@@ -28,16 +28,16 @@ scoreboard players enable @a Donate
 scoreboard players enable @a YouTubers
 scoreboard players enable @a TwitchStreamers
 scoreboard players enable @a SetHome
-#scoreboard players enable @a Gift
-#scoreboard players enable @a ToggleSpam
+scoreboard players enable @a Gift
+scoreboard players enable @a ToggleSpam
 scoreboard players enable @a ViewLevel
-#scoreboard players enable @a ViewStats
-#scoreboard players enable @a UpgradeClass
-#scoreboard players enable @a[scores={tplx.lvl=25..}] ToggleSpeed
+scoreboard players enable @a ViewStats
+scoreboard players enable @a UpgradeClass
+scoreboard players enable @a[scores={tplx.lvl=25..}] ToggleSpeed
 #scoreboard players enable @a[tag=OP] Freeze
-#scoreboard players enable @a DoMission
-#scoreboard players enable @a Up_Elf_Sp
-#scoreboard players enable @a Up_Elf_Eff
+scoreboard players enable @a DoMission
+scoreboard players enable @a Up_Elf_Sp
+scoreboard players enable @a Up_Elf_Eff
 scoreboard players enable @a Die
 scoreboard players enable @a VoteDay
 scoreboard players enable @a VoteNight
@@ -87,7 +87,11 @@ scoreboard players enable @a Buy_OP_CP
 # Selling
 scoreboard players enable @a Sell
 scoreboard players enable @a Sell_Wheat
-scoreboard players enable @a Sell_Cactus
+scoreboard players enable @a Sell_Cacti
+scoreboard players enable @a Sell_Reeds
+scoreboard players enable @a Sell_64Wheat
+scoreboard players enable @a Sell_64Cacti
+scoreboard players enable @a Sell_64Reeds
 ### Perks
 scoreboard players enable @a[tag=special] Firework
 scoreboard players enable @a[tag=special] ToggleParticle
