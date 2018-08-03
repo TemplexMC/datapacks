@@ -83,7 +83,6 @@ execute as @a[scores={Buy_GoldFarm=1..}] run function templex_standard:buy_goldf
 execute as @a[scores={Buy_IronFarm=1..}] run function templex_standard:buy_ironfarm
 execute as @a[scores={ViewLevel=1..}] run function templex_standard:view_level
 execute as @a[scores={ViewStats=1..}] run function templex_standard:view_stats
-execute as @a[scores={Buy_Class_Elf=1..}] run function templex_standard:buy_class_elf
 execute as @a[scores={UpgradeClass=1..}] run function templex_standard:upgrade_class
 execute as @a[scores={Buy_CoalFarm=1..}] run function templex_standard:buy_coalfarm
 execute as @a[scores={ToggleSpeed=1..}] run function templex_standard:togglespeed
@@ -95,7 +94,12 @@ execute as @a[scores={BuyTPA=1..}] run function templex_stand:buy_tpa_try
 execute as @a[scores={Buy_EnderEgg=1..}] run function templex_standard:buy_enderegg
 execute as @a[scores={Up_Elf_Sp=1..}] run function templex_standard:up_elf_sp
 execute as @a[scores={Up_Elf_Eff=1..}] run function templex_standard:up_elf_eff
+execute as @a[scores={Up_Dwarf_St=1..}] run function templex_standard:up_dwarf_st
+execute as @a[scores={Up_Dwarf_Eff=1..}] run function templex_standard:up_dwarf_eff
+execute as @a[scores={SelectClass=1..}] run function templex_standard:selectclass
 execute as @a[scores={DoMission=1..}] run function templex_standard:mission
+execute as @a[scores={Buy_Class_Elf=1..}] run function templex_standard:buy_class_elf
+execute as @a[scores={Buy_Class_Dwarf=1..}] run function templex_standard:buy_class_dwarf
 execute as @a[scores={Buy_OP_CP=1..}] run function templex_standard:buy_op_cp
 execute as @a[scores={Sell=1..}] run function templex_standard:sell
 execute as @a[scores={Sell_Wheat=1..}] run function templex_standard:sell_wheat

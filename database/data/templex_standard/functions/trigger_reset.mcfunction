@@ -38,6 +38,8 @@ scoreboard players enable @a[scores={tplx.lvl=25..}] ToggleSpeed
 scoreboard players enable @a DoMission
 scoreboard players enable @a Up_Elf_Sp
 scoreboard players enable @a Up_Elf_Eff
+scoreboard players enable @a Up_Dwarf_St
+scoreboard players enable @a Up_Dwarf_Eff
 scoreboard players enable @a Die
 scoreboard players enable @a VoteDay
 scoreboard players enable @a VoteNight
@@ -49,6 +51,7 @@ scoreboard players enable @a ViewWalkTime
 scoreboard players enable @a TPZombs
 scoreboard players enable @a SeeZombsStats
 scoreboard players enable @a TPOP
+scoreboard players enable @a SelectClass
 ### All Buyable Items
 # Indirect Items
 scoreboard players enable @a Shulker
@@ -78,6 +81,7 @@ scoreboard players enable @a Buy_500XP
 scoreboard players enable @a Buy_GoldFarm
 scoreboard players enable @a Buy_IronFarm
 scoreboard players enable @a Buy_Class_Elf
+scoreboard players enable @a Buy_Class_Dwarf
 scoreboard players enable @a Buy_CoalFarm
 scoreboard players enable @a Buy_SlimeFarm
 scoreboard players enable @a Buy_LightningG

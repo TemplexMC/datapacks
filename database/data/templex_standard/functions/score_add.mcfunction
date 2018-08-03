@@ -9,6 +9,7 @@ scoreboard objectives add Buy_Arrow trigger
 scoreboard objectives add Buy_Coal trigger
 scoreboard objectives add Buy_CoalFarm trigger
 scoreboard objectives add Buy_Class_Elf trigger
+scoreboard objectives add Buy_Class_Dwarf trigger
 scoreboard objectives add Buy_Diamonds trigger
 scoreboard objectives add Buy_Emeralds trigger
 scoreboard objectives add Buy_EnderEgg trigger
@@ -46,6 +47,7 @@ scoreboard objectives add RTP trigger
 scoreboard objectives add Rules trigger
 scoreboard objectives add Secret trigger
 scoreboard objectives add SeeZombsStats trigger
+scoreboard objectives add SelectClass trigger
 scoreboard objectives add Sell trigger
 scoreboard objectives add Sell_64Wheat trigger
 scoreboard objectives add Sell_64Cacti trigger
@@ -80,6 +82,8 @@ scoreboard objectives add TriggerReset trigger
 scoreboard objectives add Tutorial trigger
 scoreboard objectives add Up_Elf_Sp trigger
 scoreboard objectives add Up_Elf_Eff trigger
+scoreboard objectives add Up_Dwarf_St trigger
+scoreboard objectives add Up_Dwarf_Eff trigger
 scoreboard objectives add UpgradeClass trigger
 scoreboard objectives add ViewKarma trigger
 scoreboard objectives add ViewLevel trigger
@@ -134,6 +138,10 @@ scoreboard objectives add ElvenLevel dummy [{"text":"Elven Level"}]
 scoreboard objectives add ElvenEff dummy [{"text":"Elven Efficiency"}]
 scoreboard objectives add ElvenSpeed dummy [{"text":"Elven Speed"}]
 scoreboard objectives add ElvenUpgradeCost dummy [{"text":"Elven Upgrade Cost"}]
+scoreboard objectives add DwarvenLevel dummy [{"text":"Dwarven Level"}]
+scoreboard objectives add DwarvenEff dummy [{"text":"Dwarven Efficiency"}]
+scoreboard objectives add DwarvenStrength dummy [{"text":"Dwarven Strength"}]
+scoreboard objectives add DwarvUpgradeCost dummy [{"text":"Dwarven Upgrade Cost"}]
 #scoreboard objectives add TPAs dummy
 scoreboard objectives add VotePartyTick dummy
 scoreboard objectives add SellItems dummy
