@@ -48,6 +48,7 @@ scoreboard players enable @a ViewWalkTime
 #scoreboard players enable @a TPArena
 scoreboard players enable @a TPZombs
 scoreboard players enable @a SeeZombsStats
+scoreboard players enable @a TPOP
 ### All Buyable Items
 # Indirect Items
 scoreboard players enable @a Shulker

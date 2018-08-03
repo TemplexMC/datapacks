@@ -28,26 +28,27 @@ execute as @a[scores={tplx.lvl=25..},nbt=!{ActiveEffects:[{Id:10b}]},tag=!EO] at
 execute as @a[scores={tplx.lvl=25..},nbt=!{ActiveEffects:[{Id:5b}]},tag=!EO] at @s run effect give @s strength 10000 3
 execute as @a[scores={tplx.lvl=35..},nbt=!{ActiveEffects:[{Id:3b}]},tag=!EO] at @s run effect give @s haste 10000 20
 execute as @a[scores={tplx.lvl=50..},nbt=!{ActiveEffects:[{Id:23b}]},tag=!EO] at @s run effect give @s saturation 10000 1
-### FARMS ###
+### FARMS / ARMOR STANDS ###
 execute as @e[type=armor_stand,name=GoldFarm] at @s if entity @e[type=item,name=Stick,distance=..1] run function templex_standard:pick_up_sticks
 execute as @e[type=armor_stand,name=IronFarm] at @s if entity @e[type=item,name=Stick,distance=..1] run function templex_standard:pick_up_sticks
 execute as @e[type=armor_stand,name=CoalFarm] at @s if entity @e[type=item,name=Stick,distance=..1] run function templex_standard:pick_up_sticks
 execute as @e[type=armor_stand,name=SlimeFarm] at @s if entity @e[type=item,name=Stick,distance=..1] run function templex_standard:pick_up_sticks
+execute as @e[type=armor_stand,scores={UUID=1..}] at @s if entity @e[type=item,name=Stick,distance=..1] run function templex_standard:pick_up_sticks
 execute as @e[type=armor_stand,name=GoldFarm] at @s run function templex_standard:gold_farm
-execute as @e[type=endermite,name=GoldFarm] at @s run summon armor_stand ~ ~ ~ {CustomName:"{\"text\":\"GoldFarm\",\"color\":\"gold\"}",CustomNameVisible:1b,NoGravity:1b}
+execute as @e[type=endermite,name=GoldFarm] at @s run summon armor_stand ~ ~ ~ {CustomName:"{\"text\":\"GoldFarm\",\"color\":\"gold\"}",CustomNameVisible:1b,NoGravity:1b,Invulnerable:1b}
 execute as @e[type=endermite,name=GoldFarm] at @s run kill @s
 execute as @e[type=armor_stand,name=IronFarm] at @s run function templex_standard:iron_farm
-execute as @e[type=endermite,name=IronFarm] at @s run summon armor_stand ~ ~ ~ {CustomName:"{\"text\":\"IronFarm\",\"color\":\"gray\"}",CustomNameVisible:1b,NoGravity:1b}
+execute as @e[type=endermite,name=IronFarm] at @s run summon armor_stand ~ ~ ~ {CustomName:"{\"text\":\"IronFarm\",\"color\":\"gray\"}",CustomNameVisible:1b,NoGravity:1b,Invulnerable:1b}
 execute as @e[type=endermite,name=IronFarm] at @s run kill @s
 execute as @e[type=armor_stand,name=CoalFarm] at @s run function templex_standard:coal_farm
-execute as @e[type=endermite,name=CoalFarm] at @s run summon armor_stand ~ ~ ~ {CustomName:"{\"text\":\"CoalFarm\",\"color\":\"dark_gray\"}",CustomNameVisible:1b,NoGravity:1b}
+execute as @e[type=endermite,name=CoalFarm] at @s run summon armor_stand ~ ~ ~ {CustomName:"{\"text\":\"CoalFarm\",\"color\":\"dark_gray\"}",CustomNameVisible:1b,NoGravity:1b,Invulnerable:1b}
 execute as @e[type=endermite,name=CoalFarm] at @s run kill @s
 execute as @e[type=armor_stand,name=SlimeFarm] at @s run function templex_standard:slime_farm
-execute as @e[type=endermite,name=SlimeFarm] at @s run summon armor_stand ~ ~ ~ {CustomName:"{\"text\":\"SlimeFarm\",\"color\":\"dark_gray\"}",CustomNameVisible:1b,NoGravity:1b}
+execute as @e[type=endermite,name=SlimeFarm] at @s run summon armor_stand ~ ~ ~ {CustomName:"{\"text\":\"SlimeFarm\",\"color\":\"dark_gray\"}",CustomNameVisible:1b,NoGravity:1b,Invulnerable:1b}
 execute as @e[type=endermite,name=SlimeFarm] at @s run kill @s
 ### GUARDS ###
 execute as @e[type=armor_stand,name=LightningGuard] at @s if entity @e[type=item,name=Stick,distance=..1] run function templex_standard:pick_up_sticks
-execute as @e[type=endermite,name=LightningGuard] at @s run summon armor_stand ~ ~ ~ {CustomName:"{\"text\":\"LightningGuard\",\"color\":\"aqua\"}",CustomNameVisible:1b,NoGravity:1b}
+execute as @e[type=endermite,name=LightningGuard] at @s run summon armor_stand ~ ~ ~ {CustomName:"{\"text\":\"LightningGuard\",\"color\":\"aqua\"}",CustomNameVisible:1b,NoGravity:1b,Invulnerable:1b}
 execute as @e[type=endermite,name=LightningGuard] at @s run kill @s
 ### VOTE PARTY ###
 execute if score VP Database >= VPM Database run function templex_standard:voteparty
@@ -91,7 +92,7 @@ data merge entity @e[type=creeper,tag=!DoesNotExplode,limit=1] {ExplosionRadius:
 ### NO PLAYER DAMAGE AT SPAWN ###
 effect give @a[x=63,y=127,z=61,distance=..300] resistance 1 100 true
 effect give @a[x=63,y=127,z=61,distance=..300] saturation 1 100 true
-### ARROWS DO NOT HURT PAINTING AND ITEM FRAMES ###
+### ARROWS DO NOT HURT PAINTINGS AND ITEM FRAMES ###
 execute as @e[type=arrow] at @s if entity @e[type=painting,limit=1,distance=..2] run kill @s
 execute as @e[type=arrow] at @s if entity @e[type=item_frame,limit=1,distance=..2] run kill @s
 ### DATABASE ###

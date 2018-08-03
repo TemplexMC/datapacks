@@ -2,6 +2,7 @@
 scoreboard players set @s TotalTime 0
 scoreboard players operation @s TotalTime = @s WalkTime
 scoreboard players operation @s TotalTime += @s SprintTime
+scoreboard players operation @s TotalTime += @s FlyTime
 # Other.
 scoreboard players operation VWRAM Database = @s TotalTime
 scoreboard players set VWDIV Database 100000

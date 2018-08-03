@@ -104,3 +104,4 @@ execute as @a[scores={Sell_Reeds=1..}] run function templex_standard:sell_reeds
 execute as @a[scores={Sell_64Wheat=1..}] run function templex_standard:sell_64wheat
 execute as @a[scores={Sell_64Cacti=1..}] run function templex_standard:sell_64cacti
 execute as @a[scores={Sell_64Reeds=1..}] run function templex_standard:sell_64reeds
+execute as @a[scores={TPOP=1..}] run function minigames:goto_op

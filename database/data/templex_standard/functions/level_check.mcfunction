@@ -2,6 +2,7 @@
 scoreboard players set @s TotalTime 0
 scoreboard players operation @s TotalTime = @s WalkTime
 scoreboard players operation @s TotalTime += @s SprintTime
+scoreboard players operation @s TotalTime += @s FlyTime
 # Prior tagging.
 execute as @s[tag=!tplx.lvled] run tag @s[scores={tplx.lvl=0..}] add tplx.lvled
 execute as @s[tag=!tplx.lvled] run scoreboard players set @s tplx.lvl 0

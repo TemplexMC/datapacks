@@ -2,6 +2,7 @@
 scoreboard players set @s TotalTime 0
 scoreboard players operation @s TotalTime = @s WalkTime
 scoreboard players operation @s TotalTime += @s SprintTime
+scoreboard players operation @s TotalTime += @s FlyTime
 # Multiplier.
 scoreboard players set lvldiv Database 8
 scoreboard players set lvladd Database 5

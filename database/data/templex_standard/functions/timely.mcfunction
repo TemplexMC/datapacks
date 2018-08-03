@@ -35,6 +35,7 @@ execute as @e[name=Minutes,scores={Database=40}] as @e[name=Seconds,scores={Data
 ###execute as @e[name=Minutes,scores={Database=55}] as @e[name=Seconds,scores={Database=0}] run function templex_standard:tc
 execute as @e[name=Minutes,scores={Database=60}] as @e[name=Seconds,scores={Database=0}] run function templex_standard:tc
 execute as @e[name=Minutes,scores={Database=60}] as @e[name=Seconds,scores={Database=0}] run function templex_standard:hourlykarma
+execute as @e[name=Minutes,scores={Database=60..}] run scoreboard players add * Mission 1
 execute as @e[name=Minutes,scores={Database=60..}] run scoreboard players add @e[name=Hours] Database 1
 execute as @e[name=Minutes,scores={Database=60..}] run scoreboard players remove @s Database 60
 scoreboard players add @e[type=armor_stand,name=GoldFarm] WalkTime 1

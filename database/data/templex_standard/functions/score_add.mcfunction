@@ -74,6 +74,7 @@ scoreboard objectives add TPArena trigger
 scoreboard objectives add TPARequest dummy
 scoreboard objectives add TPDeny trigger
 scoreboard objectives add TPEnd trigger
+scoreboard objectives add TPOP trigger
 scoreboard objectives add TPZombs trigger
 scoreboard objectives add TriggerReset trigger
 scoreboard objectives add Tutorial trigger
@@ -141,6 +142,9 @@ scoreboard objectives add ypos.ram dummy
 scoreboard objectives add zpos.ram dummy
 scoreboard objectives add SprintTime minecraft.custom:minecraft.sprint_one_cm [{"text":"Centimeters Sprinted"}]
 scoreboard objectives add TotalTime dummy [{"text":"Centimeters in Total"}]
+scoreboard objectives add FlyTime minecraft.custom:minecraft.fly_one_cm [{"text":"Centimeters Flown"}]
+scoreboard objectives add Health health [{"text":"Player Health"}]
+scoreboard objectives add Mission dummy [{"text":"Missions Left"}]
 # Tell.
 scoreboard players set @s TriggerReset 1
 tellraw @a [{"text":"Score Setup","color":"gold"},{"text":" : ","color":"dark_gray"},{"text":"Added all objectives back.","color":"green"}]
