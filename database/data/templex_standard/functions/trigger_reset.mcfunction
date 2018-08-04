@@ -44,6 +44,7 @@ scoreboard players enable @a Die
 scoreboard players enable @a VoteDay
 scoreboard players enable @a VoteNight
 scoreboard players enable @a ViewWalkTime
+scoreboard players enable @a SeeAllUUIDs
 
 #scoreboard players enable @a Ping
 ### Minigames
@@ -89,6 +90,7 @@ scoreboard players enable @a BuyTPA
 scoreboard players enable @a BuyRTP
 scoreboard players enable @a Buy_EnderEgg
 scoreboard players enable @a Buy_OP_CP
+scoreboard players enable @a Buy_Redstone
 # Selling
 scoreboard players enable @a Sell
 scoreboard players enable @a Sell_Wheat

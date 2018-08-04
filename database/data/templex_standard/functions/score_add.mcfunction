@@ -22,6 +22,7 @@ scoreboard objectives add Buy_Iron trigger
 scoreboard objectives add Buy_IronFarm trigger
 scoreboard objectives add Buy_LightningG trigger
 scoreboard objectives add Buy_OP_CP trigger
+scoreboard objectives add Buy_Redstone trigger
 scoreboard objectives add Buy_Slimeball trigger
 scoreboard objectives add Buy_SlimeFarm trigger
 scoreboard objectives add BuyRTP trigger
@@ -46,6 +47,7 @@ scoreboard objectives add Ping trigger
 scoreboard objectives add RTP trigger
 scoreboard objectives add Rules trigger
 scoreboard objectives add Secret trigger
+scoreboard objectives add SeeAllUUIDs trigger
 scoreboard objectives add SeeZombsStats trigger
 scoreboard objectives add SelectClass trigger
 scoreboard objectives add Sell trigger

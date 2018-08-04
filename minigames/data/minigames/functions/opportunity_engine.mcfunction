@@ -3,7 +3,7 @@
 execute as @p[tag=!InOP,distance=..200] as @s[gamemode=survival] run function templex_standard:protection
 execute as @p[tag=!InOP,distance=..200] as @s[gamemode=adventure] run tag @s add EO
 execute as @p[tag=!InOP,distance=..200] as @s[gamemode=adventure] run effect clear @s
-execute as @p[tag=!InOP,distance=..200] as @s[gamemode=adventure] as @s[tag=selElf] run give @s bow{display:{Name:"{\"text\":\"Elven Bow\",\"color\":\"green\"}"},Enchantments:[{id:"infinity",lvl:1},{id:"unbreaking",lvl:10},{id:"power",lvl:100},{id:"punch",lvl:7}]} 1
+execute as @p[tag=!InOP,distance=..200] as @s[gamemode=adventure] as @s[tag=selElf] run give @s bow{display:{Name:"{\"text\":\"Elven Bow\",\"color\":\"green\"}"},Enchantments:[{id:"infinity",lvl:1},{id:"unbreaking",lvl:10},{id:"power",lvl:50},{id:"punch",lvl:7}]} 1
 execute as @p[tag=!InOP,distance=..200] as @s[gamemode=adventure] as @s[tag=selElf] run give @s iron_sword{display:{Name:"{\"text\":\"Elven Daggar\",\"color\":\"green\"}"},Enchantments:[{id:"sharpness",lvl:35},{id:"unbreaking",lvl:10},{id:"smite",lvl:20}]} 1
 execute as @p[tag=!InOP,distance=..200] as @s[gamemode=adventure] as @s[tag=selElf] run give @s diamond_chestplate{display:{Name:"{\"text\":\"Mithril\",\"\":\"green\"}"},Enchantments:[{id:"protection",lvl:100},{id:"projectile_protection",lvl:100},{id:"unbreaking",lvl:100}]}
 execute as @p[tag=!InOP,distance=..200] as @s[gamemode=adventure] as @s[tag=selElf] run give @s arrow 1
