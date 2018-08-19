@@ -47,6 +47,9 @@ scoreboard players enable @a ViewWalkTime
 scoreboard players enable @a SeeAllUUIDs
 
 #scoreboard players enable @a Ping
+### TOGGLES
+# Potions
+scoreboard players enable @a ToggleHaste
 ### Minigames
 #scoreboard players enable @a TPArena
 scoreboard players enable @a TPZombs
@@ -86,11 +89,15 @@ scoreboard players enable @a Buy_Class_Dwarf
 scoreboard players enable @a Buy_CoalFarm
 scoreboard players enable @a Buy_SlimeFarm
 scoreboard players enable @a Buy_LightningG
+scoreboard players enable @a Buy_TaggerG
 scoreboard players enable @a BuyTPA
 scoreboard players enable @a BuyRTP
 scoreboard players enable @a Buy_EnderEgg
 scoreboard players enable @a Buy_OP_CP
+scoreboard players enable @a Buy_OP_BT
 scoreboard players enable @a Buy_Redstone
+scoreboard players enable @a Buy_Lapis
+scoreboard players enable @a Buy_Rocket
 # Selling
 scoreboard players enable @a Sell
 scoreboard players enable @a Sell_Wheat

@@ -8,7 +8,7 @@ execute as @s[tag=tplx.home.true1] as @s[tag=!home.got] run scoreboard players o
 execute as @s[tag=tplx.home.true1] as @s[tag=!home.got] run scoreboard players operation @s zpos.ram = @s zPos
 execute as @s[tag=tplx.home.true1] as @s[tag=!home.got] run tag @s add home.got
 # Doers.
-execute as @s[tag=tplx.home.true1] as @s[tag=home.got] as @s[tag=!home.begin] run teleport @s 0 0 0
+execute as @s[tag=tplx.home.true1] as @s[tag=home.got] as @s[tag=!home.begin] in overworld run teleport @s 0 0 0
 execute as @s[tag=tplx.home.true1] as @s[tag=home.got] as @s[tag=!home.begin] run effect give @s resistance 1000 100 true
 execute as @s[tag=tplx.home.true1] as @s[tag=home.got] as @s[tag=!home.begin] run effect give @s levitation 1000 255 true
 execute as @s[tag=tplx.home.true1] as @s[tag=home.got] as @s[tag=!home.begin] run tag @s add home.begin
@@ -100,14 +100,14 @@ execute as @s[tag=tplx.home.true1] as @s[tag=home.got] as @s[tag=!home.at] as @s
 ### GetY
 #execute as @s[tag=tplx.home.true1] as @s[tag=home.got] as @s[tag=!home.at] as @s[scores={xpos.ram=0,zpos.ram=0}] as @s[tag=!GetY] run fill ~ 0 ~ ~ 255 ~ emerald_ore replace air
 #execute as @s[tag=tplx.home.true1] as @s[tag=home.got] as @s[tag=!home.at] as @s[scores={xpos.ram=0,zpos.ram=0}] as @s[tag=!GetY] run fill ~ 0 ~ ~ 255 ~ gold_ore replace water
-#execute as @s[tag=tplx.home.true1] as @s[tag=home.got] as @s[tag=!home.at] as @s[scores={xpos.ram=0,zpos.ram=0}] as @s[tag=!GetY] run tag @s add GetY
+execute as @s[tag=tplx.home.true1] as @s[tag=home.got] as @s[tag=!home.at] as @s[scores={xpos.ram=0,zpos.ram=0}] as @s[tag=!GetY] run tag @s add GetY
 ### AtY
 #execute as @s[tag=tplx.home.true1] as @s[tag=home.got] as @s[tag=!home.at] as @s[scores={xpos.ram=0,zpos.ram=0}] as @s[tag=!AtY] at @s run teleport @s ~ ~ ~ ~ 90
 #execute as @s[tag=tplx.home.true1] as @s[tag=home.got] as @s[tag=!home.at] as @s[scores={xpos.ram=0,zpos.ram=0}] as @s[tag=!AtY] at @s run teleport @s @e[type=armor_stand,nbt={Invisible:1b,Invulnerable:1b},limit=1,sort=nearest]
-execute as @s[tag=tplx.home.true1] as @s[tag=home.got] as @s[tag=!home.at] as @s[scores={xpos.ram=0,zpos.ram=0}] as @s[tag=!AtY] run tag @s add AtY
+#execute as @s[tag=tplx.home.true1] as @s[tag=home.got] as @s[tag=!home.at] as @s[scores={xpos.ram=0,zpos.ram=0}] as @s[tag=!AtY] run tag @s add AtY
 ### DONE
-#execute as @s[tag=tplx.home.true1] as @s[tag=home.got] as @s[tag=!home.at] as @s[scores={ypos.ram=0,xpos.ram=0,zpos.ram=0}] at @s run tag @s add home.at
-execute as @s[tag=tplx.home.true1] as @s[tag=home.got] as @s[tag=!home.at] as @s[scores={xpos.ram=0,zpos.ram=0}] as @s[tag=AtY] at @s run tag @s add home.at
+execute as @s[tag=tplx.home.true1] as @s[tag=home.got] as @s[tag=!home.at] as @s[scores={ypos.ram=0,xpos.ram=0,zpos.ram=0}] at @s run tag @s add home.at
+#execute as @s[tag=tplx.home.true1] as @s[tag=home.got] as @s[tag=!home.at] as @s[scores={xpos.ram=0,zpos.ram=0}] as @s[tag=AtY] at @s run tag @s add home.at
 # At.
 execute as @s[tag=tplx.home.true1] as @s[tag=home.got] as @s[tag=home.at] run tellraw @s [{"text":"You have arrived at your home!","color":"green"}]
 execute as @s[tag=tplx.home.true1] as @s[tag=home.got] as @s[tag=home.at] run tellraw @a[tag=OP] [{"text":"\u00A76Home System \u00A78: "},{"selector":"@s","color":"green"},{"text":" was successfully teleported to their set home!","color":"red"}]
@@ -123,6 +123,7 @@ execute as @s[tag=home.done] run scoreboard players reset @s zpos.ram
 execute as @s[tag=home.done] run scoreboard players reset @s Home
 execute as @s[tag=home.done] run scoreboard players enable @a Home
 execute as @s[tag=home.done] run tag @s remove AtY
+execute as @s[tag=home.done] run tag @s remove GetY
 execute as @s[tag=home.done] run tag @s remove home.at
 execute as @s[tag=home.done] run tag @s remove home.got
 execute as @s[tag=home.done] run tag @s remove home.begin

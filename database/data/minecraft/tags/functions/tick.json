@@ -1,5 +1,6 @@
 {
 	"values": [
-		"templex_standard:lp_s"
+		"templex_standard:lp_s",
+		"heads:trigger_test"
 	]
 }

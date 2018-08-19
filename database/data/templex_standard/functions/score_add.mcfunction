@@ -20,11 +20,15 @@ scoreboard objectives add Buy_Head_Shark trigger
 scoreboard objectives add Buy_HolyTrident trigger
 scoreboard objectives add Buy_Iron trigger
 scoreboard objectives add Buy_IronFarm trigger
+scoreboard objectives add Buy_Lapis trigger
 scoreboard objectives add Buy_LightningG trigger
+scoreboard objectives add Buy_OP_BT trigger
 scoreboard objectives add Buy_OP_CP trigger
 scoreboard objectives add Buy_Redstone trigger
+scoreboard objectives add Buy_Rocket trigger
 scoreboard objectives add Buy_Slimeball trigger
 scoreboard objectives add Buy_SlimeFarm trigger
+scoreboard objectives add Buy_TaggerG trigger
 scoreboard objectives add BuyRTP trigger
 #scoreboard objectives add BuyTPA trigger
 scoreboard objectives add CmdBook trigger
@@ -68,6 +72,7 @@ scoreboard objectives add Store_TC trigger
 scoreboard objectives add Survey trigger
 scoreboard objectives add Survival trigger
 scoreboard objectives add Taunt trigger
+scoreboard objectives add ToggleHaste trigger
 scoreboard objectives add ToggleParticle trigger
 scoreboard objectives add ToggleSpam trigger
 scoreboard objectives add ToggleSpeed trigger

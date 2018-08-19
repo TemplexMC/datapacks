@@ -1,5 +1,5 @@
 # Players who have the TPAto tag.
-execute as @s[tag=TPAto] run tp @p[tag=TPAing] @s
+execute as @s[tag=TPAto] at @s run tp @p[tag=TPAing] @s
 execute as @s[tag=TPAto] run tellraw @p[tag=TPAing] [{"text":"Successfully teleported you to ","color":"gold"},{"selector":"@s","color":"green"},{"text":"!","color":"gold"}]
 execute as @s[tag=TPAto] run tellraw @s [{"text":"Successfully teleported ","color":"gold"},{"selector":"@p[tag=TPAing]","color":"green"},{"text":" to you!","color":"gold"}]
 execute as @s[tag=TPAto] run tellraw @a[tag=OP] [{"text":"New TPA System","color":"gold"},{"text":" : ","color":"dark_gray"},{"text":"Successfully teleported ","color":"red"},{"selector":"@p[tag=TPAing]","color":"green"},{"text":" to ","color":"red"},{"selector":"@s","color":"green"},{"text":"!","color":"red"}]

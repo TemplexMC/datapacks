@@ -1,4 +1,4 @@
-tp @s -2026 25 4047
+execute in the_end run tp @s 100 49 0
 tellraw @a[tag=OP] [{"text":"TPEnd System","color":"gold"},{"text":" : ","color":"dark_gray"},{"text":"Just TPed ","color":"red"},{"selector":"@s","color":"green"},{"text":" to the End!","color":"red"}]
 tellraw @s [{"text":"Successfully TPed to the End!","color":"green","italic":"true"}]
 scoreboard players set @s TPEnd 0

@@ -11,7 +11,7 @@ execute as @a[tag=!Booked] run function templex_standard:cmd_book
 function templex_standard:bossbar
 execute as @a[gamemode=survival,tag=!ByPassGamemode,distance=..350] run function templex_standard:protection
 ### VOTE PARTY ###
-execute if score VP Database matches 50 run function templex_standard:voteparty
+execute if score VP Database >= VPM Database run function templex_standard:voteparty
 execute as @a[tag=VoteParty] at @s run scoreboard players add @s VotePartyTick 1
 execute as @a[tag=VoteParty] at @s run title @s actionbar [{"text":"VoteParty still loves you!","color":"aqua"}]
 execute as @a[scores={VotePartyTick=72000..}] run tag @a remove VoteParty
@@ -44,8 +44,8 @@ execute positioned 82 127 59 as @e[distance=..1000,tag=!NOKILL,type=!player] at 
 ### NO CREEPER EXPLODE ###
 data merge entity @e[type=creeper,tag=!DoesNotExplode,limit=1] {ExplosionRadius:0,Tags:["DoesNotExplode"]}
 ### NO PLAYER DAMAGE AT SPAWN ###
-effect give @a[x=63,y=127,z=61,distance=..300] resistance 1 100 true
-effect give @a[x=63,y=127,z=61,distance=..300] saturation 1 100 true
+effect give @a[x=82,y=127,z=59,distance=..300] resistance 1 100 true
+effect give @a[x=82,y=127,z=59,distance=..300] saturation 1 100 true
 ### FARMS ###
 execute as @e[type=armor_stand,name=GoldFarm] at @s if entity @e[type=item,name=Stick,distance=..1] run function templex_standard:pick_up_sticks
 execute as @e[type=armor_stand,name=IronFarm] at @s if entity @e[type=item,name=Stick,distance=..1] run function templex_standard:pick_up_sticks
@@ -61,18 +61,24 @@ execute as @e[type=armor_stand,name=CoalFarm] at @s run function templex_standar
 execute as @e[type=endermite,name=CoalFarm] at @s run summon armor_stand ~ ~ ~ {CustomName:"{\"text\":\"CoalFarm\",\"color\":\"dark_gray\"}",CustomNameVisible:1b,NoGravity:1b}
 execute as @e[type=endermite,name=CoalFarm] at @s run kill @s
 execute as @e[type=armor_stand,name=SlimeFarm] at @s run function templex_standard:slime_farm
-execute as @e[type=endermite,name=SlimeFarm] at @s run summon armor_stand ~ ~ ~ {CustomName:"{\"text\":\"SlimeFarm\",\"color\":\"dark_gray\"}",CustomNameVisible:1b,NoGravity:1b}
+execute as @e[type=endermite,name=SlimeFarm] at @s run summon armor_stand ~ ~ ~ {CustomName:"{\"text\":\"SlimeFarm\",\"color\":\"green\"}",CustomNameVisible:1b,NoGravity:1b}
 execute as @e[type=endermite,name=SlimeFarm] at @s run kill @s
 ### DATABASE ###
 execute as @e[name=KarmaBoolean,scores={Database=1..}] run function templex_standard:karma
 ### TEAMS ###
-execute as @a[team=!NC,scores={WalkTime=..299999},tag=!special] run function templex_standard:ncfix
-execute as @a[team=!Warrior,scores={WalkTime=300000..999999},tag=!special] run function templex_standard:team_warrior
-execute as @a[team=!Explorer,scores={WalkTime=1000000..1999999},tag=!special] run function templex_standard:team_explorer
-execute as @a[team=!Master,scores={WalkTime=2000000..4999999},tag=!special] run function templex_standard:team_master
-execute as @a[team=!Knight,scores={WalkTime=5000000..11999999},tag=!special] run function templex_standard:team_knight
-execute as @a[team=!Magician,scores={WalkTime=12000000..23999999},tag=!special] run function templex_standard:team_magician
-execute as @a[team=!King,scores={WalkTime=24000000..24000010},tag=!special] run function templex_standard:team_king
+execute as @a[team=!NC,scores={TotalTime=..299999},tag=!special] run function templex_standard:ncfix
+# 3 km
+execute as @a[team=!Warrior,scores={TotalTime=300000..1999999},tag=!special] run function templex_standard:team_warrior
+# 20 km
+execute as @a[team=!Explorer,scores={TotalTime=2000000..39999999},tag=!special] run function templex_standard:team_explorer
+# 400 km
+execute as @a[team=!Master,scores={TotalTime=40000000..299999999},tag=!special] run function templex_standard:team_master
+# 3,000
+execute as @a[team=!Knight,scores={TotalTime=300000000..899999999},tag=!special] run function templex_standard:team_knight
+# 9,000
+execute as @a[team=!Magician,scores={TotalTime=900000000..1499999999},tag=!special] run function templex_standard:team_magician
+# 15,000 km
+execute as @a[team=!King,scores={TotalTime=1500000000..},tag=!special] run function templex_standard:team_king
 ### FORWARDED FUNCTIONS ###
 #function templex_standard:essential_functions
 function templex_standard:needed_functions

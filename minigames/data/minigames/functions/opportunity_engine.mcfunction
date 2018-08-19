@@ -3,14 +3,14 @@
 execute as @p[tag=!InOP,distance=..200] as @s[gamemode=survival] run function templex_standard:protection
 execute as @p[tag=!InOP,distance=..200] as @s[gamemode=adventure] run tag @s add EO
 execute as @p[tag=!InOP,distance=..200] as @s[gamemode=adventure] run effect clear @s
-execute as @p[tag=!InOP,distance=..200] as @s[gamemode=adventure] as @s[tag=selElf] run give @s bow{display:{Name:"{\"text\":\"Elven Bow\",\"color\":\"green\"}"},Enchantments:[{id:"infinity",lvl:1},{id:"unbreaking",lvl:10},{id:"power",lvl:50},{id:"punch",lvl:7}]} 1
-execute as @p[tag=!InOP,distance=..200] as @s[gamemode=adventure] as @s[tag=selElf] run give @s iron_sword{display:{Name:"{\"text\":\"Elven Daggar\",\"color\":\"green\"}"},Enchantments:[{id:"sharpness",lvl:35},{id:"unbreaking",lvl:10},{id:"smite",lvl:20}]} 1
-execute as @p[tag=!InOP,distance=..200] as @s[gamemode=adventure] as @s[tag=selElf] run give @s diamond_chestplate{display:{Name:"{\"text\":\"Mithril\",\"\":\"green\"}"},Enchantments:[{id:"protection",lvl:100},{id:"projectile_protection",lvl:100},{id:"unbreaking",lvl:100}]}
+execute as @p[tag=!InOP,distance=..200] as @s[gamemode=adventure] as @s[tag=selElf] run give @s bow{display:{Name:"{\"text\":\"Elven Bow\",\"color\":\"green\"}"},Enchantments:[{id:"infinity",lvl:1},{id:"unbreaking",lvl:10},{id:"power",lvl:25},{id:"punch",lvl:1}]} 1
+execute as @p[tag=!InOP,distance=..200] as @s[gamemode=adventure] as @s[tag=selElf] run give @s iron_sword{display:{Name:"{\"text\":\"Elven Daggar\",\"color\":\"green\"}"},Enchantments:[{id:"sharpness",lvl:45},{id:"unbreaking",lvl:10},{id:"smite",lvl:20}]} 1
+execute as @p[tag=!InOP,distance=..200] as @s[gamemode=adventure] as @s[tag=selElf] run give @s diamond_chestplate{display:{Name:"{\"text\":\"Mithril\",\"\":\"green\"}"},Enchantments:[{id:"protection",lvl:100},{id:"projectile_protection",lvl:100},{id:"unbreaking",lvl:100},{id:"fire_protection",lvl:80}]}
 execute as @p[tag=!InOP,distance=..200] as @s[gamemode=adventure] as @s[tag=selElf] run give @s arrow 1
-execute as @p[tag=!InOP,distance=..200] as @s[gamemode=adventure] as @s[tag=selDwarf] run give @s diamond_axe{display:{Name:"{\"text\":\"Dwarven Axe\",\"color\":\"black\"}"},Enchantments:[{id:"sharpness",lvl:25},{id:"unbreaking",lvl:10},{id:"knockback",lvl:7}]} 1
-execute as @p[tag=!InOP,distance=..200] as @s[gamemode=adventure] as @s[tag=selDwarf] run give @s diamond_chestplate{display:{Name:"{\"text\":\"Dark Steel\",\"\":\"black\"}"},Enchantments:[{id:"protection",lvl:100},{id:"fire_protection",lvl:100},{id:"unbreaking",lvl:100}]}
-execute as @p[tag=!InOP,distance=..200] as @s[gamemode=adventure] as @s[tag=selDwarf] run give @s shield{display:{Name:"{\"text\":\"Dwarven Sheild\",\"color\":\"black\"}"}} 1
-execute as @p[tag=!InOP,distance=..200] as @s[gamemode=adventure] as @s[tag=pizzaCutter] run give @s diamond_sword{display:{Name:"{\"text\":\"Pizza Cutter\",\"color\":\"dark_red\"}"},Enchantments:[{id:"sharpness",lvl:100},{id:"smite",lvl:500}]}
+execute as @p[tag=!InOP,distance=..200] as @s[gamemode=adventure] as @s[tag=selDwarf] run give @s diamond_axe{display:{Name:"{\"text\":\"Dwarven Axe\",\"color\":\"black\"}"},Enchantments:[{id:"sharpness",lvl:40},{id:"unbreaking",lvl:10},{id:"knockback",lvl:1}]} 1
+execute as @p[tag=!InOP,distance=..200] as @s[gamemode=adventure] as @s[tag=selDwarf] run give @s diamond_chestplate{display:{Name:"{\"text\":\"Dark Steel\",\"\":\"black\"}"},Enchantments:[{id:"protection",lvl:100},{id:"fire_protection",lvl:100},{id:"unbreaking",lvl:100},{id:"projectile_protection",lvl:80}]}
+execute as @p[tag=!InOP,distance=..200] as @s[gamemode=adventure] as @s[tag=selDwarf] run give @s shield{display:{Name:"{\"text\":\"Dwarven Sheild\",\"color\":\"black\"}"},Enchantments:[{id:"unbreaking",lvl:100}]} 1
+execute as @p[tag=!InOP,distance=..200] as @s[gamemode=adventure] as @s[tag=pizzaCutter] run give @s diamond_sword{display:{Name:"{\"text\":\"Pizza Cutter\",\"color\":\"dark_red\"}"},Enchantments:[{id:"sharpness",lvl:120},{id:"smite",lvl:500}]}
 execute as @p[tag=!InOP,distance=..200] as @s[gamemode=adventure] run tag @s add InOP
 # Dead.
 execute as @a[tag=InOP] as @s[scores={Health=0}] run tag @s add OPDead
@@ -102,6 +102,7 @@ execute as @a[tag=InOP] as @s[tag=selDwarf] as @s[scores={DwarvenStrength=31..}]
 execute as @a[tag=InOP,distance=..200] run scoreboard players reset @s Survival
 execute as @a[tag=InOP,distance=..200] run scoreboard players reset @s Home
 execute as @a[tag=InOP,distance=..200] run scoreboard players reset @s SetHome
+execute as @a[tag=InOP,distance=..200] run scoreboard players reset @s Spawn
 execute as @a[tag=InOP,distance=..200] run effect give @s saturation 1 1
-teleport @e[type=!player,type=!item,type=!armor_stand,type=!arrow,distance=..200] ~ ~-270 ~
+teleport @e[type=!player,type=!item,type=!armor_stand,type=!trident,type=!arrow,distance=..200] ~ ~-270 ~
 ##### /summon minecraft:armor_stand -75630 135 -304967 {CustomName:"{\"text\":\"Opportunity\"}",Invisible:1b,Invulnerable:1b,NoGravity:1b}

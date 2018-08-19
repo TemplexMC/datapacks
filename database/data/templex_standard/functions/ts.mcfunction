@@ -34,6 +34,11 @@ team add King
 
 team add TAssassin
 team add TCrusader
+
+team add Rapture
+
+team add MOD
+team add ADMIN
 # NPCs.
 team add GREEN
 team add GOLD
@@ -65,6 +70,9 @@ team modify JrStreamer color gray
 team modify NC color gray
 team modify Alchemist color gray
 
+team modify MOD color gray
+team modify ADMIN color gray
+
 team modify Explorer color gray
 team modify Warrior color gray
 team modify Master color gray
@@ -74,57 +82,64 @@ team modify King color gray
 
 team modify TAssassin color gray
 team modify TCrusader color gray
+
+team modify Rapture color gold
 # Prefixes / Suffixes.
-team modify Owner prefix [{"text":"\u00A74You\u00A76Tuber "}]
+team modify Owner prefix [{"text":"\u00A74You\u00A76Tuber \u00A77"}]
 team modify Owner suffix [{"text":" \u00A73Owner"}]
-team modify HeadSysadmin prefix [{"text":"\u00A76Head \u00A76Sys\u00A7cadmin "}]
+team modify HeadSysadmin prefix [{"text":"\u00A76Head \u00A76Sys\u00A7cadmin \u00A77"}]
 team modify HeadSysadmin suffix [{"text":" \u00A74You\u00A76Tuber"}]
-team modify HeadAdmin prefix [{"text":"\u00A76Head \u00A7cAdmin "}]
-team modify HeadMod prefix [{"text":"\u00A76Head \u00A74Mod "}]
-team modify HeadBuilder prefix [{"text":"\u00A76Head \u00A72Builder "}]
+team modify HeadAdmin prefix [{"text":"\u00A76Head \u00A7cAdmin \u00A77"}]
+team modify HeadMod prefix [{"text":"\u00A76Head \u00A74Mod \u00A77"}]
+team modify HeadBuilder prefix [{"text":"\u00A76Head \u00A72Builder \u00A77"}]
 team modify HeadBuilder suffix [{"text":" \u00A75Streamer"}]
-team modify Sysadmin prefix [{"text":"\u00A76Sys\u00A7cadmin "}]
-team modify SysYT prefix [{"text":"\u00A74You\u00A76Tuber "}]
+team modify Sysadmin prefix [{"text":"\u00A76Sys\u00A7cadmin \u00A77"}]
+team modify SysYT prefix [{"text":"\u00A74You\u00A76Tuber \u00A77"}]
 team modify SysYT suffix [{"text":" \u00A76Sys\u00A7cadmin"}]
-team modify Admin prefix [{"text":"\u00A7cAdmin "}]
-team modify Mod prefix [{"text":"\u00A74Mod "}]
-team modify Builder prefix [{"text":"\u00A72Builder "}]
-team modify Dev prefix [{"text":"\u00A79Developer "}]
-team modify Helper prefix [{"text":"\u00A79Helper "}]
-team modify Templexian prefix [{"text":"\u00A74Templexian "}]
-team modify DNRP prefix [{"text":"\u00A7dDNR\u00A7e+ "}]
+team modify Admin prefix [{"text":"\u00A7cAdmin \u00A77"}]
+team modify Mod prefix [{"text":"\u00A74Mod \u00A77"}]
+team modify Builder prefix [{"text":"\u00A72Builder \u00A77"}]
+team modify Dev prefix [{"text":"\u00A79Developer \u00A77"}]
+team modify Helper prefix [{"text":"\u00A79Helper \u00A77"}]
+team modify Templexian prefix [{"text":"\u00A74Templexian \u00A77"}]
+team modify DNRP prefix [{"text":"\u00A7dDNR\u00A7e+ \u00A77"}]
 team modify DNRP suffix [{"text":" \u00A7c$$$"}]
-team modify MVPP prefix [{"text":"\u00A7bMVP\u00A7e+ "}]
+team modify MVPP prefix [{"text":"\u00A7bMVP\u00A7e+ \u00A77"}]
 team modify MVPP suffix [{"text":" \u00A7c$$"}]
-team modify MVP prefix [{"text":"\u00A7bMVP "}]
+team modify MVP prefix [{"text":"\u00A7bMVP \u00A77"}]
 team modify MVP suffix [{"text":" \u00A7c$$"}]
-team modify VIPP prefix [{"text":"\u00A7aVIP\u00A7e+ "}]
+team modify VIPP prefix [{"text":"\u00A7aVIP\u00A7e+ \u00A77"}]
 team modify VIPP suffix [{"text":" \u00A7c$"}]
-team modify VIP prefix [{"text":"\u00A7aVIP "}]
+team modify VIP prefix [{"text":"\u00A7aVIP \u00A77"}]
 team modify VIP suffix [{"text":" \u00A7c$"}]
-team modify YT prefix [{"text":"\u00A74You\u00A76Tuber "}]
+team modify YT prefix [{"text":"\u00A74You\u00A76Tuber \u00A77"}]
 team modify YT suffix [{"text":" \u00A78Player"}]
-team modify Streamer prefix [{"text":"\u00A75Streamer "}]
+team modify Streamer prefix [{"text":"\u00A75Streamer \u00A77"}]
 team modify Streamer suffix [{"text":" \u00A78Player"}]
-team modify JrYT prefix [{"text":"\u00A72Jr\u00A78. \u00A76YT "}]
+team modify JrYT prefix [{"text":"\u00A72Jr\u00A78. \u00A76YT \u00A77"}]
 team modify JrYT suffix [{"text":" \u00A78Player"}]
-team modify JrStreamer prefix [{"text":"\u00A72Jr\u00A78. \u00A75Streamer "}]
+team modify JrStreamer prefix [{"text":"\u00A72Jr\u00A78. \u00A75Streamer \u00A77"}]
 team modify JrStreamer suffix [{"text":" \u00A78Player"}]
-team modify NC prefix [{"text":"\u00A7aNew Comer "}]
-team modify Alchemist prefix [{"text":"\u00A78Alchemist "}]
+team modify NC prefix [{"text":"\u00A7aNew Comer \u00A77"}]
+team modify Alchemist prefix [{"text":"\u00A78Alchemist \u00A77"}]
 team modify Alchemist suffix [{"text":" \u00A76Reward"}]
 
-team modify Explorer prefix [{"text":"\u00A7dExplorer "}]
-team modify Warrior prefix [{"text":"\u00A78Warrior "}]
-team modify Master prefix [{"text":"\u00A75Master "}]
-team modify Knight prefix [{"text":"\u00A79Knight "}]
-team modify Magician prefix [{"text":"\u00A76Magician "}]
-team modify King prefix [{"text":"\u00A74King "}]
+team modify MOD prefix {"text":"\u00A76MOD \u00A77"}
+team modify ADMIN prefix {"text":"\u00A75ADMIN \u00A77"}
 
-team modify TAssassin prefix [{"text":"\u00A78Assassin "}]
+team modify Explorer prefix [{"text":"\u00A7dExplorer \u00A77"}]
+team modify Warrior prefix [{"text":"\u00A78Warrior \u00A77"}]
+team modify Master prefix [{"text":"\u00A75Master \u00A77"}]
+team modify Knight prefix [{"text":"\u00A79Knight \u00A77"}]
+team modify Magician prefix [{"text":"\u00A76Magician \u00A77"}]
+team modify King prefix [{"text":"\u00A74King \u00A77"}]
+
+team modify TAssassin prefix [{"text":"\u00A78Assassin \u00A77"}]
 team modify TAssassin suffix [{"text":" \u00A74Templexian"}]
-team modify TCrusader prefix [{"text":"\u00A7fCrusader "}]
+team modify TCrusader prefix [{"text":"\u00A7fCrusader \u00A77"}]
 team modify TCrusader suffix [{"text":" \u00A74Templexian"}]
+
+team modify Rapture prefix [{"text":"\u00A74Rapture \u00A76"}]
 # NPCs.
 team modify GREEN color green
 team modify GOLD color gold

@@ -15,18 +15,18 @@ function quests:trigger_test
 execute as @a[gamemode=!spectator,tag=PO] run function templex_standard:particles
 execute as @a[gamemode=survival,tag=!ByPassGamemode,distance=..350] run function templex_standard:protection
 ### LEVEL PERKS ###
-execute as @a[scores={tplx.lvl=15..19},nbt=!{ActiveEffects:[{Id:3b}]},tag=!EO] at @s run effect give @s haste 10000 2
+execute as @a[scores={tplx.lvl=15..19},nbt=!{ActiveEffects:[{Id:3b}]},tag=!EO,tag=HON] at @s run effect give @s haste 10000 2
 execute as @a[scores={tplx.lvl=15..19},nbt=!{ActiveEffects:[{Id:11b}]},tag=!EO] at @s run effect give @s resistance 10000 1
 execute as @a[scores={tplx.lvl=15..19},nbt=!{ActiveEffects:[{Id:5b}]},tag=!EO] at @s run effect give @s strength 10000 1
-execute as @a[scores={tplx.lvl=20..24},nbt=!{ActiveEffects:[{Id:3b}]},tag=!EO] at @s run effect give @s haste 10000 5
+execute as @a[scores={tplx.lvl=20..24},nbt=!{ActiveEffects:[{Id:3b}]},tag=!EO,tag=HON] at @s run effect give @s haste 10000 5
 execute as @a[scores={tplx.lvl=20..24},nbt=!{ActiveEffects:[{Id:11b}]},tag=!EO] at @s run effect give @s resistance 10000 2
 execute as @a[scores={tplx.lvl=20..24},nbt=!{ActiveEffects:[{Id:5b}]},tag=!EO] at @s run effect give @s strength 10000 2
-execute as @a[scores={tplx.lvl=25..34},nbt=!{ActiveEffects:[{Id:3b}]},tag=!EO] at @s run effect give @s haste 10000 10
+execute as @a[scores={tplx.lvl=25..34},nbt=!{ActiveEffects:[{Id:3b}]},tag=!EO,tag=HON] at @s run effect give @s haste 10000 10
 execute as @a[scores={tplx.lvl=25..},nbt=!{ActiveEffects:[{Id:11b}]},tag=!EO] at @s run effect give @s resistance 10000 3
 execute as @a[scores={tplx.lvl=25..},nbt=!{ActiveEffects:[{Id:1b}]},tag=SPEEDON,tag=!EO] at @s run effect give @s speed 10000 3
 execute as @a[scores={tplx.lvl=25..},nbt=!{ActiveEffects:[{Id:10b}]},tag=!EO] at @s run effect give @s regeneration 10000 1
 execute as @a[scores={tplx.lvl=25..},nbt=!{ActiveEffects:[{Id:5b}]},tag=!EO] at @s run effect give @s strength 10000 3
-execute as @a[scores={tplx.lvl=35..},nbt=!{ActiveEffects:[{Id:3b}]},tag=!EO] at @s run effect give @s haste 10000 20
+execute as @a[scores={tplx.lvl=35..},nbt=!{ActiveEffects:[{Id:3b}]},tag=!EO,tag=HON] at @s run effect give @s haste 10000 20
 execute as @a[scores={tplx.lvl=50..},nbt=!{ActiveEffects:[{Id:23b}]},tag=!EO] at @s run effect give @s saturation 10000 1
 ### FARMS / ARMOR STANDS ###
 execute as @e[type=armor_stand,name=GoldFarm] at @s if entity @e[type=item,name=Stick,distance=..1] run function templex_standard:pick_up_sticks
@@ -44,10 +44,11 @@ execute as @e[type=armor_stand,name=CoalFarm] at @s run function templex_standar
 execute as @e[type=endermite,name=CoalFarm] at @s run summon armor_stand ~ ~ ~ {CustomName:"{\"text\":\"CoalFarm\",\"color\":\"dark_gray\"}",CustomNameVisible:1b,NoGravity:1b,Invulnerable:1b}
 execute as @e[type=endermite,name=CoalFarm] at @s run kill @s
 execute as @e[type=armor_stand,name=SlimeFarm] at @s run function templex_standard:slime_farm
-execute as @e[type=endermite,name=SlimeFarm] at @s run summon armor_stand ~ ~ ~ {CustomName:"{\"text\":\"SlimeFarm\",\"color\":\"dark_gray\"}",CustomNameVisible:1b,NoGravity:1b,Invulnerable:1b}
+execute as @e[type=endermite,name=SlimeFarm] at @s run summon armor_stand ~ ~ ~ {CustomName:"{\"text\":\"SlimeFarm\",\"color\":\"green\"}",CustomNameVisible:1b,NoGravity:1b,Invulnerable:1b}
 execute as @e[type=endermite,name=SlimeFarm] at @s run kill @s
 ### GUARDS ###
 execute as @e[type=armor_stand,name=LightningGuard] at @s if entity @e[type=item,name=Stick,distance=..1] run function templex_standard:pick_up_sticks
+execute as @e[type=armor_stand,name=LightningGuard] at @s run function templex_standard:guard_lightning
 execute as @e[type=endermite,name=LightningGuard] at @s run summon armor_stand ~ ~ ~ {CustomName:"{\"text\":\"LightningGuard\",\"color\":\"aqua\"}",CustomNameVisible:1b,NoGravity:1b,Invulnerable:1b}
 execute as @e[type=endermite,name=LightningGuard] at @s run kill @s
 ### VOTE PARTY ###
@@ -90,8 +91,8 @@ execute as @e[x=82,y=127,z=59,distance=..1000,tag=!NOKILL,type=!player] at @s ru
 ### NO CREEPER EXPLODE ###
 data merge entity @e[type=creeper,tag=!DoesNotExplode,limit=1] {ExplosionRadius:0,Tags:["DoesNotExplode"]}
 ### NO PLAYER DAMAGE AT SPAWN ###
-effect give @a[x=63,y=127,z=61,distance=..300] resistance 1 100 true
-effect give @a[x=63,y=127,z=61,distance=..300] saturation 1 100 true
+effect give @a[x=82,y=127,z=59,distance=..300] resistance 1 100 true
+effect give @a[x=82,y=127,z=59,distance=..300] saturation 1 100 true
 ### ARROWS DO NOT HURT PAINTINGS AND ITEM FRAMES ###
 execute as @e[type=arrow] at @s if entity @e[type=painting,limit=1,distance=..2] run kill @s
 execute as @e[type=arrow] at @s if entity @e[type=item_frame,limit=1,distance=..2] run kill @s
@@ -99,12 +100,18 @@ execute as @e[type=arrow] at @s if entity @e[type=item_frame,limit=1,distance=..
 execute as @e[name=KarmaBoolean,scores={Database=1..}] run function templex_standard:karma
 ### TEAMS ###
 execute as @a[team=!NC,scores={TotalTime=..299999},tag=!special] run function templex_standard:ncfix
-execute as @a[team=!Warrior,scores={TotalTime=300000..999999},tag=!special] run function templex_standard:team_warrior
-execute as @a[team=!Explorer,scores={TotalTime=1000000..1999999},tag=!special] run function templex_standard:team_explorer
-execute as @a[team=!Master,scores={TotalTime=2000000..4999999},tag=!special] run function templex_standard:team_master
-execute as @a[team=!Knight,scores={TotalTime=5000000..11999999},tag=!special] run function templex_standard:team_knight
-execute as @a[team=!Magician,scores={TotalTime=12000000..23999999},tag=!special] run function templex_standard:team_magician
-execute as @a[team=!King,scores={TotalTime=24000000..24000010},tag=!special] run function templex_standard:team_king
+# 3 km
+execute as @a[team=!Warrior,scores={TotalTime=300000..1999999},tag=!special] run function templex_standard:team_warrior
+# 20 km
+execute as @a[team=!Explorer,scores={TotalTime=2000000..39999999},tag=!special] run function templex_standard:team_explorer
+# 400 km
+execute as @a[team=!Master,scores={TotalTime=40000000..299999999},tag=!special] run function templex_standard:team_master
+# 3,000
+execute as @a[team=!Knight,scores={TotalTime=300000000..899999999},tag=!special] run function templex_standard:team_knight
+# 9,000
+execute as @a[team=!Magician,scores={TotalTime=900000000..1499999999},tag=!special] run function templex_standard:team_magician
+# 15,000 km
+execute as @a[team=!King,scores={TotalTime=1500000000..},tag=!special] run function templex_standard:team_king
 ### FORWARDED FUNCTIONS ###
 function templex_standard:function_forward
 # Terrestria
