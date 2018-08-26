@@ -1,6 +1,9 @@
 {
 	"values": [
-		"templex_standard:lp_s",
-		"heads:trigger_test"
+		"templex_standard:lp_l",
+		"heads:trigger_test",
+		"terr-main:main",
+		"templex_standard:bossbar",
+		"quests:trigger_test"
 	]
 }

@@ -1,46 +1,30 @@
 ## Timely
-scoreboard players set Players-Online Stats 0
-execute as @a run scoreboard players add Players-Online Stats 1
-scoreboard players set YouTubers-Online Stats 0
-execute as @a[tag=YT,team=!YT] run scoreboard players add YouTubers-Online Stats 1
-execute as @a[team=YT] run scoreboard players add YouTubers-Online Stats 1
+execute store result score Players-Online Stats run execute if entity @a
+execute store result score YouTubers-Online Stats run execute if entity @a[tag=YT]
 # Timers
-scoreboard players add @e[name=Seconds] Database 1
-execute as @e[name=Seconds,scores={Database=60..}] run function templex_standard:mob_rate
-execute as @e[name=Timer,scores={Database=20..}] as @a at @s run function templex_standard:level_check
-execute as @e[name=Seconds,scores={Database=60..}] run scoreboard players add @e[name=Minutes] Database 1
-execute as @e[name=Seconds,scores={Database=60..}] run scoreboard players set @s Database 0
-execute as @e[name=Minutes,scores={Database=5}] as @e[name=Seconds,scores={Database=0}] run scoreboard players set @e[name=KarmaBoolean] Database 1
-execute as @e[name=Minutes,scores={Database=10}] as @e[name=Seconds,scores={Database=0}] run scoreboard players set @e[name=KarmaBoolean] Database 1
-execute as @e[name=Minutes,scores={Database=15}] as @e[name=Seconds,scores={Database=0}] run scoreboard players set @e[name=KarmaBoolean] Database 1
-execute as @e[name=Minutes,scores={Database=20}] as @e[name=Seconds,scores={Database=0}] run scoreboard players set @e[name=KarmaBoolean] Database 1
-execute as @e[name=Minutes,scores={Database=25}] as @e[name=Seconds,scores={Database=0}] run scoreboard players set @e[name=KarmaBoolean] Database 1
-execute as @e[name=Minutes,scores={Database=30}] as @e[name=Seconds,scores={Database=0}] run scoreboard players set @e[name=KarmaBoolean] Database 1
-execute as @e[name=Minutes,scores={Database=35}] as @e[name=Seconds,scores={Database=0}] run scoreboard players set @e[name=KarmaBoolean] Database 1
-execute as @e[name=Minutes,scores={Database=40}] as @e[name=Seconds,scores={Database=0}] run scoreboard players set @e[name=KarmaBoolean] Database 1
-execute as @e[name=Minutes,scores={Database=45}] as @e[name=Seconds,scores={Database=0}] run scoreboard players set @e[name=KarmaBoolean] Database 1
-execute as @e[name=Minutes,scores={Database=50}] as @e[name=Seconds,scores={Database=0}] run scoreboard players set @e[name=KarmaBoolean] Database 1
-execute as @e[name=Minutes,scores={Database=55}] as @e[name=Seconds,scores={Database=0}] run scoreboard players set @e[name=KarmaBoolean] Database 1
-execute as @e[name=Minutes,scores={Database=60}] as @e[name=Seconds,scores={Database=0}] run scoreboard players set @e[name=KarmaBoolean] Database 1
-###execute as @e[name=Minutes,scores={Database=5}] as @e[name=Seconds,scores={Database=0}] run function templex_standard:tc
-###execute as @e[name=Minutes,scores={Database=10}] as @e[name=Seconds,scores={Database=0}] run function templex_standard:tc
-###execute as @e[name=Minutes,scores={Database=15}] as @e[name=Seconds,scores={Database=0}] run function templex_standard:tc
-execute as @e[name=Minutes,scores={Database=20}] as @e[name=Seconds,scores={Database=0}] run function templex_standard:tc
-###execute as @e[name=Minutes,scores={Database=25}] as @e[name=Seconds,scores={Database=0}] run function templex_standard:tc
-###execute as @e[name=Minutes,scores={Database=30}] as @e[name=Seconds,scores={Database=0}] run function templex_standard:tc
-###execute as @e[name=Minutes,scores={Database=35}] as @e[name=Seconds,scores={Database=0}] run function templex_standard:tc
-execute as @e[name=Minutes,scores={Database=40}] as @e[name=Seconds,scores={Database=0}] run function templex_standard:tc
-###execute as @e[name=Minutes,scores={Database=45}] as @e[name=Seconds,scores={Database=0}] run function templex_standard:tc
-###execute as @e[name=Minutes,scores={Database=50}] as @e[name=Seconds,scores={Database=0}] run function templex_standard:tc
-###execute as @e[name=Minutes,scores={Database=55}] as @e[name=Seconds,scores={Database=0}] run function templex_standard:tc
-execute as @e[name=Minutes,scores={Database=60}] as @e[name=Seconds,scores={Database=0}] run function templex_standard:tc
-execute as @e[name=Minutes,scores={Database=60}] as @e[name=Seconds,scores={Database=0}] run function templex_standard:hourlykarma
-execute as @e[name=Minutes,scores={Database=60..}] run scoreboard players add * Mission 1
-execute as @e[name=Minutes,scores={Database=60..}] run scoreboard players add @e[name=Hours] Database 1
-execute as @e[name=Minutes,scores={Database=60..}] run scoreboard players remove @s Database 60
-scoreboard players add @e[type=armor_stand,name=GoldFarm] WalkTime 1
-scoreboard players add @e[type=armor_stand,name=IronFarm] WalkTime 1
-scoreboard players add @e[type=armor_stand,name=CoalFarm] WalkTime 1
-scoreboard players add @e[type=armor_stand,name=SlimeFarm] WalkTime 1
+scoreboard players add Seconds Database 1
+execute if score Seconds Database matches 60 run function templex_standard:mob_rate
+execute if score Timer Database matches 20 as @a at @s run function templex_standard:level_check
+execute if score Seconds Database matches 60 run scoreboard players add Minutes Database 1
+execute if score Seconds Database matches 60 run scoreboard players set Seconds Database 0
+### KP
+execute if score Minutes Database matches 5 if score Seconds Database matches 0 run function templex_standard:karma
+execute if score Minutes Database matches 10 if score Seconds Database matches 0 run function templex_standard:karma
+execute if score Minutes Database matches 15 if score Seconds Database matches 0 run function templex_standard:karma
+execute if score Minutes Database matches 20 if score Seconds Database matches 0 run function templex_standard:karma
+execute if score Minutes Database matches 25 if score Seconds Database matches 0 run function templex_standard:karma
+execute if score Minutes Database matches 30 if score Seconds Database matches 0 run function templex_standard:karma
+execute if score Minutes Database matches 35 if score Seconds Database matches 0 run function templex_standard:karma
+execute if score Minutes Database matches 40 if score Seconds Database matches 0 run function templex_standard:karma
+execute if score Minutes Database matches 45 if score Seconds Database matches 0 run function templex_standard:karma
+execute if score Minutes Database matches 50 if score Seconds Database matches 0 run function templex_standard:karma
+execute if score Minutes Database matches 55 if score Seconds Database matches 0 run function templex_standard:karma
+execute if score Minutes Database matches 60 if score Seconds Database matches 0 run function templex_standard:karma
+### TC
+execute if score Minutes Database matches 20 if score Seconds Database matches 0 run function templex_standard:tc
+execute if score Minutes Database matches 40 if score Seconds Database matches 0 run function templex_standard:tc
+execute if score Minutes Database matches 60 if score Seconds Database matches 0 run function templex_standard:tc
+execute if score Minutes Database matches 60 run scoreboard players add Hours Database 1
+execute if score Minutes Database matches 60 run scoreboard players set Minutes Database 0
 ### Has to be last.
-scoreboard players reset @e[name=Timer] Database
+scoreboard players set Timer Database 0

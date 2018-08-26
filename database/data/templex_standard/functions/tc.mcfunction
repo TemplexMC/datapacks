@@ -11,6 +11,7 @@ scoreboard players add @a[team=VIPP] TC 14
 scoreboard players add @a[team=MVP] TC 29
 scoreboard players add @a[team=MVPP] TC 99
 scoreboard players add @a[team=DNRP] TC 299
+scoreboard players add @a[team=Rapture] Karma 55
 scoreboard players add @a[tag=VoteParty] TC 20
 scoreboard players add @a[team=Alchemist,tag=VoteParty] TC 10
 scoreboard players add @a[tag=special,tag=VoteParty] TC 4
@@ -22,4 +23,4 @@ scoreboard players add @a[team=VIPP,tag=VoteParty] TC 14
 scoreboard players add @a[team=MVP,tag=VoteParty] TC 29
 scoreboard players add @a[team=MVPP,tag=VoteParty] TC 99
 scoreboard players add @a[team=DNRP,tag=VoteParty] TC 299
-scoreboard players operation @s TC += @s tplx.lvl
+scoreboard players add @a[team=Rapture,tag=VoteParty] TC 55

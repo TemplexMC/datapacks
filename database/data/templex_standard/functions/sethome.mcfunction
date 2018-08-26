@@ -8,7 +8,7 @@ tellraw @a[tag=OP] [{"text":"Set Home","color":"gold"},{"text":" : ","color":"da
 # Doers.
 execute at @s run summon armor_stand ~ ~ ~ {CustomName:"{\"text\":\"Home\",\"color\":\"aqua\"}",CustomNameVisible:1b,Invisible:1b,Invulnerable:1b}
 execute at @s run scoreboard players operation @e[type=armor_stand,limit=1,sort=nearest] UUID = @s UUID
-tag @s add tplx.home.true1
+tag @s add tplx.home.true2
 # Resetters.
 scoreboard players reset @s SetHome
 scoreboard players enable @a SetHome
