@@ -1,6 +1,7 @@
 ## Timely
 execute store result score Players-Online Stats run execute if entity @a
 execute store result score YouTubers-Online Stats run execute if entity @a[tag=YT]
+bossbar set minecraft:templex players @a
 # Timers
 scoreboard players add Seconds Database 1
 execute if score Seconds Database matches 60 run function templex_standard:mob_rate

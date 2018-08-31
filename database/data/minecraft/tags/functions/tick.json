@@ -3,7 +3,6 @@
 		"templex_standard:lp_l",
 		"heads:trigger_test",
 		"terr-main:main",
-		"templex_standard:bossbar",
 		"quests:trigger_test"
 	]
 }

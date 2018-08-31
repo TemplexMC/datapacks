@@ -37,27 +37,28 @@ execute as @e[type=armor_stand,name=Home,nbt={Invulnerable:1b}] at @s if entity 
 ### ITEM CLEAR ###
 execute if score IB Database >= 1 Database run function templex_standard:item_cleanup
 ### SPAWN CLEAN ###
-#x=82,y=127,z=59,distance=..1000,
-tag @e[x=82,y=127,z=59,distance=..1000,tag=!NOKILL,type=armor_stand] add NOKILL
-tag @e[x=82,y=127,z=59,distance=..1000,tag=!NOKILL,type=experience_bottle] add NOKILL
-tag @e[x=82,y=127,z=59,distance=..1000,tag=!NOKILL,type=experience_orb] add NOKILL
-tag @e[x=82,y=127,z=59,distance=..1000,tag=!NOKILL,type=arrow] add NOKILL
-tag @e[x=82,y=127,z=59,distance=..1000,tag=!NOKILL,type=villager] add NOKILL
-tag @e[x=82,y=127,z=59,distance=..1000,tag=!NOKILL,type=item] add NOKILL
-tag @e[x=82,y=127,z=59,distance=..1000,tag=!NOKILL,type=squid] add NOKILL
-tag @e[x=82,y=127,z=59,distance=..1000,tag=!NOKILL,type=tropical_fish] add NOKILL
-tag @e[x=82,y=127,z=59,distance=..1000,tag=!NOKILL,type=pufferfish] add NOKILL
-tag @e[x=82,y=127,z=59,distance=..1000,tag=!NOKILL,type=salmon] add NOKILL
-tag @e[x=82,y=127,z=59,distance=..1000,tag=!NOKILL,type=cod] add NOKILL
-tag @e[x=82,y=127,z=59,distance=..1000,tag=!NOKILL,type=firework_rocket] add NOKILL
-tag @e[x=82,y=127,z=59,distance=..1000,tag=!NOKILL,type=snowball] add NOKILL
-tag @e[x=82,y=127,z=59,distance=..1000,tag=!NOKILL,type=minecart] add NOKILL
-execute as @e[x=82,y=127,z=59,distance=..1000,tag=!NOKILL,type=!player] at @s run tp @s ~ ~-270 ~
+#x=171,y=93,z=-169,distance=..1000,
+tag @e[x=171,y=93,z=-169,distance=..1000,tag=!NOKILL,type=armor_stand] add NOKILL
+tag @e[x=171,y=93,z=-169,distance=..1000,tag=!NOKILL,type=experience_bottle] add NOKILL
+tag @e[x=171,y=93,z=-169,distance=..1000,tag=!NOKILL,type=experience_orb] add NOKILL
+tag @e[x=171,y=93,z=-169,distance=..1000,tag=!NOKILL,type=arrow] add NOKILL
+tag @e[x=171,y=93,z=-169,distance=..1000,tag=!NOKILL,type=villager] add NOKILL
+tag @e[x=171,y=93,z=-169,distance=..1000,tag=!NOKILL,type=item] add NOKILL
+tag @e[x=171,y=93,z=-169,distance=..1000,tag=!NOKILL,type=squid] add NOKILL
+tag @e[x=171,y=93,z=-169,distance=..1000,tag=!NOKILL,type=tropical_fish] add NOKILL
+tag @e[x=171,y=93,z=-169,distance=..1000,tag=!NOKILL,type=pufferfish] add NOKILL
+tag @e[x=171,y=93,z=-169,distance=..1000,tag=!NOKILL,type=salmon] add NOKILL
+tag @e[x=171,y=93,z=-169,distance=..1000,tag=!NOKILL,type=cod] add NOKILL
+tag @e[x=171,y=93,z=-169,distance=..1000,tag=!NOKILL,type=firework_rocket] add NOKILL
+tag @e[x=171,y=93,z=-169,distance=..1000,tag=!NOKILL,type=snowball] add NOKILL
+tag @e[x=171,y=93,z=-169,distance=..1000,tag=!NOKILL,type=boat] add NOKILL
+tag @e[x=171,y=93,z=-169,distance=..1000,tag=!NOKILL,type=minecart] add NOKILL
+execute as @e[x=171,y=93,z=-169,distance=..1000,tag=!NOKILL,type=!player] at @s run tp @s ~ ~-270 ~
 ### NO CREEPER EXPLODE ###
 data merge entity @e[type=creeper,tag=!DoesNotExplode,limit=1] {ExplosionRadius:0,Tags:["DoesNotExplode"]}
 ### NO PLAYER DAMAGE AT SPAWN ###
-effect give @a[x=82,y=127,z=59,distance=..300] resistance 1 100 true
-effect give @a[x=82,y=127,z=59,distance=..300] saturation 1 100 true
+effect give @a[x=171,y=93,z=-169,distance=..300] resistance 1 100 true
+effect give @a[x=171,y=93,z=-169,distance=..300] saturation 1 100 true
 ### TEAMS ###
 execute as @a[team=!NC,scores={TotalTime=..299999},tag=!special] run function templex_standard:ncfix
 # 3 km

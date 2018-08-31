@@ -52,18 +52,18 @@ execute as @a[scores={Buy_10TC=1..}] run function templex_standard:buy_10tc
 execute as @a[scores={Buy_100TC=1..}] run function templex_standard:buy_100tc
 execute as @a[scores={Buy_1000TC=1..}] run function templex_standard:buy_1000tc
 #- Items
-execute as @a[scores={Buy_Rocket=1..}] run function templex_standard:buy_rocket
+#execute as @a[scores={Buy_Rocket=1..}] run function templex_standard:buy_rocket
 #- Drops
-execute as @a[scores={Buy_Arrow=1..}] run function templex_standard:buy_arrow
-execute as @a[scores={Buy_Slimeball=1..}] run function templex_standard:buy_slimeball
+#execute as @a[scores={Buy_Arrow=1..}] run function templex_standard:buy_arrow
+#execute as @a[scores={Buy_Slimeball=1..}] run function templex_standard:buy_slimeball
 #- Ore
-execute as @a[scores={Buy_Redstone=1..}] run function templex_standard:buy_redstone
-execute as @a[scores={Buy_Lapis=1..}] run function templex_standard:buy_lapis
-execute as @a[scores={Buy_Coal=1..}] run function templex_standard:buy_coal
-execute as @a[scores={Buy_Iron=1..}] run function templex_standard:buy_iron
-execute as @a[scores={Buy_Gold=1..}] run function templex_standard:buy_gold
-execute as @a[scores={Buy_Diamonds=1..}] run function templex_standard:buy_diamonds
-execute as @a[scores={Buy_Emeralds=1..}] run function templex_standard:buy_emeralds
+#execute as @a[scores={Buy_Redstone=1..}] run function templex_standard:buy_redstone
+#execute as @a[scores={Buy_Lapis=1..}] run function templex_standard:buy_lapis
+#execute as @a[scores={Buy_Coal=1..}] run function templex_standard:buy_coal
+#execute as @a[scores={Buy_Iron=1..}] run function templex_standard:buy_iron
+#execute as @a[scores={Buy_Gold=1..}] run function templex_standard:buy_gold
+#execute as @a[scores={Buy_Diamonds=1..}] run function templex_standard:buy_diamonds
+#execute as @a[scores={Buy_Emeralds=1..}] run function templex_standard:buy_emeralds
 #- OP Gear
 execute as @a[scores={Buy_OP_CP=1..}] run function templex_standard:buy_op_cp
 execute as @a[scores={Buy_OP_BT=1..}] run function templex_standard:buy_op_bt
@@ -82,17 +82,17 @@ execute as @a[scores={Buy_EnderEgg=1..}] run function templex_standard:buy_ender
 execute as @a[scores={Buy_Head_Shark=1..}] run function templex_standard:buy_head_shark
 execute as @a[scores={Buy_Head_Nitrate=1..}] run function templex_standard:buy_head_nitrate
 # SELL
-execute as @a[scores={Sell=1..}] run function templex_standard:sell
-execute as @a[scores={Sell_Wheat=1..}] run function templex_standard:sell_wheat
-execute as @a[scores={Sell_Cacti=1..}] run function templex_standard:sell_cacti
-execute as @a[scores={Sell_Reeds=1..}] run function templex_standard:sell_reeds
-execute as @a[scores={Sell_64Wheat=1..}] run function templex_standard:sell_64wheat
-execute as @a[scores={Sell_64Cacti=1..}] run function templex_standard:sell_64cacti
-execute as @a[scores={Sell_64Reeds=1..}] run function templex_standard:sell_64reeds
+#execute as @a[scores={Sell=1..}] run function templex_standard:sell
+#execute as @a[scores={Sell_Wheat=1..}] run function templex_standard:sell_wheat
+#execute as @a[scores={Sell_Cacti=1..}] run function templex_standard:sell_cacti
+#execute as @a[scores={Sell_Reeds=1..}] run function templex_standard:sell_reeds
+#execute as @a[scores={Sell_64Wheat=1..}] run function templex_standard:sell_64wheat
+#execute as @a[scores={Sell_64Cacti=1..}] run function templex_standard:sell_64cacti
+#execute as @a[scores={Sell_64Reeds=1..}] run function templex_standard:sell_64reeds
 # MINIGAMES
 #- Zombs
-execute as @a[scores={TPZombs=1..}] run function minigames:goto_zombs
-execute as @a[scores={SeeZombsStats=1..}] run function minigames:seezombsstats
+#execute as @a[scores={TPZombs=1..}] run function minigames:goto_zombs
+#execute as @a[scores={SeeZombsStats=1..}] run function minigames:seezombsstats
 # BOUGHT RANKS
 execute as @a[scores={Firework=1},tag=special] run function templex_standard:firework
 execute as @a[scores={Secret=1},tag=special] run function templex_standard:zelda

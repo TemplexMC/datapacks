@@ -1,4 +1,4 @@
-execute in overworld run tp @s -229 64 -120
+execute in overworld run tp @s 171 93 -169
 gamemode adventure @s[tag=!OP,gamemode=survival]
 tellraw @s [{"text":"Successfully TPed to Spawn!","color":"blue","italic":"true"}]
 tellraw @a[tag=OP] [{"text":"Spawn System","color":"gold"},{"text":" : ","color":"dark_gray"},{"text":"Successfully TPed ","color":"red"},{"selector":"@s","color":"green"},{"text":" to Spawn!","color":"red"}]
